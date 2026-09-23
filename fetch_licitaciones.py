@@ -333,25 +333,58 @@ def upsert_and_detect_new(conn: sqlite3.Connection, lic: Licitacion) -> bool:
 # Exportación para el dashboard
 # ---------------------------------------------------------------------------
  
-def export_json(conn: sqlite3.Connection, nuevas_keys: set[str], dashboard_days: int) -> None:
+def export_json(
+    conn: sqlite3.Connection,
+    nuevas_keys: set[str],
+    dashboard_days: int,
+    is_bootstrap: bool,
+    max_nuevas: int = 3000,
+) -> None:
     cur = conn.execute(
         "SELECT expediente, titulo, estado, organo, objeto, importe_sin_iva, "
         "tipo_contrato, procedimiento, cpv, url, updated, first_seen_at "
-        "FROM licitaciones ORDER BY first_seen_at DESC"
+        "FROM licitaciones ORDER BY updated DESC"
     )
     cols = [d[0] for d in cur.description]
     all_rows = [dict(zip(cols, r)) for r in cur.fetchall()]
  
-    nuevas = [r for r in all_rows if r["expediente"] in nuevas_keys]
+    if is_bootstrap:
+        # Primera ejecución: la base de datos estaba vacía, así que "todo" cuenta
+        # técnicamente como nuevo — pero exportar cientos de miles de registros
+        # como nuevas_hoy.json no tiene sentido (y GitHub rechaza el push si el
+        # archivo supera 100 MB). Sembramos la base de datos en silencio y no
+        # marcamos nada como "nuevo" hoy.
+        nuevas = []
+        nota = (
+            f"Primera ejecución: base de datos sembrada con {len(all_rows):,} "
+            "expedientes existentes. A partir de mañana, aquí aparecerán solo "
+            "las licitaciones realmente nuevas."
+        )
+        print(f"[export] Bootstrap: {len(all_rows):,} expedientes sembrados, "
+              f"0 marcadas como nuevas (ver nota en nuevas_hoy.json)", file=sys.stderr)
+    else:
+        nuevas_all = [r for r in all_rows if r["expediente"] in nuevas_keys]
+        nuevas_all.sort(key=lambda r: r["updated"] or "", reverse=True)
+        nuevas = nuevas_all[:max_nuevas]
+        nota = None
+        if len(nuevas_all) > max_nuevas:
+            nota = (
+                f"Hubo {len(nuevas_all):,} novedades hoy; se muestran las "
+                f"{max_nuevas:,} más recientes para no generar un archivo excesivo."
+            )
+        print(f"[export] {len(nuevas_all)} nuevas ({len(nuevas)} exportadas) "
+              f"-> {NUEVAS_HOY_PATH}", file=sys.stderr)
+ 
+    payload = {
+        "generado": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "total": len(nuevas),
+        "licitaciones": nuevas,
+    }
+    if nota:
+        payload["nota"] = nota
     NUEVAS_HOY_PATH.write_text(
-        json.dumps(
-            {"generado": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-             "total": len(nuevas), "licitaciones": nuevas},
-            ensure_ascii=False, indent=2,
-        ),
-        encoding="utf-8",
+        json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8",
     )
-    print(f"[export] {len(nuevas)} nuevas -> {NUEVAS_HOY_PATH}", file=sys.stderr)
  
     latest = all_rows[: max(dashboard_days * 200, 500)]  # tope razonable de tamaño
     LATEST_PATH.write_text(
@@ -371,6 +404,7 @@ def export_json(conn: sqlite3.Connection, nuevas_keys: set[str], dashboard_days:
  
 def run(years: list[int], dashboard_days: int) -> None:
     conn = get_db()
+    is_bootstrap = conn.execute("SELECT COUNT(*) FROM licitaciones").fetchone()[0] == 0
     nuevas_keys: set[str] = set()
     total_procesadas = 0
  
@@ -394,7 +428,7 @@ def run(years: list[int], dashboard_days: int) -> None:
     print(f"[run] Procesadas {total_procesadas:,} entradas. "
           f"Nuevas/actualizadas: {len(nuevas_keys):,}", file=sys.stderr)
  
-    export_json(conn, nuevas_keys, dashboard_days)
+    export_json(conn, nuevas_keys, dashboard_days, is_bootstrap=is_bootstrap)
     conn.close()
  
  
@@ -416,4 +450,3 @@ def main() -> None:
  
 if __name__ == "__main__":
     main()
- 

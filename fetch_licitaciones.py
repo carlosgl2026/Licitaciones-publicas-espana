@@ -2,42 +2,42 @@
 """
 fetch_licitaciones.py
 ======================
- 
+
 Descarga el feed oficial y diario de la Plataforma de Contratación del
 Sector Público (PLACSP) español, detecta qué expedientes son nuevos (o se
 han actualizado) desde la última vez que se ejecutó el script, y guarda:
- 
+
   - data/licitaciones.db       -> base de datos SQLite con el histórico completo
   - data/nuevas_hoy.json       -> solo las licitaciones nuevas/actualizadas en esta ejecución
   - data/latest.json           -> últimos N días, listos para el dashboard (dashboard.html)
- 
+
 Fuente de datos
 ----------------
 PLACSP publica el ZIP anual de licitaciones en:
- 
+
     https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_643/
     licitacionesPerfilesContratanteCompleto3_{año}.zip
- 
+
 Ese ZIP contiene ficheros .atom (formato CODICE 2.07) con TODAS las
 licitaciones publicadas ese año, y el propio portal indica que "se
 actualizan diariamente con los cambios del día anterior". Por eso, la
 estrategia de este script es:
- 
+
   1. Descargar el ZIP del año en curso (y opcionalmente el del año anterior,
      por si hay expedientes a caballo entre diciembre/enero).
   2. Parsear todos los ficheros .atom.
   3. Comparar cada expediente contra lo que ya teníamos guardado en SQLite.
   4. Todo lo que sea nuevo, o cuyo estado/fecha de actualización haya
      cambiado, se marca como "nuevo" en esta ejecución.
- 
+
 Uso
 ---
     python fetch_licitaciones.py                 # año actual
     python fetch_licitaciones.py --years 2025 2026
     python fetch_licitaciones.py --dashboard-days 30
- 
+
 Pensado para ejecutarse una vez al día (cron, systemd timer, GitHub Actions...).
- 
+
 IMPORTANTE
 ----------
 Este script necesita salir a Internet hacia contrataciondelsectorpublico.gob.es.
@@ -45,9 +45,9 @@ No se puede ejecutar dentro del sandbox de este chat (la red está restringida
 a registries de paquetes), así que debes correrlo en tu propia máquina,
 servidor, o en GitHub Actions (ver .github/workflows/daily.yml incluido).
 """
- 
+
 from __future__ import annotations
- 
+
 import argparse
 import io
 import json
@@ -60,18 +60,18 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable, Optional
 from xml.etree import ElementTree as ET
- 
+
 import requests
- 
+
 # ---------------------------------------------------------------------------
 # Configuración
 # ---------------------------------------------------------------------------
- 
+
 BASE_URL = (
     "https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_643/"
     "licitacionesPerfilesContratanteCompleto3_{year}.zip"
 )
- 
+
 # Muchos portales de la administración española usan un WAF que detecta tráfico
 # "de bot" (sin cabeceras de navegador, o proveniente de rangos de IP de
 # centros de datos como los de GitHub Actions/AWS/Azure) y lo estrangula a
@@ -85,36 +85,92 @@ REQUEST_HEADERS = {
     "Accept": "application/zip, application/octet-stream, */*",
     "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
 }
- 
+
 MAX_RETRIES = 3
 RETRY_BACKOFF_SECONDS = 15
- 
+
 DATA_DIR = Path(__file__).parent / "data"
 DB_PATH = DATA_DIR / "licitaciones.db"
 NUEVAS_HOY_PATH = DATA_DIR / "nuevas_hoy.json"
 LATEST_PATH = DATA_DIR / "latest.json"
- 
+
 NS = {
     "atom": "http://www.w3.org/2005/Atom",
     "cbc": "urn:dgpe:names:draft:codice:schema:xsd:CommonBasicComponents-2",
     "cac": "urn:dgpe:names:draft:codice:schema:xsd:CommonAggregateComponents-2",
     "cac-ext": "urn:dgpe:names:draft:codice-place-ext:schema:xsd:CommonAggregateComponents-2",
 }
- 
+
 CFS_TAG = f"{{{NS['cac-ext']}}}ContractFolderStatus"
- 
- 
+
+
+# ---------------------------------------------------------------------------
+# Filtro de tecnología
+# ---------------------------------------------------------------------------
+# Solo nos interesan licitaciones relacionadas con tecnología/informática.
+# Combinamos dos señales para no depender de que el organismo haya clasificado
+# bien el CPV (en la práctica, muchos ayuntamientos pequeños lo hacen mal):
+#
+#   1. Prefijos de CPV (Vocabulario Común de Contratos Públicos de la UE)
+#      del ámbito TI: software, hardware, telecomunicaciones, servicios
+#      informáticos, internet...
+#   2. Palabras clave en el objeto/título del contrato.
+#
+# Si CUALQUIERA de las dos coincide, se considera "tecnología".
+
+TECH_CPV_PREFIXES = (
+    "30200", "30210", "30211", "30213", "30216", "30220", "30230", "30231",
+    "30232", "30233", "30234", "30236", "30237",          # hardware / equipos informáticos
+    "32", "323", "324",                                    # telecomunicaciones / radio / TV / redes
+    "48",                                                   # paquetes de software y sistemas de información
+    "72",                                                   # servicios TI: consultoría, programación, datos, internet
+    "79711", "79712",                                       # sistemas de seguridad/vigilancia electrónica
+)
+
+TECH_KEYWORDS = (
+    "informátic", "informatiz", "software", "hardware", "aplicación web",
+    "aplicación móvil", "app móvil", "ciberseguridad", "seguridad informática",
+    "tecnologías de la información", "sistema de información", "base de datos",
+    "servidor", "servidores", "nube", "cloud", "centro de datos", "datacenter",
+    "red de datos", "red informática", "telecomunicacion", "digitalizaci",
+    "transformación digital", "plataforma digital", "página web", "sitio web",
+    "desarrollo de software", "mantenimiento informático", "puesto de trabajo informátic",
+    "licencias de software", "erp", "crm", "inteligencia artificial",
+    "big data", "internet de las cosas", "iot", "fibra óptica", "wifi",
+    "videovigilancia", "sistema informático",
+)
+
+
+def _normalize(s: str) -> str:
+    """minúsculas + sin tildes, para comparar sin depender de acentos."""
+    import unicodedata
+    s = unicodedata.normalize("NFKD", s.lower())
+    return "".join(c for c in s if not unicodedata.combining(c))
+
+
+_TECH_KEYWORDS_NORM = tuple(_normalize(k) for k in TECH_KEYWORDS)
+
+
+def is_tecnologia(lic: "Licitacion") -> bool:
+    cpv = (lic.cpv or "").strip()
+    if cpv and cpv.startswith(TECH_CPV_PREFIXES):
+        return True
+
+    texto = _normalize(f"{lic.objeto} {lic.titulo}")
+    return any(kw in texto for kw in _TECH_KEYWORDS_NORM)
+
+
 def _t(el: Optional[ET.Element], path: str, ns=NS) -> str:
     """Helper: findtext seguro devolviendo '' si no existe."""
     if el is None:
         return ""
     return (el.findtext(path, default="", namespaces=ns) or "").strip()
- 
- 
+
+
 # ---------------------------------------------------------------------------
 # Modelo de datos
 # ---------------------------------------------------------------------------
- 
+
 @dataclass
 class Licitacion:
     expediente: str
@@ -129,32 +185,32 @@ class Licitacion:
     url: str
     updated: str  # fecha "updated" del entry Atom (ISO)
     fetched_at: str  # cuándo lo vio este script por última vez
- 
+
     @property
     def key(self) -> str:
         return self.expediente or self.url
- 
- 
+
+
 # ---------------------------------------------------------------------------
 # Descarga y parseo
 # ---------------------------------------------------------------------------
- 
+
 def download_year_zip(year: int, connect_timeout: int = 30, read_timeout: int = 60) -> bytes:
     """Descarga en streaming, con reintentos y cabeceras de navegador.
- 
+
     Usamos streaming en vez de resp.content directo por dos motivos:
       1. Poder loguear cuántos MB llevamos (si no, el log de GitHub Actions
          se queda "mudo" durante varios minutos y parece que está colgado).
       2. Poder cortar con un timeout de LECTURA razonable: si el servidor
          deja de mandar bytes durante más de `read_timeout` segundos,
          requests lanza una excepción en vez de esperar indefinidamente.
- 
+
     Además reintentamos varias veces: algunos portales públicos estrangulan
     o cortan conexiones que parecen "de bot" de forma intermitente, y un
     segundo intento a veces basta.
     """
     url = BASE_URL.format(year=year)
- 
+
     last_error: Optional[Exception] = None
     for attempt in range(1, MAX_RETRIES + 1):
         print(f"[fetch] Descargando {url} (intento {attempt}/{MAX_RETRIES}) ...", file=sys.stderr)
@@ -162,7 +218,7 @@ def download_year_zip(year: int, connect_timeout: int = 30, read_timeout: int = 
             chunks: list[bytes] = []
             total = 0
             last_log = time.monotonic()
- 
+
             with requests.get(
                 url, stream=True, timeout=(connect_timeout, read_timeout),
                 headers=REQUEST_HEADERS,
@@ -171,7 +227,7 @@ def download_year_zip(year: int, connect_timeout: int = 30, read_timeout: int = 
                 content_length = resp.headers.get("Content-Length")
                 if content_length:
                     print(f"[fetch] Tamaño anunciado: {int(content_length):,} bytes", file=sys.stderr)
- 
+
                 for chunk in resp.iter_content(chunk_size=1024 * 1024):  # 1 MB
                     if not chunk:
                         continue
@@ -181,22 +237,22 @@ def download_year_zip(year: int, connect_timeout: int = 30, read_timeout: int = 
                     if now - last_log >= 5:  # loguea como mucho cada 5s, no por cada MB
                         print(f"[fetch] ...{total / (1024 * 1024):.1f} MB descargados", file=sys.stderr)
                         last_log = now
- 
+
             data = b"".join(chunks)
             print(f"[fetch] OK ({len(data):,} bytes)", file=sys.stderr)
             return data
- 
+
         except requests.RequestException as e:
             last_error = e
             print(f"[fetch] Intento {attempt} falló: {e}", file=sys.stderr)
             if attempt < MAX_RETRIES:
                 print(f"[fetch] Reintentando en {RETRY_BACKOFF_SECONDS}s...", file=sys.stderr)
                 time.sleep(RETRY_BACKOFF_SECONDS)
- 
+
     assert last_error is not None
     raise last_error
- 
- 
+
+
 def iter_entries_from_zip(zip_bytes: bytes) -> Iterable[ET.Element]:
     """Itera sobre todos los <entry> de todos los ficheros .atom del ZIP."""
     with zipfile.ZipFile(io.BytesIO(zip_bytes)) as zf:
@@ -211,25 +267,25 @@ def iter_entries_from_zip(zip_bytes: bytes) -> Iterable[ET.Element]:
             root = tree.getroot()
             for entry in root.findall("atom:entry", NS):
                 yield entry
- 
- 
+
+
 def parse_entry(entry: ET.Element) -> Optional[Licitacion]:
     titulo = _t(entry, "atom:title")
     updated = _t(entry, "atom:updated")
     link_el = entry.find("atom:link", NS)
     url = link_el.get("href", "") if link_el is not None else ""
- 
+
     cfs = entry.find(f".//{CFS_TAG}")
     if cfs is None:
         return None
- 
+
     expediente = _t(cfs, "cbc:ContractFolderID")
     estado = _t(cfs, "cbc:ContractFolderStatusCode")
- 
+
     organo = _t(cfs, ".//cac-ext:LocatedContractingParty//cbc:Name") or _t(
         cfs, ".//cac:LocatedContractingParty//cbc:Name"
     )
- 
+
     objeto = _t(cfs, ".//cac:ProcurementProject/cbc:Name") or _t(
         cfs, ".//cac-ext:ProcurementProject/cbc:Name"
     )
@@ -241,7 +297,7 @@ def parse_entry(entry: ET.Element) -> Optional[Licitacion]:
         cfs, ".//cac-ext:TenderingProcess/cbc:ProcedureCode"
     )
     cpv = _t(cfs, ".//cbc:ItemClassificationCode")
- 
+
     return Licitacion(
         expediente=expediente,
         titulo=titulo,
@@ -256,12 +312,12 @@ def parse_entry(entry: ET.Element) -> Optional[Licitacion]:
         updated=updated,
         fetched_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),
     )
- 
- 
+
+
 # ---------------------------------------------------------------------------
 # Persistencia (SQLite)
 # ---------------------------------------------------------------------------
- 
+
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS licitaciones (
     expediente TEXT PRIMARY KEY,
@@ -281,8 +337,8 @@ CREATE TABLE IF NOT EXISTS licitaciones (
 CREATE INDEX IF NOT EXISTS idx_updated ON licitaciones(updated);
 CREATE INDEX IF NOT EXISTS idx_first_seen ON licitaciones(first_seen_at);
 """
- 
- 
+
+
 def get_db(db_path: Optional[Path] = None) -> sqlite3.Connection:
     if db_path is None:
         db_path = DB_PATH  # lookup dinámico: respeta overrides hechos en tiempo de ejecución
@@ -290,8 +346,8 @@ def get_db(db_path: Optional[Path] = None) -> sqlite3.Connection:
     conn = sqlite3.connect(db_path)
     conn.executescript(SCHEMA)
     return conn
- 
- 
+
+
 def upsert_and_detect_new(conn: sqlite3.Connection, lic: Licitacion) -> bool:
     """Inserta/actualiza una licitación. Devuelve True si es nueva o cambió `updated`."""
     cur = conn.execute(
@@ -299,7 +355,7 @@ def upsert_and_detect_new(conn: sqlite3.Connection, lic: Licitacion) -> bool:
     )
     row = cur.fetchone()
     now = lic.fetched_at
- 
+
     if row is None:
         conn.execute(
             """INSERT INTO licitaciones
@@ -313,7 +369,7 @@ def upsert_and_detect_new(conn: sqlite3.Connection, lic: Licitacion) -> bool:
             ),
         )
         return True
- 
+
     changed = row[0] != lic.updated
     conn.execute(
         """UPDATE licitaciones SET
@@ -327,12 +383,12 @@ def upsert_and_detect_new(conn: sqlite3.Connection, lic: Licitacion) -> bool:
         ),
     )
     return changed
- 
- 
+
+
 # ---------------------------------------------------------------------------
 # Exportación para el dashboard
 # ---------------------------------------------------------------------------
- 
+
 def export_json(
     conn: sqlite3.Connection,
     nuevas_keys: set[str],
@@ -347,7 +403,7 @@ def export_json(
     )
     cols = [d[0] for d in cur.description]
     all_rows = [dict(zip(cols, r)) for r in cur.fetchall()]
- 
+
     if is_bootstrap:
         # Primera ejecución: la base de datos estaba vacía, así que "todo" cuenta
         # técnicamente como nuevo — pero exportar cientos de miles de registros
@@ -374,7 +430,7 @@ def export_json(
             )
         print(f"[export] {len(nuevas_all)} nuevas ({len(nuevas)} exportadas) "
               f"-> {NUEVAS_HOY_PATH}", file=sys.stderr)
- 
+
     payload = {
         "generado": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "total": len(nuevas),
@@ -385,7 +441,7 @@ def export_json(
     NUEVAS_HOY_PATH.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8",
     )
- 
+
     latest = all_rows[: max(dashboard_days * 200, 500)]  # tope razonable de tamaño
     LATEST_PATH.write_text(
         json.dumps(
@@ -396,42 +452,58 @@ def export_json(
         encoding="utf-8",
     )
     print(f"[export] {len(latest)} registros -> {LATEST_PATH}", file=sys.stderr)
- 
- 
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
- 
+
 def run(years: list[int], dashboard_days: int) -> None:
     conn = get_db()
     is_bootstrap = conn.execute("SELECT COUNT(*) FROM licitaciones").fetchone()[0] == 0
     nuevas_keys: set[str] = set()
     total_procesadas = 0
- 
+
     for year in years:
         try:
             zip_bytes = download_year_zip(year)
         except requests.RequestException as e:
             print(f"[fetch] ERROR descargando el año {year}: {e}", file=sys.stderr)
             continue
- 
+
+        year_processed = 0
+        year_skipped = 0
+        last_log = time.monotonic()
         for entry in iter_entries_from_zip(zip_bytes):
             lic = parse_entry(entry)
             if lic is None or not lic.key:
                 continue
+            if not is_tecnologia(lic):
+                year_skipped += 1
+                continue
             total_procesadas += 1
+            year_processed += 1
             if upsert_and_detect_new(conn, lic):
                 nuevas_keys.add(lic.key)
- 
+
+            now = time.monotonic()
+            if now - last_log >= 5:  # loguea como mucho cada 5s
+                print(f"[parse] ...{year_processed:,} de tecnología procesados "
+                      f"del año {year} ({year_skipped:,} descartados, no son de tecnología)",
+                      file=sys.stderr)
+                last_log = now
+
         conn.commit()
- 
+        print(f"[parse] Año {year} terminado: {year_processed:,} de tecnología, "
+              f"{year_skipped:,} descartados por no ser de tecnología.", file=sys.stderr)
+
     print(f"[run] Procesadas {total_procesadas:,} entradas. "
           f"Nuevas/actualizadas: {len(nuevas_keys):,}", file=sys.stderr)
- 
+
     export_json(conn, nuevas_keys, dashboard_days, is_bootstrap=is_bootstrap)
     conn.close()
- 
- 
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     current_year = datetime.now().year
@@ -446,7 +518,7 @@ def main() -> None:
     )
     args = parser.parse_args()
     run(args.years, args.dashboard_days)
- 
- 
+
+
 if __name__ == "__main__":
     main()

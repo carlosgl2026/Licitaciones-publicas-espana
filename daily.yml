@@ -34,9 +34,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: data/licitaciones.db
-          key: licitaciones-db-tech-v1-${{ github.run_id }}
+          key: licitaciones-db-tech-v2-${{ github.run_id }}
           restore-keys: |
-            licitaciones-db-tech-v1-
+            licitaciones-db-tech-v2-
 
       - name: Ejecutar fetch_licitaciones.py
         run: |
@@ -66,6 +66,7 @@ jobs:
           mkdir -p site/data
           cp data/latest.json site/data/latest.json
           cp data/nuevas_hoy.json site/data/nuevas_hoy.json
+          cp data/alertas_partners.json site/data/alertas_partners.json
 
       - name: Subir artefacto de Pages
         uses: actions/upload-pages-artifact@v3

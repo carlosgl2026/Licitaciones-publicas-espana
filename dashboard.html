@@ -95,6 +95,7 @@
   <div class="tabs">
     <div class="tab active" data-tab="nuevas">Nuevas de hoy</div>
     <div class="tab" data-tab="todas">Todo el histórico cargado</div>
+    <div class="tab" data-tab="partners">🔔 Alertas: Google Cloud / ClickHouse / ElevenLabs</div>
   </div>
 
   <div class="toolbar">
@@ -155,12 +156,14 @@
 
   async function loadData() {
     try {
-      const [nuevasResp, todasResp] = await Promise.all([
+      const [nuevasResp, todasResp, partnersResp] = await Promise.all([
         fetch('data/nuevas_hoy.json').then(r => r.ok ? r.json() : null).catch(() => null),
         fetch('data/latest.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/alertas_partners.json').then(r => r.ok ? r.json() : null).catch(() => null),
       ]);
       state.nuevas = nuevasResp;
       state.todas = todasResp;
+      state.partners = partnersResp;
 
       if (!state.nuevas && !state.todas) {
         $('#list').innerHTML = `<div class="empty error">
@@ -204,6 +207,9 @@
   }
 
   function currentDataset() {
+    if (state.tab === 'partners') {
+      return (state.partners && state.partners.historico) ? state.partners.historico : [];
+    }
     const source = state.tab === 'nuevas' ? state.nuevas : state.todas;
     return (source && source.licitaciones) ? source.licitaciones : [];
   }
@@ -230,17 +236,59 @@
     return out;
   }
 
+  function partnerBadge(objeto) {
+    const t = (objeto || '').toLowerCase();
+    if (t.includes('google cloud')) return 'Google Cloud';
+    if (t.includes('clickhouse')) return 'ClickHouse';
+    if (t.includes('elevenlabs')) return 'ElevenLabs';
+    return null;
+  }
+
   function render() {
     const raw = currentDataset();
     const rows = applyFilters(raw);
 
-    $('#statTotal').textContent = (state.todas?.total ?? state.todas?.licitaciones?.length ?? 0).toLocaleString('es-ES');
-    $('#statNew').textContent = (state.nuevas?.total ?? state.nuevas?.licitaciones?.length ?? 0).toLocaleString('es-ES');
+    if (state.tab === 'partners') {
+      $('#statTotal').textContent = (state.partners?.total_historico ?? 0).toLocaleString('es-ES');
+      $('#statNew').textContent = (state.partners?.total_nuevas ?? 0).toLocaleString('es-ES');
+    } else {
+      $('#statTotal').textContent = (state.todas?.total ?? state.todas?.licitaciones?.length ?? 0).toLocaleString('es-ES');
+      $('#statNew').textContent = (state.nuevas?.total ?? state.nuevas?.licitaciones?.length ?? 0).toLocaleString('es-ES');
+    }
     $('#statFiltered').textContent = rows.length.toLocaleString('es-ES');
 
     const list = $('#list');
     if (rows.length === 0) {
       list.innerHTML = `<div class="empty">Sin resultados con estos filtros.</div>`;
+      return;
+    }
+
+    if (state.tab === 'partners') {
+      const nuevasIds = new Set((state.partners?.nuevas || []).map(l => l.expediente));
+      list.innerHTML = `<div class="empty" style="padding:14px 4px;text-align:left;color:var(--muted);font-size:0.85rem;">
+        🔔 Estas licitaciones mencionan Google Cloud, ClickHouse o ElevenLabs en cualquier lugar de España,
+        <strong>sin aplicar el filtro habitual de Madrid/nacional ni el rango de importe</strong> — para no perderte
+        ninguna oportunidad relacionada con vuestros partners tecnológicos, aunque sea de otra región o tamaño distinto.
+      </div>` + rows.map(l => {
+        const isNew = nuevasIds.has(l.expediente);
+        const importe = fmtImporte(l.importe_sin_iva);
+        const partner = partnerBadge(l.objeto || l.titulo);
+        return `
+          <div class="card ${isNew ? 'is-new' : ''}">
+            <h3>
+              <a href="${escapeAttr(l.url || '#')}" target="_blank" rel="noopener">${escapeHtml(l.objeto || l.titulo || 'Sin título')}</a>
+              ${isNew ? '<span class="badge new">NUEVA</span>' : ''}
+              ${partner ? `<span class="badge estado">${escapeHtml(partner)}</span>` : ''}
+              <span class="badge estado">${escapeHtml(ESTADO_LABELS[l.estado] || l.estado || '—')}</span>
+            </h3>
+            <div class="meta">
+              <span><strong>Órgano:</strong> ${escapeHtml(l.organo || '—')}</span>
+              <span><strong>Expediente:</strong> ${escapeHtml(l.expediente || '—')}</span>
+              ${importe ? `<span><strong>Importe (sin IVA):</strong> ${importe}</span>` : ''}
+              <span><strong>Actualizado:</strong> ${fmtFecha(l.updated)}</span>
+            </div>
+          </div>`;
+      }).join('');
       return;
     }
 

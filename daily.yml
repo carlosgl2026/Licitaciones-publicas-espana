@@ -54,10 +54,38 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # El fetch+parseo tarda 1-2+ horas. Si en ese tiempo main ha recibido
+          # otros commits (ej. otra ejecución programada, o un cambio manual
+          # tuyo), un "git push" directo aquí fallaría con "rejected... fetch
+          # first". Como lo único que nos importa es dejar los data/*.json
+          # generados en esta ejecución encima de lo último del remoto (no
+          # nos importa el historial exacto de esos archivos), sincronizamos
+          # primero con origin/main antes de comitear.
+          git fetch origin main
+          git reset --soft origin/main
+
           git add data/*.json
           git diff --staged --quiet || git commit -m "Actualización diaria de licitaciones $(date -u +%Y-%m-%d)"
           # No versionamos el .db (puede pesar mucho); se cachea con actions/cache
-          git push
+
+          # Reintenta el push unas cuantas veces por si hay otra ejecución
+          # empujando al mismo tiempo justo en este instante. Usamos el mismo
+          # truco de reset --soft en cada reintento (en vez de rebase): como
+          # el contenido de data/*.json se regenera entero cada vez, no tiene
+          # sentido intentar fusionar diffs línea a línea, así que simplemente
+          # nos aseguramos de que nuestra versión quede encima de lo último.
+          for i in 1 2 3 4 5; do
+            if git push; then
+              break
+            fi
+            echo "Push rechazado, reintentando ($i/5)..."
+            sleep 5
+            git fetch origin main
+            git reset --soft origin/main
+            git add data/*.json
+            git diff --staged --quiet || git commit -m "Actualización diaria de licitaciones $(date -u +%Y-%m-%d)"
+          done
 
       - name: Preparar carpeta para GitHub Pages
         run: |

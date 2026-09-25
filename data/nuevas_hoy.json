@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-25T10:20:56+00:00",
-  "total": 63,
+  "generado": "2026-09-25T13:00:14+00:00",
+  "total": 62,
   "licitaciones": [
     {
       "expediente": "2DGT2AP00047",
@@ -931,21 +931,6 @@
       "updated": "2026-09-10T17:10:18.249+02:00",
       "published": "",
       "first_seen_at": "2026-09-23T15:25:46+00:00"
-    },
-    {
-      "expediente": "22235/2026",
-      "titulo": "Servicio de alojamiento web, mantenimiento y soporte de las páginas web corporativas del Ayuntamiento de Rivas-Vaciamadrid.",
-      "estado": "",
-      "organo": "Junta de Gobierno del Ayuntamiento de Rivas Vaciamadrid",
-      "objeto": "Servicio de alojamiento web, mantenimiento y soporte de las páginas web corporativas del Ayuntamiento de Rivas-Vaciamadrid.",
-      "importe_sin_iva": "136800",
-      "tipo_contrato": "2",
-      "procedimiento": "1",
-      "cpv": "72267100",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=4EuQI8sLzLS8ebB%2FXTwy0A%3D%3D",
-      "updated": "2026-09-10T13:55:38.573+02:00",
-      "published": "",
-      "first_seen_at": "2026-09-23T15:23:09+00:00"
     }
   ]
 }

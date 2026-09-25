@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-24T13:24:23+00:00",
-  "total": 69,
+  "generado": "2026-09-25T10:20:56+00:00",
+  "total": 63,
   "licitaciones": [
     {
       "expediente": "2DGT2AP00047",
@@ -813,21 +813,6 @@
       "first_seen_at": "2026-09-23T15:26:00+00:00"
     },
     {
-      "expediente": "26/2026",
-      "titulo": "Suministro para la renovación y mantenimiento del sistema de cortafuegos de aplicación web del Senado.",
-      "estado": "",
-      "organo": "Mesa del Senado",
-      "objeto": "Suministro para la renovación y mantenimiento del sistema de cortafuegos de aplicación web del Senado.",
-      "importe_sin_iva": "350000",
-      "tipo_contrato": "1",
-      "procedimiento": "1",
-      "cpv": "32570000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Tx9mTbgvYMYl5NjlNci%2BtA%3D%3D",
-      "updated": "2026-09-14T08:05:05.270+02:00",
-      "published": "",
-      "first_seen_at": "2026-09-23T15:17:50+00:00"
-    },
-    {
       "expediente": "CON-P2026/5400003.0",
       "titulo": "Suministro y actualización de licencias de productos Microsoft utilizados en el Congreso de los Diputados mediante la modalidad de \"Enterprise Agreement\"",
       "estado": "",
@@ -933,21 +918,6 @@
       "first_seen_at": "2026-09-23T15:25:48+00:00"
     },
     {
-      "expediente": "2026/17",
-      "titulo": "Servicios de mantenimiento y desarrollo del sistema de gestión de la actividad parlamentaria Ágora+ del Parlamento de Andalucía.",
-      "estado": "",
-      "organo": "Parlamento de Andalucía",
-      "objeto": "Servicios de mantenimiento y desarrollo del sistema de gestión de la actividad parlamentaria Ágora+ del Parlamento de Andalucía.",
-      "importe_sin_iva": "167782.8",
-      "tipo_contrato": "2",
-      "procedimiento": "3",
-      "cpv": "72267000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=DzqbDx7UL0TjHF5qKI4aaw%3D%3D",
-      "updated": "2026-09-11T09:03:58.567+02:00",
-      "published": "",
-      "first_seen_at": "2026-09-23T15:19:00+00:00"
-    },
-    {
       "expediente": "A-09/26",
       "titulo": "Mantenimiento adaptativo hacia la transformación digital de los sistemas de gestión universitarios y web de la Universidad Autónoma de Madrid",
       "estado": "",
@@ -976,66 +946,6 @@
       "updated": "2026-09-10T13:55:38.573+02:00",
       "published": "",
       "first_seen_at": "2026-09-23T15:23:09+00:00"
-    },
-    {
-      "expediente": "DRH-178/2026",
-      "titulo": "Servicio De Digitalización Y Desarrollo De Acciones Formativas Con Rise 360",
-      "estado": "",
-      "organo": "Aena. Dirección de Contratación",
-      "objeto": "Servicio De Digitalización Y Desarrollo De Acciones Formativas Con Rise 360",
-      "importe_sin_iva": "759000",
-      "tipo_contrato": "2",
-      "procedimiento": "100",
-      "cpv": "72230000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=nFjuhlkFuKRt5r0ngvMetA%3D%3D",
-      "updated": "2026-09-10T10:39:55.502+02:00",
-      "published": "",
-      "first_seen_at": "2026-09-23T15:24:24+00:00"
-    },
-    {
-      "expediente": "DDT-277/2026",
-      "titulo": "Suministro En Estado Operativo De La Plataforma Autodesk Forma (Sistema De Gestión De Proyectos De Construcción)",
-      "estado": "",
-      "organo": "Aena. Dirección de Contratación",
-      "objeto": "Suministro En Estado Operativo De La Plataforma Autodesk Forma (Sistema De Gestión De Proyectos De Construcción)",
-      "importe_sin_iva": "1244868",
-      "tipo_contrato": "1",
-      "procedimiento": "100",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=WfNZRKKJz4d6nTs9LZ9RhQ%3D%3D",
-      "updated": "2026-09-10T10:36:13.831+02:00",
-      "published": "",
-      "first_seen_at": "2026-09-23T15:27:05+00:00"
-    },
-    {
-      "expediente": "26/2025",
-      "titulo": "SDA de Suministro de ropa laboral y EPIS para el personal de Aserpinto",
-      "estado": "",
-      "organo": "Consejo de Administración de Auxiliar de Servicios de Pinto SAU",
-      "objeto": "SDA de Suministro de ropa laboral y EPIS para el personal de Aserpinto",
-      "importe_sin_iva": "100000",
-      "tipo_contrato": "1",
-      "procedimiento": "2",
-      "cpv": "18100000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=u1ArH%2FHytDGGCFcHcNGIlQ%3D%3D",
-      "updated": "2026-09-10T09:14:40.450+02:00",
-      "published": "",
-      "first_seen_at": "2026-09-23T15:17:16+00:00"
-    },
-    {
-      "expediente": "22/2024",
-      "titulo": "Sistema dinámico de adquisición para el suministro de repuestos necesarios para el taller mecánico de Aserpinto, S.A.U.",
-      "estado": "",
-      "organo": "Consejo de Administración de Auxiliar de Servicios de Pinto SAU",
-      "objeto": "Sistema dinámico de adquisición para el suministro de repuestos necesarios para el taller mecánico de Aserpinto, S.A.U.",
-      "importe_sin_iva": "100000",
-      "tipo_contrato": "1",
-      "procedimiento": "2",
-      "cpv": "34300000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=T9JSyRVU9c7s%2BnLj3vAg5A%3D%3D",
-      "updated": "2026-09-10T09:06:44.375+02:00",
-      "published": "",
-      "first_seen_at": "2026-09-23T15:17:33+00:00"
     }
   ]
 }

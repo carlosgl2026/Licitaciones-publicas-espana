@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-24T13:24:23+00:00",
-  "total_nuevas": 7,
+  "generado": "2026-09-25T10:20:56+00:00",
+  "total_nuevas": 4,
   "total_historico": 7,
   "nuevas": [
     {
@@ -14,30 +14,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=LgW%2BqnB6t%2BFJ8Trn0ZPzLw%3D%3D",
       "updated": "2026-09-04T10:40:58.027+02:00",
       "first_seen_at": "2026-09-24T13:17:30+00:00"
-    },
-    {
-      "expediente": "SD25-24B02",
-      "titulo": "Servicio de bases de datos de Google Cloud (BIGQUERY Y FIRESTORE)",
-      "estado": "",
-      "organo": "Consejo de Administración de la Empresa de Servicios Municipales de Alcorcón, S.A.U.",
-      "objeto": "Servicio de bases de datos de Google Cloud (BIGQUERY Y FIRESTORE)",
-      "importe_sin_iva": "40320",
-      "cpv": "48422000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Wk%2FzQI0nIeI2wEhQbcAqug%3D%3D",
-      "updated": "2026-07-24T13:10:06.644+02:00",
-      "first_seen_at": "2026-09-24T13:21:20+00:00"
-    },
-    {
-      "expediente": "SD25-24B04",
-      "titulo": "Servicio de bases de datos de Google Cloud (Bigquery y Firestore) y otros servicios asociados",
-      "estado": "",
-      "organo": "Consejo de Administración de la Empresa de Servicios Municipales de Alcorcón, S.A.U.",
-      "objeto": "Servicio de bases de datos de Google Cloud (Bigquery y Firestore) y otros servicios asociados",
-      "importe_sin_iva": "46219.81",
-      "cpv": "48422000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2BxwNoEr18AQUqXM96WStVA%3D%3D",
-      "updated": "2026-07-24T12:55:19.052+02:00",
-      "first_seen_at": "2026-09-24T13:21:20+00:00"
     },
     {
       "expediente": "2026/AS/ASC/0126",
@@ -62,18 +38,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=VaroATmIMPjN3k3tjedSGw%3D%3D",
       "updated": "2026-02-20T11:16:06.970+01:00",
       "first_seen_at": "2026-09-24T13:11:36+00:00"
-    },
-    {
-      "expediente": "PDC 2026-214",
-      "titulo": "ANUNCIO PREVIO de la futura contratación prevista llevar a cabo por el Órgano de Contratación de MAZ a lo largo del ejercicio 2026 del Servicio de Google Maps Platform y Google Cloud Platform para la intranet y web corporativa de MAZ",
-      "estado": "",
-      "organo": "Gerencia de MAZ Mútua de Accidentes de Trabajo y Enfermedades Profesionales de la Seguridad Social nº 11",
-      "objeto": "ANUNCIO PREVIO de la futura contratación prevista llevar a cabo por el Órgano de Contratación de MAZ a lo largo del ejercicio 2026 del Servicio de Google Maps Platform y Google Cloud Platform para la intranet y web corporativa de MAZ",
-      "importe_sin_iva": "0",
-      "cpv": "72268000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=D3Z91bRrpBs2wEhQbcAqug%3D%3D",
-      "updated": "2026-02-06T09:28:40.105+01:00",
-      "first_seen_at": "2026-09-24T13:12:28+00:00"
     },
     {
       "expediente": "N202500589",

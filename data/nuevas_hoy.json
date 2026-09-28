@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-27T12:34:18+00:00",
-  "total": 101,
+  "generado": "2026-09-28T10:56:31+00:00",
+  "total": 99,
   "licitaciones": [
     {
       "expediente": "68/2026",
@@ -78,21 +78,6 @@
       "first_seen_at": "2026-09-23T15:27:49+00:00"
     },
     {
-      "expediente": "2026-02171",
-      "titulo": "Servicio para el desarrollo e implantacion de un sistema de supervision inteligente de conduccion",
-      "estado": "",
-      "organo": "Dirección General Económico-Financiera de la Entidad Pública Empresarial RENFE-Operadora",
-      "objeto": "Servicio para el desarrollo e implantacion de un sistema de supervision inteligente de conduccion",
-      "importe_sin_iva": "185000",
-      "tipo_contrato": "2",
-      "procedimiento": "100",
-      "cpv": "72267100",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=krlIyFUZlcwaF6cS8TCh%2FA%3D%3D",
-      "updated": "2026-09-22T12:49:14.630+02:00",
-      "published": "",
-      "first_seen_at": "2026-09-27T12:34:00+00:00"
-    },
-    {
       "expediente": "N202600493",
       "titulo": "Adquisición y mantenimiento de las licencias software de los productos COGNOS de MC MUTUAL",
       "estado": "",
@@ -106,21 +91,6 @@
       "updated": "2026-09-22T12:47:02.140+02:00",
       "published": "",
       "first_seen_at": "2026-09-23T15:29:38+00:00"
-    },
-    {
-      "expediente": "C018/2026",
-      "titulo": "Contrato de servicio de migración y mantenimiento de la aplicación Firmadoc Next del Ayuntamiento de Majadahonda",
-      "estado": "",
-      "organo": "Junta de Gobierno del Ayuntamiento de Majadahonda",
-      "objeto": "Contrato de servicio de migración y mantenimiento de la aplicación Firmadoc Next del Ayuntamiento de Majadahonda",
-      "importe_sin_iva": "724600",
-      "tipo_contrato": "2",
-      "procedimiento": "3",
-      "cpv": "72267100",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=ad3C%2FJaMKtecTfjQf3USOg%3D%3D",
-      "updated": "2026-09-22T12:11:35.327+02:00",
-      "published": "",
-      "first_seen_at": "2026-09-27T12:34:08+00:00"
     },
     {
       "expediente": "CG-2026/2815/0104",

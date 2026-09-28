@@ -1,35 +1,42 @@
 name: Actualizar licitaciones diarias
-
+ 
 on:
   schedule:
-    # Todos los días a las 06:15 UTC (~08:15 hora de España en invierno, 07:15 en verano)
-    - cron: "15 6 * * *"
+    # España cambia de hora dos veces al año, y GitHub Actions solo programa
+    # en UTC, así que usamos DOS horarios para que sean siempre las 7:00 en
+    # España: uno para el horario de invierno (CET, UTC+1) y otro para el de
+    # verano (CEST, UTC+2). El cambio real de hora es el último domingo de
+    # marzo/octubre, así que en las 3-4 semanas de "solape" de esos meses el
+    # disparo puede ir con 1 hora de diferencia (a las 6 o a las 8 en vez de
+    # las 7) hasta que entra el mes completo del horario correspondiente.
+    - cron: "0 6 * 1,2,3,11,12 *"     # 7:00 CET (invierno: nov-mar) = 06:00 UTC
+    - cron: "0 5 * 4,5,6,7,8,9,10 *"  # 7:00 CEST (verano: abr-oct) = 05:00 UTC
   workflow_dispatch: {}   # permite lanzarlo a mano desde la pestaña Actions
-
+ 
 permissions:
   contents: write
   pages: write
   id-token: write
-
+ 
 concurrency:
   group: "pages"
   cancel-in-progress: false
-
+ 
 jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
+ 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
+ 
       - name: Instalar dependencias
         run: pip install -r requirements.txt
-
+ 
       - name: Restaurar base de datos SQLite de la ejecución anterior
         uses: actions/cache@v4
         with:
@@ -37,7 +44,7 @@ jobs:
           key: licitaciones-db-tech-v2-${{ github.run_id }}
           restore-keys: |
             licitaciones-db-tech-v2-
-
+ 
       - name: Ejecutar fetch_licitaciones.py
         run: |
           # En enero incluimos también el año anterior por si hay expedientes a caballo
@@ -49,12 +56,12 @@ jobs:
           else
             python fetch_licitaciones.py --years "$YEAR"
           fi
-
+ 
       - name: Commitear datos actualizados
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
+ 
           # El fetch+parseo tarda 1-2+ horas. Si en ese tiempo main ha recibido
           # otros commits (ej. otra ejecución programada, o un cambio manual
           # tuyo), un "git push" directo aquí fallaría con "rejected... fetch
@@ -64,11 +71,11 @@ jobs:
           # primero con origin/main antes de comitear.
           git fetch origin main
           git reset --soft origin/main
-
+ 
           git add data/*.json
           git diff --staged --quiet || git commit -m "Actualización diaria de licitaciones $(date -u +%Y-%m-%d)"
           # No versionamos el .db (puede pesar mucho); se cachea con actions/cache
-
+ 
           # Reintenta el push unas cuantas veces por si hay otra ejecución
           # empujando al mismo tiempo justo en este instante. Usamos el mismo
           # truco de reset --soft en cada reintento (en vez de rebase): como
@@ -86,7 +93,7 @@ jobs:
             git add data/*.json
             git diff --staged --quiet || git commit -m "Actualización diaria de licitaciones $(date -u +%Y-%m-%d)"
           done
-
+ 
       - name: Preparar carpeta para GitHub Pages
         run: |
           mkdir -p site
@@ -95,12 +102,12 @@ jobs:
           cp data/latest.json site/data/latest.json
           cp data/nuevas_hoy.json site/data/nuevas_hoy.json
           cp data/alertas_partners.json site/data/alertas_partners.json
-
+ 
       - name: Subir artefacto de Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
-
+ 
   deploy:
     needs: fetch
     runs-on: ubuntu-latest

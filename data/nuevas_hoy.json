@@ -1,37 +1,7 @@
 {
-  "generado": "2026-10-02T11:21:24+00:00",
-  "total": 140,
+  "generado": "2026-10-02T16:08:15+00:00",
+  "total": 132,
   "licitaciones": [
-    {
-      "expediente": "2026/081/01",
-      "titulo": "Contratación del servicio de digitalización de la documentación asistencial de las Historias Clínicas (HHCC) de Contingencia Profesional (CP), que conforman parte del actual archivo pasivo de Mutualia, con integración de dicha documentación en el actual sistema de gestión documental.",
-      "estado": "",
-      "organo": "Dirección Gerencia de Mutualia, Mutua Colaboradora con la Seguridad Social nº 02",
-      "objeto": "Contratación del servicio de digitalización de la documentación asistencial de las Historias Clínicas (HHCC) de Contingencia Profesional (CP), que conforman parte del actual archivo pasivo de Mutualia, con integración de dicha documentación en el actual sistema de gestión documental.",
-      "importe_sin_iva": "175864.38",
-      "tipo_contrato": "2",
-      "procedimiento": "1",
-      "cpv": "72252000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=ELC1vzKytjx6nTs9LZ9RhQ%3D%3D",
-      "updated": "2026-10-01T16:04:59.728+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-02T11:06:02+00:00"
-    },
-    {
-      "expediente": "2026/AS/ASC/0489",
-      "titulo": "Adquisición de recursos técnicos, hardware y software para la incorporación e implementación de la realidad virtual para MAZ M.C.S.S. nº 11.",
-      "estado": "",
-      "organo": "Dirección Área Jurídica y Prestación de MAZ, Mutua Colaboradora con la Seguridad Social, Nº 11",
-      "objeto": "Adquisición de recursos técnicos, hardware y software para la incorporación e implementación de la realidad virtual para MAZ M.C.S.S. nº 11.",
-      "importe_sin_iva": "103355",
-      "tipo_contrato": "2",
-      "procedimiento": "9",
-      "cpv": "72212931",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=6o1GZNiSuR%2Fmnwcj%2BxbdTg%3D%3D",
-      "updated": "2026-10-01T14:06:28.874+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-02T11:21:19+00:00"
-    },
     {
       "expediente": "SUM-26-0306-SIST",
       "titulo": "Suministro de licencias VMware, incluyendo soporte, mantenimiento y migración de los entornos críticos virtualizados",
@@ -123,21 +93,6 @@
       "first_seen_at": "2026-09-23T15:28:14+00:00"
     },
     {
-      "expediente": "DTC-389/2024 - 6",
-      "titulo": "Pedido 6: Acuerdo Marco Para El Suministro E Instalación De Equipamiento Sipa 2025-2028",
-      "estado": "",
-      "organo": "Aena. Consejo de Administración",
-      "objeto": "Pedido 6: Acuerdo Marco Para El Suministro E Instalación De Equipamiento Sipa 2025-2028",
-      "importe_sin_iva": "269117.5",
-      "tipo_contrato": "1",
-      "procedimiento": "7",
-      "cpv": "48813000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=xtwl0ovhWt%2FI8aL3PRS10Q%3D%3D",
-      "updated": "2026-10-01T11:59:40.089+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-02T11:21:20+00:00"
-    },
-    {
       "expediente": "SER-26-0278-ODP",
       "titulo": "Servicios de carácter informático necesarios para el mantenimiento y desarrollo de Cuadros de Mando",
       "estado": "",
@@ -166,51 +121,6 @@
       "updated": "2026-10-01T11:03:01.409+02:00",
       "published": "",
       "first_seen_at": "2026-09-23T15:28:53+00:00"
-    },
-    {
-      "expediente": "ALC-101/2026",
-      "titulo": "Servicio De Auxiliares Para El Control De Pasaportes Previsto Por El Reglamento (Ue). Soporte A Fuerzas Y Cuerpos De Seguridad Del Estado",
-      "estado": "",
-      "organo": "Aena. Dirección del Aeropuerto de Alicante-Elche",
-      "objeto": "Servicio De Auxiliares Para El Control De Pasaportes Previsto Por El Reglamento (Ue). Soporte A Fuerzas Y Cuerpos De Seguridad Del Estado",
-      "importe_sin_iva": "299880",
-      "tipo_contrato": "2",
-      "procedimiento": "100",
-      "cpv": "79710000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=guLhgXdcxSotm4eBPtV6eQ%3D%3D",
-      "updated": "2026-10-01T10:11:53.117+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-02T11:21:21+00:00"
-    },
-    {
-      "expediente": "2027-A-02",
-      "titulo": "Servicio de mantenimiento de la electrónica de la red cableada y de la infraestructura de ciberseguridad de la Universidad Autónoma de Madrid.",
-      "estado": "",
-      "organo": "Rectorado de la Universidad Autónoma de Madrid",
-      "objeto": "Servicio de mantenimiento de la electrónica de la red cableada y de la infraestructura de ciberseguridad de la Universidad Autónoma de Madrid.",
-      "importe_sin_iva": "3568304",
-      "tipo_contrato": "2",
-      "procedimiento": "1",
-      "cpv": "50312300",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=gA2OnRw%2FUwFrSd8H4b2soA%3D%3D",
-      "updated": "2026-10-01T10:11:42.497+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-02T11:21:21+00:00"
-    },
-    {
-      "expediente": "AI270001",
-      "titulo": "Servicios - Mantenimiento, soporte y evolución plataforma de cita previa (QUENDA).",
-      "estado": "",
-      "organo": "Consejo de Administración-Comité de Inversiones de la Sociedad Estatal Correos y Telégrafos S.A",
-      "objeto": "Servicios - Mantenimiento, soporte y evolución plataforma de cita previa (QUENDA).",
-      "importe_sin_iva": "388538.37",
-      "tipo_contrato": "2",
-      "procedimiento": "1",
-      "cpv": "72212000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=sp5FLQHjjUQeIBJRHQiPkQ%3D%3D",
-      "updated": "2026-10-01T09:49:58.391+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-02T11:21:22+00:00"
     },
     {
       "expediente": "MT260012",
@@ -348,21 +258,6 @@
       "first_seen_at": "2026-09-23T15:28:55+00:00"
     },
     {
-      "expediente": "2023/PA/041",
-      "titulo": "Servicio de atención a usuarios y soporte microinformático",
-      "estado": "",
-      "organo": "Junta de Gobierno del Ayuntamiento de Pozuelo de Alarcón",
-      "objeto": "Servicio de atención a usuarios y soporte microinformático",
-      "importe_sin_iva": "440000",
-      "tipo_contrato": "2",
-      "procedimiento": "1",
-      "cpv": "72500000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2BYPtTfSBGnj10HRJw8TEnQ%3D%3D",
-      "updated": "2026-09-30T13:01:58.819+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-02T11:21:15+00:00"
-    },
-    {
       "expediente": "AI260016",
       "titulo": "HW Licencia Soporte De Proxy On-Premises",
       "estado": "",
@@ -391,21 +286,6 @@
       "updated": "2026-09-30T11:30:51.819+02:00",
       "published": "",
       "first_seen_at": "2026-09-23T15:26:35+00:00"
-    },
-    {
-      "expediente": "DTC-233/2023",
-      "titulo": "Adquisición, Implantación, Actualización Y Soporte De Productos Data Protector Y Network Node Manager",
-      "estado": "",
-      "organo": "Aena. Dirección de Contratación",
-      "objeto": "Adquisición, Implantación, Actualización Y Soporte De Productos Data Protector Y Network Node Manager",
-      "importe_sin_iva": "1527672.57",
-      "tipo_contrato": "1",
-      "procedimiento": "1",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=eMtDbAb7RhRJ8Trn0ZPzLw%3D%3D",
-      "updated": "2026-09-30T11:29:20.419+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-02T11:21:16+00:00"
     },
     {
       "expediente": "300/2026/00836",

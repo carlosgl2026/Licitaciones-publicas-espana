@@ -93,7 +93,7 @@ DATA_DIR = Path(__file__).parent / "data"
 DB_PATH = DATA_DIR / "licitaciones.db"
 NUEVAS_HOY_PATH = DATA_DIR / "nuevas_hoy.json"
 LATEST_PATH = DATA_DIR / "latest.json"
-ALERTAS_PARTNERS_PATH = DATA_DIR / "alertas_partners.json"
+ALERTAS_NUBE_PATH = DATA_DIR / "alertas_nube.json"
 
 NS = {
     "atom": "http://www.w3.org/2005/Atom",
@@ -298,21 +298,38 @@ def pasa_filtro_negocio(lic: "Licitacion") -> bool:
 
 
 # ---------------------------------------------------------------------------
-# Alerta de partners tecnológicos (Google Cloud, ClickHouse, ElevenLabs)
+# Alerta de nube pública (cualquier proveedor, cualquier importe)
 # ---------------------------------------------------------------------------
 # A diferencia del filtro de negocio, esta alerta se comprueba en TODAS las
-# licitaciones nacionales, sin aplicar los filtros de Madrid/tamaño/sector:
-# si mañana sale una licitación de Google Cloud en Sevilla por 30.000€, la
-# empresa quiere enterarse igual, porque es socio tecnológico concreto.
-PARTNER_ALERT_KEYWORDS = (
-    "google cloud", "clickhouse", "elevenlabs",
+# licitaciones nacionales, sin aplicar los filtros de Madrid/tamaño/sector ni
+# de importe: si mañana sale cualquier licitación relacionada con la nube
+# pública en cualquier parte de España y de cualquier valor, la empresa
+# quiere enterarse igual.
+NUBE_ALERT_KEYWORDS = (
+    # Términos genéricos de computación en la nube
+    "nube publica", "nube privada", "nube hibrida", "cloud publico",
+    "cloud privado", "cloud hibrido", "computacion en la nube",
+    "cloud computing", "migracion a la nube", "migracion cloud",
+    "alojamiento en la nube", "hosting cloud", "servidores en la nube",
+    "almacenamiento en la nube", "infraestructura en la nube",
+    "nube corporativa", "nube gubernamental", "centro de datos en la nube",
+    "iaas", "paas", "saas", "infraestructura como servicio",
+    "plataforma como servicio", "software como servicio",
+    # Proveedores concretos de nube pública
+    "google cloud", "amazon web services", " aws ", "microsoft azure",
+    "azure", "oracle cloud", "ovhcloud", "ovh cloud", "ibm cloud",
+    "alibaba cloud", "vmware cloud", "ionos cloud",
+    # Partners/tecnologías propias de la empresa, a menudo cloud-native
+    "clickhouse", "elevenlabs",
+    # Genérico de respaldo, para no perder casos mal redactados
+    " nube ", " cloud ",
 )
-_PARTNER_ALERT_KEYWORDS_NORM = tuple(_normalize(k) for k in PARTNER_ALERT_KEYWORDS)
+_NUBE_ALERT_KEYWORDS_NORM = tuple(_normalize(k) for k in NUBE_ALERT_KEYWORDS)
 
 
-def is_alerta_partner(lic: "Licitacion") -> bool:
-    texto = _normalize(f"{lic.objeto} {lic.titulo}")
-    return any(kw in texto for kw in _PARTNER_ALERT_KEYWORDS_NORM)
+def is_alerta_nube(lic: "Licitacion") -> bool:
+    texto = " " + _normalize(f"{lic.objeto} {lic.titulo}") + " "
+    return any(kw in texto for kw in _NUBE_ALERT_KEYWORDS_NORM)
 
 
 def _t(el: Optional[ET.Element], path: str, ns=NS) -> str:
@@ -514,7 +531,7 @@ CREATE TABLE IF NOT EXISTS licitaciones (
 CREATE INDEX IF NOT EXISTS idx_updated ON licitaciones(updated);
 CREATE INDEX IF NOT EXISTS idx_first_seen ON licitaciones(first_seen_at);
 
-CREATE TABLE IF NOT EXISTS alertas_partners (
+CREATE TABLE IF NOT EXISTS alertas_nube (
     expediente TEXT PRIMARY KEY,
     titulo TEXT,
     estado TEXT,
@@ -583,17 +600,17 @@ def upsert_and_detect_new(conn: sqlite3.Connection, lic: Licitacion) -> bool:
     return changed
 
 
-def upsert_alerta_partner(conn: sqlite3.Connection, lic: Licitacion) -> bool:
+def upsert_alerta_nube(conn: sqlite3.Connection, lic: Licitacion) -> bool:
     """Igual que upsert_and_detect_new pero para la tabla de alertas de partners."""
     cur = conn.execute(
-        "SELECT updated FROM alertas_partners WHERE expediente = ?", (lic.key,)
+        "SELECT updated FROM alertas_nube WHERE expediente = ?", (lic.key,)
     )
     row = cur.fetchone()
     now = lic.fetched_at
 
     if row is None:
         conn.execute(
-            """INSERT INTO alertas_partners
+            """INSERT INTO alertas_nube
                (expediente, titulo, estado, organo, objeto, importe_sin_iva,
                 cpv, url, updated, published, first_seen_at, last_seen_at)
                VALUES (?,?,?,?,?,?,?,?,?,?,?,?)""",
@@ -607,7 +624,7 @@ def upsert_alerta_partner(conn: sqlite3.Connection, lic: Licitacion) -> bool:
 
     changed = row[0] != lic.updated
     conn.execute(
-        """UPDATE alertas_partners SET
+        """UPDATE alertas_nube SET
              titulo=?, estado=?, organo=?, objeto=?, importe_sin_iva=?,
              cpv=?, url=?, updated=?, published=?, last_seen_at=?
            WHERE expediente=?""",
@@ -697,30 +714,31 @@ def export_json(
 # Main
 # ---------------------------------------------------------------------------
 
-def export_alertas_partners(
+def export_alertas_nube(
     conn: sqlite3.Connection,
-    nuevas_partner_keys: set[str],
+    nuevas_nube_keys: set[str],
     is_bootstrap: bool,
     max_registros: int = 1000,
 ) -> None:
-    """Exporta data/alertas_partners.json: TODAS las licitaciones nacionales
-    (sin filtro de Madrid/tamaño) que mencionen Google Cloud, ClickHouse o
-    ElevenLabs, marcando cuáles son nuevas/actualizadas desde la última
-    ejecución. En el bootstrap no marcamos nada como "nueva" por la misma
-    razón que en nuevas_hoy.json.
+    """Exporta data/alertas_nube.json: TODAS las licitaciones nacionales
+    (sin filtro de Madrid/tamaño/importe) relacionadas con la nube pública
+    (cualquier proveedor: AWS, Azure, Google Cloud, OVH..., o términos
+    genéricos como IaaS/PaaS/SaaS), marcando cuáles son nuevas/actualizadas
+    desde la última ejecución. En el bootstrap no marcamos nada como "nueva"
+    por la misma razón que en nuevas_hoy.json.
     """
     cur = conn.execute(
         "SELECT expediente, titulo, estado, organo, objeto, importe_sin_iva, "
-        "cpv, url, updated, first_seen_at FROM alertas_partners ORDER BY updated DESC"
+        "cpv, url, updated, first_seen_at FROM alertas_nube ORDER BY updated DESC"
     )
     cols = [d[0] for d in cur.description]
     todas = [dict(zip(cols, r)) for r in cur.fetchall()]
 
     if is_bootstrap:
         nuevas = []
-        nota = f"Primera ejecución: {len(todas):,} licitaciones de partners sembradas."
+        nota = f"Primera ejecución: {len(todas):,} licitaciones de nube pública sembradas."
     else:
-        nuevas_all = [r for r in todas if r["expediente"] in nuevas_partner_keys]
+        nuevas_all = [r for r in todas if r["expediente"] in nuevas_nube_keys]
         nuevas_all.sort(key=lambda r: r["updated"] or "", reverse=True)
         nuevas = nuevas_all[:max_registros]
         nota = None
@@ -734,18 +752,19 @@ def export_alertas_partners(
     }
     if nota:
         payload["nota"] = nota
-    ALERTAS_PARTNERS_PATH.write_text(
+    ALERTAS_NUBE_PATH.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8",
     )
-    print(f"[export] Alertas de partners: {len(nuevas)} nuevas, {len(todas)} en histórico "
-          f"-> {ALERTAS_PARTNERS_PATH}", file=sys.stderr)
+    print(f"[export] Alertas de nube pública: {len(nuevas)} nuevas, {len(todas)} en histórico "
+          f"-> {ALERTAS_NUBE_PATH}", file=sys.stderr)
 
 
 def run(years: list[int], dashboard_days: int) -> None:
     conn = get_db()
     is_bootstrap = conn.execute("SELECT COUNT(*) FROM licitaciones").fetchone()[0] == 0
+    is_bootstrap_nube = conn.execute("SELECT COUNT(*) FROM alertas_nube").fetchone()[0] == 0
     nuevas_keys: set[str] = set()
-    nuevas_partner_keys: set[str] = set()
+    nuevas_nube_keys: set[str] = set()
     total_procesadas = 0
 
     for year in years:
@@ -757,19 +776,19 @@ def run(years: list[int], dashboard_days: int) -> None:
 
         year_processed = 0
         year_skipped = 0
-        year_partner_alerts = 0
+        year_nube_alerts = 0
         last_log = time.monotonic()
         for entry in iter_entries_from_zip(zip_bytes):
             lic = parse_entry(entry)
             if lic is None or not lic.key:
                 continue
 
-            # Alerta de partners: se comprueba en TODAS las entradas, sin
-            # aplicar el filtro de Madrid/tamaño/sector.
-            if is_alerta_partner(lic):
-                year_partner_alerts += 1
-                if upsert_alerta_partner(conn, lic):
-                    nuevas_partner_keys.add(lic.key)
+            # Alerta de nube pública: se comprueba en TODAS las entradas, sin
+            # aplicar el filtro de Madrid/tamaño/sector ni de importe.
+            if is_alerta_nube(lic):
+                year_nube_alerts += 1
+                if upsert_alerta_nube(conn, lic):
+                    nuevas_nube_keys.add(lic.key)
 
             if not pasa_filtro_negocio(lic):
                 year_skipped += 1
@@ -790,14 +809,14 @@ def run(years: list[int], dashboard_days: int) -> None:
         conn.commit()
         print(f"[parse] Año {year} terminado: {year_processed:,} relevantes, "
               f"{year_skipped:,} descartados (fuera de sector o de rango de importe), "
-              f"{year_partner_alerts:,} alertas de partners (Google Cloud/ClickHouse/ElevenLabs).",
+              f"{year_nube_alerts:,} alertas de nube pública (cualquier proveedor/importe).",
               file=sys.stderr)
 
     print(f"[run] Procesadas {total_procesadas:,} entradas. "
           f"Nuevas/actualizadas: {len(nuevas_keys):,}", file=sys.stderr)
 
     export_json(conn, nuevas_keys, dashboard_days, is_bootstrap=is_bootstrap)
-    export_alertas_partners(conn, nuevas_partner_keys, is_bootstrap=is_bootstrap)
+    export_alertas_nube(conn, nuevas_nube_keys, is_bootstrap=is_bootstrap_nube)
     conn.close()
 
 

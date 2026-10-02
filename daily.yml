@@ -1,5 +1,5 @@
 name: Actualizar licitaciones diarias
- 
+
 on:
   schedule:
     # España cambia de hora dos veces al año, y GitHub Actions solo programa
@@ -12,31 +12,31 @@ on:
     - cron: "0 6 * 1,2,3,11,12 *"     # 7:00 CET (invierno: nov-mar) = 06:00 UTC
     - cron: "0 5 * 4,5,6,7,8,9,10 *"  # 7:00 CEST (verano: abr-oct) = 05:00 UTC
   workflow_dispatch: {}   # permite lanzarlo a mano desde la pestaña Actions
- 
+
 permissions:
   contents: write
   pages: write
   id-token: write
- 
+
 concurrency:
   group: "pages"
   cancel-in-progress: false
- 
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
- 
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
- 
+
       - name: Instalar dependencias
         run: pip install -r requirements.txt
- 
+
       - name: Restaurar base de datos SQLite de la ejecución anterior
         uses: actions/cache@v4
         with:
@@ -44,7 +44,7 @@ jobs:
           key: licitaciones-db-tech-v2-${{ github.run_id }}
           restore-keys: |
             licitaciones-db-tech-v2-
- 
+
       - name: Ejecutar fetch_licitaciones.py
         run: |
           # En enero incluimos también el año anterior por si hay expedientes a caballo
@@ -56,12 +56,12 @@ jobs:
           else
             python fetch_licitaciones.py --years "$YEAR"
           fi
- 
+
       - name: Commitear datos actualizados
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
- 
+
           # El fetch+parseo tarda 1-2+ horas. Si en ese tiempo main ha recibido
           # otros commits (ej. otra ejecución programada, o un cambio manual
           # tuyo), un "git push" directo aquí fallaría con "rejected... fetch
@@ -71,11 +71,11 @@ jobs:
           # primero con origin/main antes de comitear.
           git fetch origin main
           git reset --soft origin/main
- 
+
           git add data/*.json
           git diff --staged --quiet || git commit -m "Actualización diaria de licitaciones $(date -u +%Y-%m-%d)"
           # No versionamos el .db (puede pesar mucho); se cachea con actions/cache
- 
+
           # Reintenta el push unas cuantas veces por si hay otra ejecución
           # empujando al mismo tiempo justo en este instante. Usamos el mismo
           # truco de reset --soft en cada reintento (en vez de rebase): como
@@ -93,7 +93,7 @@ jobs:
             git add data/*.json
             git diff --staged --quiet || git commit -m "Actualización diaria de licitaciones $(date -u +%Y-%m-%d)"
           done
- 
+
       - name: Preparar carpeta para GitHub Pages
         run: |
           mkdir -p site
@@ -101,13 +101,13 @@ jobs:
           mkdir -p site/data
           cp data/latest.json site/data/latest.json
           cp data/nuevas_hoy.json site/data/nuevas_hoy.json
-          cp data/alertas_partners.json site/data/alertas_partners.json
- 
+          cp data/alertas_nube.json site/data/alertas_nube.json
+
       - name: Subir artefacto de Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
- 
+
   deploy:
     needs: fetch
     runs-on: ubuntu-latest

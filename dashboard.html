@@ -95,7 +95,7 @@
   <div class="tabs">
     <div class="tab active" data-tab="nuevas">Nuevas de hoy</div>
     <div class="tab" data-tab="todas">Todo el histórico cargado</div>
-    <div class="tab" data-tab="partners">🔔 Alertas: Google Cloud / ClickHouse / ElevenLabs</div>
+    <div class="tab" data-tab="partners">☁️ Alertas: Nube pública</div>
   </div>
 
   <div class="toolbar">
@@ -159,7 +159,7 @@
       const [nuevasResp, todasResp, partnersResp] = await Promise.all([
         fetch('data/nuevas_hoy.json').then(r => r.ok ? r.json() : null).catch(() => null),
         fetch('data/latest.json').then(r => r.ok ? r.json() : null).catch(() => null),
-        fetch('data/alertas_partners.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/alertas_nube.json').then(r => r.ok ? r.json() : null).catch(() => null),
       ]);
       state.nuevas = nuevasResp;
       state.todas = todasResp;
@@ -239,8 +239,16 @@
   function partnerBadge(objeto) {
     const t = (objeto || '').toLowerCase();
     if (t.includes('google cloud')) return 'Google Cloud';
+    if (t.includes('amazon web services') || / aws /.test(' ' + t + ' ')) return 'AWS';
+    if (t.includes('azure')) return 'Azure';
+    if (t.includes('oracle cloud')) return 'Oracle Cloud';
+    if (t.includes('ovhcloud') || t.includes('ovh cloud')) return 'OVHcloud';
+    if (t.includes('ibm cloud')) return 'IBM Cloud';
     if (t.includes('clickhouse')) return 'ClickHouse';
     if (t.includes('elevenlabs')) return 'ElevenLabs';
+    if (t.includes('iaas')) return 'IaaS';
+    if (t.includes('paas')) return 'PaaS';
+    if (t.includes('saas')) return 'SaaS';
     return null;
   }
 
@@ -266,7 +274,8 @@
     if (state.tab === 'partners') {
       const nuevasIds = new Set((state.partners?.nuevas || []).map(l => l.expediente));
       list.innerHTML = `<div class="empty" style="padding:14px 4px;text-align:left;color:var(--muted);font-size:0.85rem;">
-        🔔 Estas licitaciones mencionan Google Cloud, ClickHouse o ElevenLabs en cualquier lugar de España,
+        ☁️ Estas licitaciones mencionan nube pública (de cualquier proveedor: AWS, Azure, Google Cloud, OVH...)
+        en cualquier lugar de España,
         <strong>sin aplicar el filtro habitual de Madrid/nacional ni el rango de importe</strong> — para no perderte
         ninguna oportunidad relacionada con vuestros partners tecnológicos, aunque sea de otra región o tamaño distinto.
       </div>` + rows.map(l => {

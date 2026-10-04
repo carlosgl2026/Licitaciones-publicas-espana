@@ -1,32 +1,8 @@
 {
-  "generado": "2026-10-03T14:28:17+00:00",
-  "total_nuevas": 463,
+  "generado": "2026-10-04T12:58:23+00:00",
+  "total_nuevas": 460,
   "total_historico": 694,
   "nuevas": [
-    {
-      "expediente": "2026-03993",
-      "titulo": "Solución SaaS de inteligencia meteorológica y gestión de riesgos naturales para la operación ferroviaria",
-      "estado": "",
-      "organo": "Dirección General Económico-Financiera de la Entidad Pública Empresarial RENFE-Operadora",
-      "objeto": "Solución SaaS de inteligencia meteorológica y gestión de riesgos naturales para la operación ferroviaria",
-      "importe_sin_iva": "130000",
-      "cpv": "72200000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=ZSLuHRHNC0OFlFRHfEzEaw%3D%3D",
-      "updated": "2026-10-02T14:14:54.566+02:00",
-      "first_seen_at": "2026-10-03T14:28:11+00:00"
-    },
-    {
-      "expediente": "EPC 07/26",
-      "titulo": "Suministro de las licencias de acceso y uso del cloud de la suite de Microsoft Office 365 y los servicios asociados.",
-      "estado": "",
-      "organo": "Ente Público de Radiotelevisión de las Illes Balears",
-      "objeto": "Suministro de las licencias de acceso y uso del cloud de la suite de Microsoft Office 365 y los servicios asociados.",
-      "importe_sin_iva": "187803.36",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=S4nxrW%2BNCoV70UvEyYJSGw%3D%3D",
-      "updated": "2026-10-02T13:59:01.624+02:00",
-      "first_seen_at": "2026-10-03T14:28:11+00:00"
-    },
     {
       "expediente": "CG-2026/2815/0110",
       "titulo": "Suscripción de backup en la nube de correo electrónico para IBERMUTUA",
@@ -110,18 +86,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Xmbfdgw077RVq4S9zvaQpQ%3D%3D",
       "updated": "2026-10-02T11:02:09.370+02:00",
       "first_seen_at": "2026-10-02T11:17:00+00:00"
-    },
-    {
-      "expediente": "79716J/2026",
-      "titulo": "Suministro e implantación en modalidad SaaS de una solución informática integral para el canal interno de información acorde con la ley 2/2023 de 20 de febrero, procedimiento abierto simplificado abreviado, con el único criterio precio",
-      "estado": "",
-      "organo": "Concejalía Delegada de Hacienda del Ayuntamiento de Gijón",
-      "objeto": "Suministro e implantación en modalidad SaaS de una solución informática integral para el canal interno de información acorde con la ley 2/2023 de 20 de febrero, procedimiento abierto simplificado abreviado, con el único criterio precio",
-      "importe_sin_iva": "20433.92",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=FOy4lsevOvm8ebB%2FXTwy0A%3D%3D",
-      "updated": "2026-10-02T09:41:19.774+02:00",
-      "first_seen_at": "2026-10-03T14:28:14+00:00"
     },
     {
       "expediente": "7346/2023-C20/26",

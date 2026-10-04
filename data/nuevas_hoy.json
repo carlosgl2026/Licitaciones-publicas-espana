@@ -1,7 +1,22 @@
 {
-  "generado": "2026-10-03T14:28:17+00:00",
-  "total": 134,
+  "generado": "2026-10-04T12:58:23+00:00",
+  "total": 127,
   "licitaciones": [
+    {
+      "expediente": "J260025",
+      "titulo": "Servicio de mantenimiento de los equipos informáticos y de los sistemas de información de los Centros y Archivos Estatales dependientes de la Subdirección General de los Archivos Estatales",
+      "estado": "",
+      "organo": "Junta de Contratación del Ministerio de Cultura",
+      "objeto": "Servicio de mantenimiento de los equipos informáticos y de los sistemas de información de los Centros y Archivos Estatales dependientes de la Subdirección General de los Archivos Estatales",
+      "importe_sin_iva": "104546.58",
+      "tipo_contrato": "2",
+      "procedimiento": "1",
+      "cpv": "50312000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=5wmjQAemEma5HQrHoP3G5A%3D%3D",
+      "updated": "2026-10-03T15:12:38.455+02:00",
+      "published": "",
+      "first_seen_at": "2026-10-04T12:44:35+00:00"
+    },
     {
       "expediente": "N202600262",
       "titulo": "Servicio de asistencia técnica especializada para la gestión de proyectos y servicios TI de MC MUTUAL",
@@ -16,36 +31,6 @@
       "updated": "2026-10-02T14:26:45.920+02:00",
       "published": "",
       "first_seen_at": "2026-09-23T15:22:58+00:00"
-    },
-    {
-      "expediente": "CG-2025/2821/0058",
-      "titulo": "Implantación de una plataforma de análisis centralizado de la información y riesgos relacionados con la operación de la seguridad con destino a IBERMUTUA, M.C.S.S. Nº 274 Y CESMA, M.C.S.S. Nº 115.",
-      "estado": "",
-      "organo": "Dirección General de IBERMUTUA, Mutua Colaboradora con la Seguridad Social nº 274",
-      "objeto": "Implantación de una plataforma de análisis centralizado de la información y riesgos relacionados con la operación de la seguridad con destino a IBERMUTUA, M.C.S.S. Nº 274 Y CESMA, M.C.S.S. Nº 115.",
-      "importe_sin_iva": "230000",
-      "tipo_contrato": "2",
-      "procedimiento": "1",
-      "cpv": "72610000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=K%2Bz8HRIK7wtxseVhcqrkhw%3D%3D",
-      "updated": "2026-10-02T14:24:31.339+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-03T14:28:11+00:00"
-    },
-    {
-      "expediente": "2026-03993",
-      "titulo": "Solución SaaS de inteligencia meteorológica y gestión de riesgos naturales para la operación ferroviaria",
-      "estado": "",
-      "organo": "Dirección General Económico-Financiera de la Entidad Pública Empresarial RENFE-Operadora",
-      "objeto": "Solución SaaS de inteligencia meteorológica y gestión de riesgos naturales para la operación ferroviaria",
-      "importe_sin_iva": "130000",
-      "tipo_contrato": "2",
-      "procedimiento": "1",
-      "cpv": "72200000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=ZSLuHRHNC0OFlFRHfEzEaw%3D%3D",
-      "updated": "2026-10-02T14:14:54.566+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-03T14:28:11+00:00"
     },
     {
       "expediente": "TSA0083883",
@@ -76,21 +61,6 @@
       "updated": "2026-10-02T13:58:38.669+02:00",
       "published": "",
       "first_seen_at": "2026-09-29T15:45:15+00:00"
-    },
-    {
-      "expediente": "C109/2026",
-      "titulo": "Contrato de prestación del servicio de mantenimiento y hosting de la web, todos sus sites y la app de ciudadano del Ayuntamiento de Majadahonda",
-      "estado": "",
-      "organo": "Alcaldía del Ayuntamiento de Majadahonda",
-      "objeto": "Contrato de prestación del servicio de mantenimiento y hosting de la web, todos sus sites y la app de ciudadano del Ayuntamiento de Majadahonda",
-      "importe_sin_iva": "139480",
-      "tipo_contrato": "2",
-      "procedimiento": "1",
-      "cpv": "72267100",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=7bmjrtlpySEXhk1FZxEyvw%3D%3D",
-      "updated": "2026-10-02T13:14:40.088+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-03T14:28:11+00:00"
     },
     {
       "expediente": "73/2026",
@@ -138,21 +108,6 @@
       "first_seen_at": "2026-09-23T15:27:27+00:00"
     },
     {
-      "expediente": "2025-07",
-      "titulo": "Servicios de mantenimiento de servidores con arquitectura x86 para la Intervención General de la Administración del Estado",
-      "estado": "",
-      "organo": "Junta de Contratación de los Servicios Centrales en el Ministerio de Hacienda",
-      "objeto": "Servicios de mantenimiento de servidores con arquitectura x86 para la Intervención General de la Administración del Estado",
-      "importe_sin_iva": "301698.41",
-      "tipo_contrato": "2",
-      "procedimiento": "3",
-      "cpv": "72250000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=wMZYysbqnsWcCF8sV%2BqtYA%3D%3D",
-      "updated": "2026-10-02T11:31:43.243+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-03T14:28:13+00:00"
-    },
-    {
       "expediente": "PA 79/2026",
       "titulo": "Mixto Suministro y Servicio de Licencias Software Microsoft para el Ayuntamiento de Torrejón de Ardoz",
       "estado": "",
@@ -198,21 +153,6 @@
       "first_seen_at": "2026-09-23T15:22:09+00:00"
     },
     {
-      "expediente": "300/2026/00422",
-      "titulo": "Contrato de servicios de soporte y mantenimiento de la aplicación informática OMI-AP y puesta en producción del Módulo de IA",
-      "estado": "",
-      "organo": "Organismo Autónomo Informática del Ayuntamiento de Madrid",
-      "objeto": "Contrato de servicios de soporte y mantenimiento de la aplicación informática OMI-AP y puesta en producción del Módulo de IA",
-      "importe_sin_iva": "856256",
-      "tipo_contrato": "2",
-      "procedimiento": "3",
-      "cpv": "72267000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=dc554Fi7MhOS81gZFETWmA%3D%3D",
-      "updated": "2026-10-02T10:21:15.510+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-03T14:28:14+00:00"
-    },
-    {
       "expediente": "033-2022-0237",
       "titulo": "Suministro mediante subscripción, actualización y mantenimiento de licencias de productos del fabricante Microsoft mediante contrato en modalidad Enterprise Agreement Subscription.",
       "estado": "",
@@ -228,36 +168,6 @@
       "first_seen_at": "2026-09-23T15:22:14+00:00"
     },
     {
-      "expediente": "LOT6/27",
-      "titulo": "Servicio de soporte técnico informático destinado a diversos centros e institutos de la Agencia Estatal Consejo Superior de Investigaciones Científicas.",
-      "estado": "",
-      "organo": "Secretaría General de la Agencia Estatal Consejo Superior de Investigaciones Científicas",
-      "objeto": "Servicio de soporte técnico informático destinado a diversos centros e institutos de la Agencia Estatal Consejo Superior de Investigaciones Científicas.",
-      "importe_sin_iva": "481320",
-      "tipo_contrato": "2",
-      "procedimiento": "1",
-      "cpv": "72514000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=DRhU8g94zXHgL1BHd3qjQA%3D%3D",
-      "updated": "2026-10-02T09:34:31.073+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-03T14:28:14+00:00"
-    },
-    {
-      "expediente": "300/2026/01894",
-      "titulo": "Suministro de Vehículos de Apoyo Operativo, Contenedores y Remolques para la Jefatura del Cuerpo de Bomberos del Ayuntamiento de Madrid (4 LOTES)",
-      "estado": "",
-      "organo": "Área de Gobierno de Vicealcaldía, Portavoz, Seguridad y Emergencias del Ayuntamiento de Madrid",
-      "objeto": "Suministro de Vehículos de Apoyo Operativo, Contenedores y Remolques para la Jefatura del Cuerpo de Bomberos del Ayuntamiento de Madrid (4 LOTES)",
-      "importe_sin_iva": "4068272",
-      "tipo_contrato": "1",
-      "procedimiento": "1",
-      "cpv": "34144200",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=5Hmr8%2FaGdcbCfVQHDepjGQ%3D%3D",
-      "updated": "2026-10-02T09:31:57.394+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-03T14:28:14+00:00"
-    },
-    {
       "expediente": "300/2026/00202",
       "titulo": "Contrato de servicios para la provisión de una plataforma gestionada para el intercambio de información financiera entre entidades financieras y el Ayuntamiento de Madrid.",
       "estado": "",
@@ -271,21 +181,6 @@
       "updated": "2026-10-02T09:27:38.173+02:00",
       "published": "",
       "first_seen_at": "2026-09-23T15:20:29+00:00"
-    },
-    {
-      "expediente": "040-2026-0110",
-      "titulo": "Contratación del servicio de asistencia técnica para el mantenimiento de las aplicaciones de Prestaciones Económicas y Prestaciones Sanitarias en entorno SAP.",
-      "estado": "",
-      "organo": "Mutua Universal Mugenat, Mutua Colaboradora con la Seguridad Social nº 10",
-      "objeto": "Contratación del servicio de asistencia técnica para el mantenimiento de las aplicaciones de Prestaciones Económicas y Prestaciones Sanitarias en entorno SAP.",
-      "importe_sin_iva": "1626240",
-      "tipo_contrato": "2",
-      "procedimiento": "1",
-      "cpv": "72267000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=VBMD%2FMZWrsqKeVWTb9Scog%3D%3D",
-      "updated": "2026-10-02T09:14:02.459+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-03T14:28:14+00:00"
     },
     {
       "expediente": "26/037/3SDA",

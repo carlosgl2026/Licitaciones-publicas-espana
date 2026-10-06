@@ -1,8 +1,104 @@
 {
-  "generado": "2026-10-05T15:32:03+00:00",
-  "total_nuevas": 460,
-  "total_historico": 694,
+  "generado": "2026-10-06T14:43:20+00:00",
+  "total_nuevas": 464,
+  "total_historico": 696,
   "nuevas": [
+    {
+      "expediente": "2026049161",
+      "titulo": "Contrato basado AM AMTEGA Servicios Cloud Pública: Migración del ecosistema Tourist INSIDE RIAS BAIXAS a Cloud Pública",
+      "estado": "",
+      "organo": "Presidencia de la Diputación Provincial de Pontevedra",
+      "objeto": "Contrato basado AM AMTEGA Servicios Cloud Pública: Migración del ecosistema Tourist INSIDE RIAS BAIXAS a Cloud Pública",
+      "importe_sin_iva": "58751",
+      "cpv": "72250000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=X1EIRaDxU5Rt5r0ngvMetA%3D%3D",
+      "updated": "2026-10-05T18:52:42.918+02:00",
+      "first_seen_at": "2026-10-06T14:32:17+00:00"
+    },
+    {
+      "expediente": "2026042SUMA-BAM",
+      "titulo": "Suministro, en modalidad de Software como Servicio (SaaS), de licencias y servicios asociados a la herramienta Turnitin Originality, basado en el Acuerdo Marco del CSUC E24/65",
+      "estado": "",
+      "organo": "Rectorado de la Universidad Rey Juan Carlos",
+      "objeto": "Suministro, en modalidad de Software como Servicio (SaaS), de licencias y servicios asociados a la herramienta Turnitin Originality, basado en el Acuerdo Marco del CSUC E24/65",
+      "importe_sin_iva": "108780",
+      "cpv": "48218000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=dv8SpNh82QaP66GS%2BONYvQ%3D%3D",
+      "updated": "2026-10-05T14:09:06.849+02:00",
+      "first_seen_at": "2026-10-02T11:18:23+00:00"
+    },
+    {
+      "expediente": "0596/2026",
+      "titulo": "Contratación de la suscripción de Licencias SAP Analytics Cloud para la Empresa de Abastecimiento y Saneamiento de Aguas de Sevilla, S.A. (EMASESA) 2027-2028",
+      "estado": "",
+      "organo": "Consejería Delegada de la Empresa Metropolitana de Abastecimiento y Saneamiento de Aguas de Sevilla S.A. (EMASESA)",
+      "objeto": "Contratación de la suscripción de Licencias SAP Analytics Cloud para la Empresa de Abastecimiento y Saneamiento de Aguas de Sevilla, S.A. (EMASESA) 2027-2028",
+      "importe_sin_iva": "188131.15",
+      "cpv": "48218000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=pOpGRIsRU3BVq4S9zvaQpQ%3D%3D",
+      "updated": "2026-10-05T13:54:36.888+02:00",
+      "first_seen_at": "2026-10-02T11:19:35+00:00"
+    },
+    {
+      "expediente": "2026/32119",
+      "titulo": "Software como servicio para la gestión integral de espacios municipales, reservas, actividades y control de accesos del ayuntamiento de Pinto (Madrid).",
+      "estado": "",
+      "organo": "Concejal de Contratación del Ayuntamiento de Pinto",
+      "objeto": "Software como servicio para la gestión integral de espacios municipales, reservas, actividades y control de accesos del ayuntamiento de Pinto (Madrid).",
+      "importe_sin_iva": "3500",
+      "cpv": "72500000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=iN1%2BMzOw8OukU02jNGj1Fw%3D%3D",
+      "updated": "2026-10-05T12:52:55.248+02:00",
+      "first_seen_at": "2026-10-06T14:43:16+00:00"
+    },
+    {
+      "expediente": "N202600412",
+      "titulo": "Suscripción de licencias software de los productos Citrix Universal Hybrid Multi Cloud para MC MUTUAL",
+      "estado": "",
+      "organo": "Dirección General de la Mutual Midat Cyclops, Mutua Colaboradora con la Seguridad Social, nº 1",
+      "objeto": "Suscripción de licencias software de los productos Citrix Universal Hybrid Multi Cloud para MC MUTUAL",
+      "importe_sin_iva": "169675.8",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=TkwfOEZ2DaSopEMYCmrbmw%3D%3D",
+      "updated": "2026-10-05T10:45:45.109+02:00",
+      "first_seen_at": "2026-10-02T11:15:21+00:00"
+    },
+    {
+      "expediente": "64853/2026",
+      "titulo": "Plataforma informática de gestión deportiva en modalidad software como servicio (SAAS), incluyendo su implantación, migración de datos, mantenimiento  soporte para el Patronat Municipal d'Esports del Ayuntamiento de Castelló de la Plana",
+      "estado": "",
+      "organo": "Junta de Gobierno del Ayuntamiento de Castellón de la Plana",
+      "objeto": "Plataforma informática de gestión deportiva en modalidad software como servicio (SAAS), incluyendo su implantación, migración de datos, mantenimiento  soporte para el Patronat Municipal d'Esports del Ayuntamiento de Castelló de la Plana",
+      "importe_sin_iva": "77119.47",
+      "cpv": "72267100",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=fEFk%2Fuy51VJ4zIRvjBVCSw%3D%3D",
+      "updated": "2026-10-05T09:13:46.937+02:00",
+      "first_seen_at": "2026-10-02T11:16:49+00:00"
+    },
+    {
+      "expediente": "2026000032",
+      "titulo": "Suministro para la adquisición de renovación de licencias CITRIX Cloud (antes CITRIX Xendestop Enterprise).",
+      "estado": "",
+      "organo": "Junta de Gobierno del Ayuntamiento de Getafe",
+      "objeto": "Suministro para la adquisición de renovación de licencias CITRIX Cloud (antes CITRIX Xendestop Enterprise).",
+      "importe_sin_iva": "150000",
+      "cpv": "48218000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=zrZ40w6QLXaP%2Bo96UAV7cQ%3D%3D",
+      "updated": "2026-10-04T12:41:57.709+02:00",
+      "first_seen_at": "2026-10-02T11:11:25+00:00"
+    },
+    {
+      "expediente": "2679/2026",
+      "titulo": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
+      "estado": "",
+      "organo": "Alcaldía del Ayuntamiento de Güímar",
+      "objeto": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
+      "importe_sin_iva": "576700",
+      "cpv": "72000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=G9oWpGgxiezN3k3tjedSGw%3D%3D",
+      "updated": "2026-10-02T15:20:41.757+02:00",
+      "first_seen_at": "2026-10-02T11:18:01+00:00"
+    },
     {
       "expediente": "CG-2026/2815/0110",
       "titulo": "Suscripción de backup en la nube de correo electrónico para IBERMUTUA",
@@ -748,18 +844,6 @@
       "first_seen_at": "2026-10-02T11:12:02+00:00"
     },
     {
-      "expediente": "64853/2026",
-      "titulo": "Plataforma informática de gestión deportiva en modalidad software como servicio (SAAS), incluyendo su implantación, migración de datos, mantenimiento  soporte para el Patronat Municipal d'Esports del Ayuntamiento de Castelló de la Plana",
-      "estado": "",
-      "organo": "Junta de Gobierno del Ayuntamiento de Castellón de la Plana",
-      "objeto": "Plataforma informática de gestión deportiva en modalidad software como servicio (SAAS), incluyendo su implantación, migración de datos, mantenimiento  soporte para el Patronat Municipal d'Esports del Ayuntamiento de Castelló de la Plana",
-      "importe_sin_iva": "77119.47",
-      "cpv": "72267100",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=fEFk%2Fuy51VJ4zIRvjBVCSw%3D%3D",
-      "updated": "2026-09-22T14:15:44.660+02:00",
-      "first_seen_at": "2026-10-02T11:16:49+00:00"
-    },
-    {
       "expediente": "26Exma-028",
       "titulo": "Contratación del servicio de migración de microsoft dynamics 365 business central on premise a business central SaaS y su soporte, periodo 2027-20290",
       "estado": "",
@@ -974,18 +1058,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2Bp0i0i9xRleAAM7L03kM8A%3D%3D",
       "updated": "2026-09-16T10:26:55.088+02:00",
       "first_seen_at": "2026-10-02T11:09:41+00:00"
-    },
-    {
-      "expediente": "N202600412",
-      "titulo": "Suscripción de licencias software de los productos Citrix Universal Hybrid Multi Cloud para MC MUTUAL",
-      "estado": "",
-      "organo": "Dirección General de la Mutual Midat Cyclops, Mutua Colaboradora con la Seguridad Social, nº 1",
-      "objeto": "Suscripción de licencias software de los productos Citrix Universal Hybrid Multi Cloud para MC MUTUAL",
-      "importe_sin_iva": "169675.8",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=TkwfOEZ2DaSopEMYCmrbmw%3D%3D",
-      "updated": "2026-09-16T08:48:22.783+02:00",
-      "first_seen_at": "2026-10-02T11:15:21+00:00"
     },
     {
       "expediente": "2026/0170",
@@ -1252,18 +1324,6 @@
       "first_seen_at": "2026-10-02T11:10:29+00:00"
     },
     {
-      "expediente": "2026000032",
-      "titulo": "Suministro para la adquisición de renovación de licencias CITRIX Cloud (antes CITRIX Xendestop Enterprise).",
-      "estado": "",
-      "organo": "Junta de Gobierno del Ayuntamiento de Getafe",
-      "objeto": "Suministro para la adquisición de renovación de licencias CITRIX Cloud (antes CITRIX Xendestop Enterprise).",
-      "importe_sin_iva": "150000",
-      "cpv": "48218000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=zrZ40w6QLXaP%2Bo96UAV7cQ%3D%3D",
-      "updated": "2026-09-04T15:08:23.001+02:00",
-      "first_seen_at": "2026-10-02T11:11:25+00:00"
-    },
-    {
       "expediente": "14/26",
       "titulo": "Contrato mixto de servicios para la implantación del Portal del Empleado y Control de Presencia en modalidad SaaS (arrendamiento) de este Ayuntamiento.",
       "estado": "",
@@ -1394,18 +1454,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=UbKDN4bJYobua%2Fi14w%2FPLA%3D%3D",
       "updated": "2026-09-01T09:31:53.295+02:00",
       "first_seen_at": "2026-10-02T11:12:24+00:00"
-    },
-    {
-      "expediente": "2679/2026",
-      "titulo": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
-      "estado": "",
-      "organo": "Alcaldía del Ayuntamiento de Güímar",
-      "objeto": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
-      "importe_sin_iva": "576700",
-      "cpv": "72000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=G9oWpGgxiezN3k3tjedSGw%3D%3D",
-      "updated": "2026-09-01T09:00:00.000+02:00",
-      "first_seen_at": "2026-10-02T11:18:01+00:00"
     },
     {
       "expediente": "SU 281/26",
@@ -5526,6 +5574,102 @@
   ],
   "historico": [
     {
+      "expediente": "2026049161",
+      "titulo": "Contrato basado AM AMTEGA Servicios Cloud Pública: Migración del ecosistema Tourist INSIDE RIAS BAIXAS a Cloud Pública",
+      "estado": "",
+      "organo": "Presidencia de la Diputación Provincial de Pontevedra",
+      "objeto": "Contrato basado AM AMTEGA Servicios Cloud Pública: Migración del ecosistema Tourist INSIDE RIAS BAIXAS a Cloud Pública",
+      "importe_sin_iva": "58751",
+      "cpv": "72250000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=X1EIRaDxU5Rt5r0ngvMetA%3D%3D",
+      "updated": "2026-10-05T18:52:42.918+02:00",
+      "first_seen_at": "2026-10-06T14:32:17+00:00"
+    },
+    {
+      "expediente": "2026042SUMA-BAM",
+      "titulo": "Suministro, en modalidad de Software como Servicio (SaaS), de licencias y servicios asociados a la herramienta Turnitin Originality, basado en el Acuerdo Marco del CSUC E24/65",
+      "estado": "",
+      "organo": "Rectorado de la Universidad Rey Juan Carlos",
+      "objeto": "Suministro, en modalidad de Software como Servicio (SaaS), de licencias y servicios asociados a la herramienta Turnitin Originality, basado en el Acuerdo Marco del CSUC E24/65",
+      "importe_sin_iva": "108780",
+      "cpv": "48218000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=dv8SpNh82QaP66GS%2BONYvQ%3D%3D",
+      "updated": "2026-10-05T14:09:06.849+02:00",
+      "first_seen_at": "2026-10-02T11:18:23+00:00"
+    },
+    {
+      "expediente": "0596/2026",
+      "titulo": "Contratación de la suscripción de Licencias SAP Analytics Cloud para la Empresa de Abastecimiento y Saneamiento de Aguas de Sevilla, S.A. (EMASESA) 2027-2028",
+      "estado": "",
+      "organo": "Consejería Delegada de la Empresa Metropolitana de Abastecimiento y Saneamiento de Aguas de Sevilla S.A. (EMASESA)",
+      "objeto": "Contratación de la suscripción de Licencias SAP Analytics Cloud para la Empresa de Abastecimiento y Saneamiento de Aguas de Sevilla, S.A. (EMASESA) 2027-2028",
+      "importe_sin_iva": "188131.15",
+      "cpv": "48218000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=pOpGRIsRU3BVq4S9zvaQpQ%3D%3D",
+      "updated": "2026-10-05T13:54:36.888+02:00",
+      "first_seen_at": "2026-10-02T11:19:35+00:00"
+    },
+    {
+      "expediente": "2026/32119",
+      "titulo": "Software como servicio para la gestión integral de espacios municipales, reservas, actividades y control de accesos del ayuntamiento de Pinto (Madrid).",
+      "estado": "",
+      "organo": "Concejal de Contratación del Ayuntamiento de Pinto",
+      "objeto": "Software como servicio para la gestión integral de espacios municipales, reservas, actividades y control de accesos del ayuntamiento de Pinto (Madrid).",
+      "importe_sin_iva": "3500",
+      "cpv": "72500000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=iN1%2BMzOw8OukU02jNGj1Fw%3D%3D",
+      "updated": "2026-10-05T12:52:55.248+02:00",
+      "first_seen_at": "2026-10-06T14:43:16+00:00"
+    },
+    {
+      "expediente": "N202600412",
+      "titulo": "Suscripción de licencias software de los productos Citrix Universal Hybrid Multi Cloud para MC MUTUAL",
+      "estado": "",
+      "organo": "Dirección General de la Mutual Midat Cyclops, Mutua Colaboradora con la Seguridad Social, nº 1",
+      "objeto": "Suscripción de licencias software de los productos Citrix Universal Hybrid Multi Cloud para MC MUTUAL",
+      "importe_sin_iva": "169675.8",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=TkwfOEZ2DaSopEMYCmrbmw%3D%3D",
+      "updated": "2026-10-05T10:45:45.109+02:00",
+      "first_seen_at": "2026-10-02T11:15:21+00:00"
+    },
+    {
+      "expediente": "64853/2026",
+      "titulo": "Plataforma informática de gestión deportiva en modalidad software como servicio (SAAS), incluyendo su implantación, migración de datos, mantenimiento  soporte para el Patronat Municipal d'Esports del Ayuntamiento de Castelló de la Plana",
+      "estado": "",
+      "organo": "Junta de Gobierno del Ayuntamiento de Castellón de la Plana",
+      "objeto": "Plataforma informática de gestión deportiva en modalidad software como servicio (SAAS), incluyendo su implantación, migración de datos, mantenimiento  soporte para el Patronat Municipal d'Esports del Ayuntamiento de Castelló de la Plana",
+      "importe_sin_iva": "77119.47",
+      "cpv": "72267100",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=fEFk%2Fuy51VJ4zIRvjBVCSw%3D%3D",
+      "updated": "2026-10-05T09:13:46.937+02:00",
+      "first_seen_at": "2026-10-02T11:16:49+00:00"
+    },
+    {
+      "expediente": "2026000032",
+      "titulo": "Suministro para la adquisición de renovación de licencias CITRIX Cloud (antes CITRIX Xendestop Enterprise).",
+      "estado": "",
+      "organo": "Junta de Gobierno del Ayuntamiento de Getafe",
+      "objeto": "Suministro para la adquisición de renovación de licencias CITRIX Cloud (antes CITRIX Xendestop Enterprise).",
+      "importe_sin_iva": "150000",
+      "cpv": "48218000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=zrZ40w6QLXaP%2Bo96UAV7cQ%3D%3D",
+      "updated": "2026-10-04T12:41:57.709+02:00",
+      "first_seen_at": "2026-10-02T11:11:25+00:00"
+    },
+    {
+      "expediente": "2679/2026",
+      "titulo": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
+      "estado": "",
+      "organo": "Alcaldía del Ayuntamiento de Güímar",
+      "objeto": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
+      "importe_sin_iva": "576700",
+      "cpv": "72000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=G9oWpGgxiezN3k3tjedSGw%3D%3D",
+      "updated": "2026-10-02T15:20:41.757+02:00",
+      "first_seen_at": "2026-10-02T11:18:01+00:00"
+    },
+    {
       "expediente": "2026-03993",
       "titulo": "Solución SaaS de inteligencia meteorológica y gestión de riesgos naturales para la operación ferroviaria",
       "estado": "",
@@ -6546,18 +6690,6 @@
       "first_seen_at": "2026-10-02T11:20:32+00:00"
     },
     {
-      "expediente": "64853/2026",
-      "titulo": "Plataforma informática de gestión deportiva en modalidad software como servicio (SAAS), incluyendo su implantación, migración de datos, mantenimiento  soporte para el Patronat Municipal d'Esports del Ayuntamiento de Castelló de la Plana",
-      "estado": "",
-      "organo": "Junta de Gobierno del Ayuntamiento de Castellón de la Plana",
-      "objeto": "Plataforma informática de gestión deportiva en modalidad software como servicio (SAAS), incluyendo su implantación, migración de datos, mantenimiento  soporte para el Patronat Municipal d'Esports del Ayuntamiento de Castelló de la Plana",
-      "importe_sin_iva": "77119.47",
-      "cpv": "72267100",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=fEFk%2Fuy51VJ4zIRvjBVCSw%3D%3D",
-      "updated": "2026-09-22T14:15:44.660+02:00",
-      "first_seen_at": "2026-10-02T11:16:49+00:00"
-    },
-    {
       "expediente": "26Exma-028",
       "titulo": "Contratación del servicio de migración de microsoft dynamics 365 business central on premise a business central SaaS y su soporte, periodo 2027-20290",
       "estado": "",
@@ -6726,18 +6858,6 @@
       "first_seen_at": "2026-10-02T11:17:22+00:00"
     },
     {
-      "expediente": "0596/2026",
-      "titulo": "Contratación de la suscripción de Licencias SAP Analytics Cloud para la Empresa de Abastecimiento y Saneamiento de Aguas de Sevilla, S.A. (EMASESA) 2027-2028",
-      "estado": "",
-      "organo": "Consejería Delegada de la Empresa Metropolitana de Abastecimiento y Saneamiento de Aguas de Sevilla S.A. (EMASESA)",
-      "objeto": "Contratación de la suscripción de Licencias SAP Analytics Cloud para la Empresa de Abastecimiento y Saneamiento de Aguas de Sevilla, S.A. (EMASESA) 2027-2028",
-      "importe_sin_iva": "188131.15",
-      "cpv": "48218000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=pOpGRIsRU3BVq4S9zvaQpQ%3D%3D",
-      "updated": "2026-09-18T08:49:17.559+02:00",
-      "first_seen_at": "2026-10-02T11:19:35+00:00"
-    },
-    {
       "expediente": "2026/17",
       "titulo": "Contrato de suministro, mediante la modalidad de suscripción (Software as a Service - SaaS), de los derechos de uso, implantación, soporte técnico y mantenimiento de una aplicación móvil (App) orientada a la promoción de la movilidad sostenible e inclusiva entre la comunidad universitaria.",
       "estado": "",
@@ -6844,18 +6964,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2Bp0i0i9xRleAAM7L03kM8A%3D%3D",
       "updated": "2026-09-16T10:26:55.088+02:00",
       "first_seen_at": "2026-10-02T11:09:41+00:00"
-    },
-    {
-      "expediente": "N202600412",
-      "titulo": "Suscripción de licencias software de los productos Citrix Universal Hybrid Multi Cloud para MC MUTUAL",
-      "estado": "",
-      "organo": "Dirección General de la Mutual Midat Cyclops, Mutua Colaboradora con la Seguridad Social, nº 1",
-      "objeto": "Suscripción de licencias software de los productos Citrix Universal Hybrid Multi Cloud para MC MUTUAL",
-      "importe_sin_iva": "169675.8",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=TkwfOEZ2DaSopEMYCmrbmw%3D%3D",
-      "updated": "2026-09-16T08:48:22.783+02:00",
-      "first_seen_at": "2026-10-02T11:15:21+00:00"
     },
     {
       "expediente": "2026/0170",
@@ -7194,18 +7302,6 @@
       "first_seen_at": "2026-10-02T11:10:29+00:00"
     },
     {
-      "expediente": "2026000032",
-      "titulo": "Suministro para la adquisición de renovación de licencias CITRIX Cloud (antes CITRIX Xendestop Enterprise).",
-      "estado": "",
-      "organo": "Junta de Gobierno del Ayuntamiento de Getafe",
-      "objeto": "Suministro para la adquisición de renovación de licencias CITRIX Cloud (antes CITRIX Xendestop Enterprise).",
-      "importe_sin_iva": "150000",
-      "cpv": "48218000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=zrZ40w6QLXaP%2Bo96UAV7cQ%3D%3D",
-      "updated": "2026-09-04T15:08:23.001+02:00",
-      "first_seen_at": "2026-10-02T11:11:25+00:00"
-    },
-    {
       "expediente": "14/26",
       "titulo": "Contrato mixto de servicios para la implantación del Portal del Empleado y Control de Presencia en modalidad SaaS (arrendamiento) de este Ayuntamiento.",
       "estado": "",
@@ -7362,18 +7458,6 @@
       "first_seen_at": "2026-10-02T11:12:24+00:00"
     },
     {
-      "expediente": "2679/2026",
-      "titulo": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
-      "estado": "",
-      "organo": "Alcaldía del Ayuntamiento de Güímar",
-      "objeto": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
-      "importe_sin_iva": "576700",
-      "cpv": "72000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=G9oWpGgxiezN3k3tjedSGw%3D%3D",
-      "updated": "2026-09-01T09:00:00.000+02:00",
-      "first_seen_at": "2026-10-02T11:18:01+00:00"
-    },
-    {
       "expediente": "SUM/2026/0000117025",
       "titulo": "Adquisicion de la licencia de uso de la plataforma Genially Campus, en su modalidad de Software como Servicio SaaS, para suexplotacion por parte del personal docente de los Centros Nacionales de Referencia adscritos, personal del SCE de las distintassubdirecciones  del Servicio Canario de Empleo",
       "estado": "",
@@ -7492,18 +7576,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Eot583GJIswmMOlAXxDEjw%3D%3D",
       "updated": "2026-08-26T13:28:25.281+02:00",
       "first_seen_at": "2026-10-02T11:16:25+00:00"
-    },
-    {
-      "expediente": "2026042SUMA-BAM",
-      "titulo": "Suministro, en modalidad de Software como Servicio (SaaS), de licencias y servicios asociados a la herramienta Turnitin Originality, basado en el Acuerdo Marco del CSUC E24/65",
-      "estado": "",
-      "organo": "Rectorado de la Universidad Rey Juan Carlos",
-      "objeto": "Suministro, en modalidad de Software como Servicio (SaaS), de licencias y servicios asociados a la herramienta Turnitin Originality, basado en el Acuerdo Marco del CSUC E24/65",
-      "importe_sin_iva": "108780",
-      "cpv": "48218000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=dv8SpNh82QaP66GS%2BONYvQ%3D%3D",
-      "updated": "2026-08-26T12:51:52.310+02:00",
-      "first_seen_at": "2026-10-02T11:18:23+00:00"
     },
     {
       "expediente": "2021/D22200/006-313/00004",

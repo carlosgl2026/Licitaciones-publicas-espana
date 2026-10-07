@@ -1,20 +1,8 @@
 {
-  "generado": "2026-10-06T14:43:20+00:00",
-  "total_nuevas": 464,
+  "generado": "2026-10-07T14:21:38+00:00",
+  "total_nuevas": 462,
   "total_historico": 696,
   "nuevas": [
-    {
-      "expediente": "2026049161",
-      "titulo": "Contrato basado AM AMTEGA Servicios Cloud Pública: Migración del ecosistema Tourist INSIDE RIAS BAIXAS a Cloud Pública",
-      "estado": "",
-      "organo": "Presidencia de la Diputación Provincial de Pontevedra",
-      "objeto": "Contrato basado AM AMTEGA Servicios Cloud Pública: Migración del ecosistema Tourist INSIDE RIAS BAIXAS a Cloud Pública",
-      "importe_sin_iva": "58751",
-      "cpv": "72250000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=X1EIRaDxU5Rt5r0ngvMetA%3D%3D",
-      "updated": "2026-10-05T18:52:42.918+02:00",
-      "first_seen_at": "2026-10-06T14:32:17+00:00"
-    },
     {
       "expediente": "2026042SUMA-BAM",
       "titulo": "Suministro, en modalidad de Software como Servicio (SaaS), de licencias y servicios asociados a la herramienta Turnitin Originality, basado en el Acuerdo Marco del CSUC E24/65",
@@ -38,18 +26,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=pOpGRIsRU3BVq4S9zvaQpQ%3D%3D",
       "updated": "2026-10-05T13:54:36.888+02:00",
       "first_seen_at": "2026-10-02T11:19:35+00:00"
-    },
-    {
-      "expediente": "2026/32119",
-      "titulo": "Software como servicio para la gestión integral de espacios municipales, reservas, actividades y control de accesos del ayuntamiento de Pinto (Madrid).",
-      "estado": "",
-      "organo": "Concejal de Contratación del Ayuntamiento de Pinto",
-      "objeto": "Software como servicio para la gestión integral de espacios municipales, reservas, actividades y control de accesos del ayuntamiento de Pinto (Madrid).",
-      "importe_sin_iva": "3500",
-      "cpv": "72500000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=iN1%2BMzOw8OukU02jNGj1Fw%3D%3D",
-      "updated": "2026-10-05T12:52:55.248+02:00",
-      "first_seen_at": "2026-10-06T14:43:16+00:00"
     },
     {
       "expediente": "N202600412",

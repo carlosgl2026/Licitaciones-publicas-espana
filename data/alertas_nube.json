@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-10T13:04:45+00:00",
-  "total_nuevas": 474,
+  "generado": "2026-10-11T13:23:17+00:00",
+  "total_nuevas": 472,
   "total_historico": 711,
   "nuevas": [
     {
@@ -14,18 +14,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=syxSKHkTujGzz8fXU2i3eQ%3D%3D",
       "updated": "2026-10-09T14:41:33.218+02:00",
       "first_seen_at": "2026-10-02T11:16:18+00:00"
-    },
-    {
-      "expediente": "2025/006507",
-      "titulo": "Suscripción de licencias Adobe Creative Cloud y Adobe Acrobat.",
-      "estado": "",
-      "organo": "Secretaría General de la Consejería de Hacienda, Administraciones Públicas y Transformación Digital de la Junta de Comunidades de Castilla-La Mancha",
-      "objeto": "Suscripción de licencias Adobe Creative Cloud y Adobe Acrobat.",
-      "importe_sin_iva": "298170.64",
-      "cpv": "48300000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=1nrgE1f91fbIGlsa0Wad%2Bw%3D%3D",
-      "updated": "2026-10-09T14:06:32.669+02:00",
-      "first_seen_at": "2026-10-10T13:04:41+00:00"
     },
     {
       "expediente": "10-SV-26-VSC",
@@ -62,18 +50,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=S6Z4LNV%2F4hq8ebB%2FXTwy0A%3D%3D",
       "updated": "2026-10-09T12:54:54.413+02:00",
       "first_seen_at": "2026-10-02T11:20:12+00:00"
-    },
-    {
-      "expediente": "SDA25T01-26-23",
-      "titulo": "Suministro de Suscripciones de Seguridad Integrada de Correo Electrónico en la Nube (ICES), incluyendo integración con Google Workspace para la Autoridad Portuaria de Baleares",
-      "estado": "",
-      "organo": "Presidencia de la Autoridad Portuaria de Baleares",
-      "objeto": "Suministro de Suscripciones de Seguridad Integrada de Correo Electrónico en la Nube (ICES), incluyendo integración con Google Workspace para la Autoridad Portuaria de Baleares",
-      "importe_sin_iva": "71000",
-      "cpv": "30000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=eKGRy3ZfA00%2FbjW6njtWLw%3D%3D",
-      "updated": "2026-10-09T12:12:41.502+02:00",
-      "first_seen_at": "2026-10-10T13:04:42+00:00"
     },
     {
       "expediente": "26/102/2",

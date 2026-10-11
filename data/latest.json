@@ -1,7 +1,22 @@
 {
-  "generado": "2026-10-10T13:04:45+00:00",
-  "total": 157,
+  "generado": "2026-10-11T13:23:17+00:00",
+  "total": 158,
   "licitaciones": [
+    {
+      "expediente": "2026SDA12",
+      "titulo": "Suministro del derecho de uso de licencias de usuarios de la Plataforma de Accesos Privilegiados (PAM)",
+      "estado": "",
+      "organo": "Organismo Autónomo Informática del Ayuntamiento de Madrid",
+      "objeto": "Suministro del derecho de uso de licencias de usuarios de la Plataforma de Accesos Privilegiados (PAM)",
+      "importe_sin_iva": "371900.83",
+      "tipo_contrato": "1",
+      "procedimiento": "2",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=3iHAuOJ3mmzgL1BHd3qjQA%3D%3D",
+      "updated": "2026-10-10T09:13:01.936+02:00",
+      "published": "",
+      "first_seen_at": "2026-10-11T13:07:45+00:00"
+    },
     {
       "expediente": "3.26/41110.0067",
       "titulo": "Renovación de la plataforma de licitación electrónica de Adif y Adif-AV",

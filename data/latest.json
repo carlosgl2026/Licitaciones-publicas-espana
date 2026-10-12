@@ -1,7 +1,37 @@
 {
-  "generado": "2026-10-11T13:23:17+00:00",
-  "total": 158,
+  "generado": "2026-10-12T16:05:33+00:00",
+  "total": 160,
   "licitaciones": [
+    {
+      "expediente": "LOT9/27",
+      "titulo": "Servicio de soporte técnico informático destinado a diversos Centros e Institutos de la Agencia Estatal Consejo Superior de Investigaciones Científicas.",
+      "estado": "",
+      "organo": "Secretaría General de la Agencia Estatal Consejo Superior de Investigaciones Científicas",
+      "objeto": "Servicio de soporte técnico informático destinado a diversos Centros e Institutos de la Agencia Estatal Consejo Superior de Investigaciones Científicas.",
+      "importe_sin_iva": "532026",
+      "tipo_contrato": "2",
+      "procedimiento": "1",
+      "cpv": "72514000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=kTZ5rCjXRLnmnwcj%2BxbdTg%3D%3D",
+      "updated": "2026-10-11T15:11:51.101+02:00",
+      "published": "",
+      "first_seen_at": "2026-10-12T15:50:55+00:00"
+    },
+    {
+      "expediente": "2026N0059005",
+      "titulo": "Recogida de datos de la Encuesta Cuatrienal de Estructura Salarial 2026",
+      "estado": "",
+      "organo": "Instituto Nacional de Estadística INE",
+      "objeto": "Recogida de datos de la Encuesta Cuatrienal de Estructura Salarial 2026",
+      "importe_sin_iva": "1346710.5",
+      "tipo_contrato": "2",
+      "procedimiento": "1",
+      "cpv": "72313000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=v6pJFlVhqdQQyBAnWzHfCg%3D%3D",
+      "updated": "2026-10-11T08:41:46.996+02:00",
+      "published": "",
+      "first_seen_at": "2026-10-12T15:50:55+00:00"
+    },
     {
       "expediente": "2026SDA12",
       "titulo": "Suministro del derecho de uso de licencias de usuarios de la Plataforma de Accesos Privilegiados (PAM)",

@@ -1,20 +1,8 @@
 {
-  "generado": "2026-10-12T16:05:33+00:00",
-  "total_nuevas": 473,
+  "generado": "2026-10-13T17:24:11+00:00",
+  "total_nuevas": 472,
   "total_historico": 712,
   "nuevas": [
-    {
-      "expediente": "8060/2026",
-      "titulo": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS)",
-      "estado": "",
-      "organo": "Alcaldía del Ayuntamiento de Bormujos",
-      "objeto": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS)",
-      "importe_sin_iva": "488240.48",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=qIwaNPtQdgxVYjgxA4nMUw%3D%3D",
-      "updated": "2026-10-11T09:27:05.673+02:00",
-      "first_seen_at": "2026-10-12T15:50:55+00:00"
-    },
     {
       "expediente": "SLU-2026-PASS-CON-0001",
       "titulo": "Contratación de un máximo de 65 licencias de uso de un gestor de proyectos en modalidad SAAS (Software As A Service) 24x7x365 Turismo y Planificación Costa del Sol, S.L.U.",

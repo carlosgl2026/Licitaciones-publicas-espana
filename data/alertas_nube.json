@@ -1,8 +1,104 @@
 {
-  "generado": "2026-10-13T17:24:11+00:00",
-  "total_nuevas": 472,
-  "total_historico": 712,
+  "generado": "2026-10-14T14:46:20+00:00",
+  "total_nuevas": 476,
+  "total_historico": 714,
   "nuevas": [
+    {
+      "expediente": "2060/2026",
+      "titulo": "Servicio de hosting externo en la nube y renovación de dominios para el Cabildo Insular de La Gomera.",
+      "estado": "",
+      "organo": "Presidencia del Cabildo Insular de La Gomera",
+      "objeto": "Servicio de hosting externo en la nube y renovación de dominios para el Cabildo Insular de La Gomera.",
+      "importe_sin_iva": "11824",
+      "cpv": "72415000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=0LW2I0It2K3yoM4us5k4vw%3D%3D",
+      "updated": "2026-10-13T14:40:29.594+02:00",
+      "first_seen_at": "2026-10-02T11:18:03+00:00"
+    },
+    {
+      "expediente": "034-2026-0306",
+      "titulo": "Suministro mediante suscripción, implantación, configuración, soporte y mantenimiento de una solución cloud de análisis de código, auditorias de seguridad y pentest de servicios web.",
+      "estado": "",
+      "organo": "Mutua Universal Mugenat, Mutua Colaboradora con la Seguridad Social nº 10",
+      "objeto": "Suministro mediante suscripción, implantación, configuración, soporte y mantenimiento de una solución cloud de análisis de código, auditorias de seguridad y pentest de servicios web.",
+      "importe_sin_iva": "96980",
+      "cpv": "48730000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=k7sn%2BN%2F8xY%2Bzz8fXU2i3eQ%3D%3D",
+      "updated": "2026-10-13T14:23:27.725+02:00",
+      "first_seen_at": "2026-10-14T14:46:14+00:00"
+    },
+    {
+      "expediente": "SFC/2026/043",
+      "titulo": "Servicio SaaS de una solución de tablones digitales que permita la gestión centralizada, programación, publicación, monitorización y control remoto de contenidos informativos, incluyendo los servicios asociados de puesta en marcha, parametrización inicial, soporte funcional/técnico y una bolsa estimada de horas de acompañamiento adicional.",
+      "estado": "",
+      "organo": "Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, S.A.",
+      "objeto": "Servicio SaaS de una solución de tablones digitales que permita la gestión centralizada, programación, publicación, monitorización y control remoto de contenidos informativos, incluyendo los servicios asociados de puesta en marcha, parametrización inicial, soporte funcional/técnico y una bolsa estimada de horas de acompañamiento adicional.",
+      "importe_sin_iva": "2671.8",
+      "cpv": "72000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2F17k38p4o%2FeOUi78BmzhOQ%3D%3D",
+      "updated": "2026-10-13T14:18:54.900+02:00",
+      "first_seen_at": "2026-10-02T11:17:36+00:00"
+    },
+    {
+      "expediente": "EQ.17/26",
+      "titulo": "Suministro de licencia de acceso al software Blackboard Ally, en modalidad SaaS, para su integración y uso con el LMS corporativo Blackboard Learn de la Universidad Pablo de Olavide.",
+      "estado": "",
+      "organo": "Rectorado de la Universidad Pablo de Olavide",
+      "objeto": "Suministro de licencia de acceso al software Blackboard Ally, en modalidad SaaS, para su integración y uso con el LMS corporativo Blackboard Learn de la Universidad Pablo de Olavide.",
+      "importe_sin_iva": "46246.98",
+      "cpv": "48500000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=zWnetfiRxvUeC9GJQOEBkQ%3D%3D",
+      "updated": "2026-10-13T14:11:29.750+02:00",
+      "first_seen_at": "2026-10-09T13:58:00+00:00"
+    },
+    {
+      "expediente": "2038/2026",
+      "titulo": "PG 39/26 Prestación de un servicio de backup en la nube durante el período 2026-2031",
+      "estado": "",
+      "organo": "Presidente de la Autoridad Portuaria de Santander",
+      "objeto": "PG 39/26 Prestación de un servicio de backup en la nube durante el período 2026-2031",
+      "importe_sin_iva": "95000",
+      "cpv": "72317000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=RLdNUiSYKpHN3k3tjedSGw%3D%3D",
+      "updated": "2026-10-13T12:26:56.698+02:00",
+      "first_seen_at": "2026-10-14T14:46:15+00:00"
+    },
+    {
+      "expediente": "SDA25T01-26-23",
+      "titulo": "Suministro de Suscripciones de Seguridad Integrada de Correo Electrónico en la Nube (ICES), incluyendo integración con Google Workspace para la Autoridad Portuaria de Baleares",
+      "estado": "",
+      "organo": "Presidencia de la Autoridad Portuaria de Baleares",
+      "objeto": "Suministro de Suscripciones de Seguridad Integrada de Correo Electrónico en la Nube (ICES), incluyendo integración con Google Workspace para la Autoridad Portuaria de Baleares",
+      "importe_sin_iva": "71000",
+      "cpv": "30000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=eKGRy3ZfA00%2FbjW6njtWLw%3D%3D",
+      "updated": "2026-10-13T11:27:40.483+02:00",
+      "first_seen_at": "2026-10-10T13:04:42+00:00"
+    },
+    {
+      "expediente": "2026/D22200/006-202/00007",
+      "titulo": "contratación anticipada y mixta del suministro mediante suscripción de una solución software de gestión integral de recursos humanos en modalidad de software as a service (SAAS) con alojamiento en la nube y con soporte y mantenimiento, así como de los servicios accesorios de implantación, y formación para la Diputación de Almería y Entidades Locales y Entes Instrumentales de la Provincia.",
+      "estado": "",
+      "organo": "Junta de Gobierno de la Diputación Provincial de Almería",
+      "objeto": "contratación anticipada y mixta del suministro mediante suscripción de una solución software de gestión integral de recursos humanos en modalidad de software as a service (SAAS) con alojamiento en la nube y con soporte y mantenimiento, así como de los servicios accesorios de implantación, y formación para la Diputación de Almería y Entidades Locales y Entes Instrumentales de la Provincia.",
+      "importe_sin_iva": "1436891.2",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=15IAHq4KkbI3vLk2DU2Ddg%3D%3D",
+      "updated": "2026-10-13T09:19:47.184+02:00",
+      "first_seen_at": "2026-10-02T11:18:10+00:00"
+    },
+    {
+      "expediente": "5328/2026",
+      "titulo": "Contratación del suministro para solución integral de administración electrónica y gestión municipal en modalidad software as a service (SAAS) del ayuntamiento de Baza, incluido en el proyecto 3 Transformación Digital para una ciudad más conectada  operación P3.A.1 instalación de plataforma digital financiado en el marco del Plan de Actuación Integrado PAI Baza 2030",
+      "estado": "",
+      "organo": "Junta de Gobierno Local del Ayuntamiento de Baza",
+      "objeto": "Contratación del suministro para solución integral de administración electrónica y gestión municipal en modalidad software as a service (SAAS) del ayuntamiento de Baza, incluido en el proyecto 3 Transformación Digital para una ciudad más conectada  operación P3.A.1 instalación de plataforma digital financiado en el marco del Plan de Actuación Integrado PAI Baza 2030",
+      "importe_sin_iva": "329657.48",
+      "cpv": "48100000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=KkLyIX6nyFomMOlAXxDEjw%3D%3D",
+      "updated": "2026-10-11T22:32:27.942+02:00",
+      "first_seen_at": "2026-10-02T11:18:03+00:00"
+    },
     {
       "expediente": "SLU-2026-PASS-CON-0001",
       "titulo": "Contratación de un máximo de 65 licencias de uso de un gestor de proyectos en modalidad SAAS (Software As A Service) 24x7x365 Turismo y Planificación Costa del Sol, S.L.U.",
@@ -220,18 +316,6 @@
       "first_seen_at": "2026-10-02T11:18:00+00:00"
     },
     {
-      "expediente": "SFC/2026/043",
-      "titulo": "Servicio SaaS de una solución de tablones digitales que permita la gestión centralizada, programación, publicación, monitorización y control remoto de contenidos informativos, incluyendo los servicios asociados de puesta en marcha, parametrización inicial, soporte funcional/técnico y una bolsa estimada de horas de acompañamiento adicional.",
-      "estado": "",
-      "organo": "Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, S.A.",
-      "objeto": "Servicio SaaS de una solución de tablones digitales que permita la gestión centralizada, programación, publicación, monitorización y control remoto de contenidos informativos, incluyendo los servicios asociados de puesta en marcha, parametrización inicial, soporte funcional/técnico y una bolsa estimada de horas de acompañamiento adicional.",
-      "importe_sin_iva": "2671.8",
-      "cpv": "72000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2F17k38p4o%2FeOUi78BmzhOQ%3D%3D",
-      "updated": "2026-10-06T15:18:43.437+02:00",
-      "first_seen_at": "2026-10-02T11:17:36+00:00"
-    },
-    {
       "expediente": "AI230011",
       "titulo": "Contratación de un acuerdo de licenciamiento “Enterprise Agreement” (EA) para la adquisición, renovación, actualización y suscripción de productos Microsoft, un servicio de asistencia técnica y formativa para la adopción y adaptación de los nuevos productos y servicios Cloud de Azure para el Grupo Correos",
       "estado": "",
@@ -314,18 +398,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=VwQC2yvUYR9SYrkJkLlFdw%3D%3D",
       "updated": "2026-10-05T19:27:11.265+02:00",
       "first_seen_at": "2026-10-02T11:18:22+00:00"
-    },
-    {
-      "expediente": "5328/2026",
-      "titulo": "Contratación del suministro para solución integral de administración electrónica y gestión municipal en modalidad software as a service (SAAS) del ayuntamiento de Baza, incluido en el proyecto 3 Transformación Digital para una ciudad más conectada  operación P3.A.1 instalación de plataforma digital financiado en el marco del Plan de Actuación Integrado PAI Baza 2030",
-      "estado": "",
-      "organo": "Junta de Gobierno Local del Ayuntamiento de Baza",
-      "objeto": "Contratación del suministro para solución integral de administración electrónica y gestión municipal en modalidad software as a service (SAAS) del ayuntamiento de Baza, incluido en el proyecto 3 Transformación Digital para una ciudad más conectada  operación P3.A.1 instalación de plataforma digital financiado en el marco del Plan de Actuación Integrado PAI Baza 2030",
-      "importe_sin_iva": "329657.48",
-      "cpv": "48100000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=KkLyIX6nyFomMOlAXxDEjw%3D%3D",
-      "updated": "2026-10-05T17:27:27.431+02:00",
-      "first_seen_at": "2026-10-02T11:18:03+00:00"
     },
     {
       "expediente": "2026/LIC/0058",
@@ -988,18 +1060,6 @@
       "first_seen_at": "2026-10-02T11:18:31+00:00"
     },
     {
-      "expediente": "2026/D22200/006-202/00007",
-      "titulo": "contratación anticipada y mixta del suministro mediante suscripción de una solución software de gestión integral de recursos humanos en modalidad de software as a service (SAAS) con alojamiento en la nube y con soporte y mantenimiento, así como de los servicios accesorios de implantación, y formación para la Diputación de Almería y Entidades Locales y Entes Instrumentales de la Provincia.",
-      "estado": "",
-      "organo": "Junta de Gobierno de la Diputación Provincial de Almería",
-      "objeto": "contratación anticipada y mixta del suministro mediante suscripción de una solución software de gestión integral de recursos humanos en modalidad de software as a service (SAAS) con alojamiento en la nube y con soporte y mantenimiento, así como de los servicios accesorios de implantación, y formación para la Diputación de Almería y Entidades Locales y Entes Instrumentales de la Provincia.",
-      "importe_sin_iva": "1436891.2",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=15IAHq4KkbI3vLk2DU2Ddg%3D%3D",
-      "updated": "2026-09-23T13:51:28.896+02:00",
-      "first_seen_at": "2026-10-02T11:18:10+00:00"
-    },
-    {
       "expediente": "S-00883-2026",
       "titulo": "Renovación del estudio B4 de Torrespaña a tecnología UHD IP y producción en la nube",
       "estado": "",
@@ -1058,18 +1118,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=yM%2B0I2p81FbL1rX3q%2FMAPA%3D%3D",
       "updated": "2026-09-23T09:45:26.828+02:00",
       "first_seen_at": "2026-10-02T11:12:02+00:00"
-    },
-    {
-      "expediente": "2060/2026",
-      "titulo": "Servicio de hosting externo en la nube y renovación de dominios para el Cabildo Insular de La Gomera.",
-      "estado": "",
-      "organo": "Presidencia del Cabildo Insular de La Gomera",
-      "objeto": "Servicio de hosting externo en la nube y renovación de dominios para el Cabildo Insular de La Gomera.",
-      "importe_sin_iva": "11824",
-      "cpv": "72415000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=0LW2I0It2K3yoM4us5k4vw%3D%3D",
-      "updated": "2026-09-22T10:11:30.651+02:00",
-      "first_seen_at": "2026-10-02T11:18:03+00:00"
     },
     {
       "expediente": "25479/2026",
@@ -5670,6 +5718,102 @@
   ],
   "historico": [
     {
+      "expediente": "2060/2026",
+      "titulo": "Servicio de hosting externo en la nube y renovación de dominios para el Cabildo Insular de La Gomera.",
+      "estado": "",
+      "organo": "Presidencia del Cabildo Insular de La Gomera",
+      "objeto": "Servicio de hosting externo en la nube y renovación de dominios para el Cabildo Insular de La Gomera.",
+      "importe_sin_iva": "11824",
+      "cpv": "72415000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=0LW2I0It2K3yoM4us5k4vw%3D%3D",
+      "updated": "2026-10-13T14:40:29.594+02:00",
+      "first_seen_at": "2026-10-02T11:18:03+00:00"
+    },
+    {
+      "expediente": "034-2026-0306",
+      "titulo": "Suministro mediante suscripción, implantación, configuración, soporte y mantenimiento de una solución cloud de análisis de código, auditorias de seguridad y pentest de servicios web.",
+      "estado": "",
+      "organo": "Mutua Universal Mugenat, Mutua Colaboradora con la Seguridad Social nº 10",
+      "objeto": "Suministro mediante suscripción, implantación, configuración, soporte y mantenimiento de una solución cloud de análisis de código, auditorias de seguridad y pentest de servicios web.",
+      "importe_sin_iva": "96980",
+      "cpv": "48730000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=k7sn%2BN%2F8xY%2Bzz8fXU2i3eQ%3D%3D",
+      "updated": "2026-10-13T14:23:27.725+02:00",
+      "first_seen_at": "2026-10-14T14:46:14+00:00"
+    },
+    {
+      "expediente": "SFC/2026/043",
+      "titulo": "Servicio SaaS de una solución de tablones digitales que permita la gestión centralizada, programación, publicación, monitorización y control remoto de contenidos informativos, incluyendo los servicios asociados de puesta en marcha, parametrización inicial, soporte funcional/técnico y una bolsa estimada de horas de acompañamiento adicional.",
+      "estado": "",
+      "organo": "Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, S.A.",
+      "objeto": "Servicio SaaS de una solución de tablones digitales que permita la gestión centralizada, programación, publicación, monitorización y control remoto de contenidos informativos, incluyendo los servicios asociados de puesta en marcha, parametrización inicial, soporte funcional/técnico y una bolsa estimada de horas de acompañamiento adicional.",
+      "importe_sin_iva": "2671.8",
+      "cpv": "72000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2F17k38p4o%2FeOUi78BmzhOQ%3D%3D",
+      "updated": "2026-10-13T14:18:54.900+02:00",
+      "first_seen_at": "2026-10-02T11:17:36+00:00"
+    },
+    {
+      "expediente": "EQ.17/26",
+      "titulo": "Suministro de licencia de acceso al software Blackboard Ally, en modalidad SaaS, para su integración y uso con el LMS corporativo Blackboard Learn de la Universidad Pablo de Olavide.",
+      "estado": "",
+      "organo": "Rectorado de la Universidad Pablo de Olavide",
+      "objeto": "Suministro de licencia de acceso al software Blackboard Ally, en modalidad SaaS, para su integración y uso con el LMS corporativo Blackboard Learn de la Universidad Pablo de Olavide.",
+      "importe_sin_iva": "46246.98",
+      "cpv": "48500000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=zWnetfiRxvUeC9GJQOEBkQ%3D%3D",
+      "updated": "2026-10-13T14:11:29.750+02:00",
+      "first_seen_at": "2026-10-09T13:58:00+00:00"
+    },
+    {
+      "expediente": "2038/2026",
+      "titulo": "PG 39/26 Prestación de un servicio de backup en la nube durante el período 2026-2031",
+      "estado": "",
+      "organo": "Presidente de la Autoridad Portuaria de Santander",
+      "objeto": "PG 39/26 Prestación de un servicio de backup en la nube durante el período 2026-2031",
+      "importe_sin_iva": "95000",
+      "cpv": "72317000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=RLdNUiSYKpHN3k3tjedSGw%3D%3D",
+      "updated": "2026-10-13T12:26:56.698+02:00",
+      "first_seen_at": "2026-10-14T14:46:15+00:00"
+    },
+    {
+      "expediente": "SDA25T01-26-23",
+      "titulo": "Suministro de Suscripciones de Seguridad Integrada de Correo Electrónico en la Nube (ICES), incluyendo integración con Google Workspace para la Autoridad Portuaria de Baleares",
+      "estado": "",
+      "organo": "Presidencia de la Autoridad Portuaria de Baleares",
+      "objeto": "Suministro de Suscripciones de Seguridad Integrada de Correo Electrónico en la Nube (ICES), incluyendo integración con Google Workspace para la Autoridad Portuaria de Baleares",
+      "importe_sin_iva": "71000",
+      "cpv": "30000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=eKGRy3ZfA00%2FbjW6njtWLw%3D%3D",
+      "updated": "2026-10-13T11:27:40.483+02:00",
+      "first_seen_at": "2026-10-10T13:04:42+00:00"
+    },
+    {
+      "expediente": "2026/D22200/006-202/00007",
+      "titulo": "contratación anticipada y mixta del suministro mediante suscripción de una solución software de gestión integral de recursos humanos en modalidad de software as a service (SAAS) con alojamiento en la nube y con soporte y mantenimiento, así como de los servicios accesorios de implantación, y formación para la Diputación de Almería y Entidades Locales y Entes Instrumentales de la Provincia.",
+      "estado": "",
+      "organo": "Junta de Gobierno de la Diputación Provincial de Almería",
+      "objeto": "contratación anticipada y mixta del suministro mediante suscripción de una solución software de gestión integral de recursos humanos en modalidad de software as a service (SAAS) con alojamiento en la nube y con soporte y mantenimiento, así como de los servicios accesorios de implantación, y formación para la Diputación de Almería y Entidades Locales y Entes Instrumentales de la Provincia.",
+      "importe_sin_iva": "1436891.2",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=15IAHq4KkbI3vLk2DU2Ddg%3D%3D",
+      "updated": "2026-10-13T09:19:47.184+02:00",
+      "first_seen_at": "2026-10-02T11:18:10+00:00"
+    },
+    {
+      "expediente": "5328/2026",
+      "titulo": "Contratación del suministro para solución integral de administración electrónica y gestión municipal en modalidad software as a service (SAAS) del ayuntamiento de Baza, incluido en el proyecto 3 Transformación Digital para una ciudad más conectada  operación P3.A.1 instalación de plataforma digital financiado en el marco del Plan de Actuación Integrado PAI Baza 2030",
+      "estado": "",
+      "organo": "Junta de Gobierno Local del Ayuntamiento de Baza",
+      "objeto": "Contratación del suministro para solución integral de administración electrónica y gestión municipal en modalidad software as a service (SAAS) del ayuntamiento de Baza, incluido en el proyecto 3 Transformación Digital para una ciudad más conectada  operación P3.A.1 instalación de plataforma digital financiado en el marco del Plan de Actuación Integrado PAI Baza 2030",
+      "importe_sin_iva": "329657.48",
+      "cpv": "48100000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=KkLyIX6nyFomMOlAXxDEjw%3D%3D",
+      "updated": "2026-10-11T22:32:27.942+02:00",
+      "first_seen_at": "2026-10-02T11:18:03+00:00"
+    },
+    {
       "expediente": "8060/2026",
       "titulo": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS)",
       "estado": "",
@@ -5740,18 +5884,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=S6Z4LNV%2F4hq8ebB%2FXTwy0A%3D%3D",
       "updated": "2026-10-09T12:54:54.413+02:00",
       "first_seen_at": "2026-10-02T11:20:12+00:00"
-    },
-    {
-      "expediente": "SDA25T01-26-23",
-      "titulo": "Suministro de Suscripciones de Seguridad Integrada de Correo Electrónico en la Nube (ICES), incluyendo integración con Google Workspace para la Autoridad Portuaria de Baleares",
-      "estado": "",
-      "organo": "Presidencia de la Autoridad Portuaria de Baleares",
-      "objeto": "Suministro de Suscripciones de Seguridad Integrada de Correo Electrónico en la Nube (ICES), incluyendo integración con Google Workspace para la Autoridad Portuaria de Baleares",
-      "importe_sin_iva": "71000",
-      "cpv": "30000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=eKGRy3ZfA00%2FbjW6njtWLw%3D%3D",
-      "updated": "2026-10-09T12:12:41.502+02:00",
-      "first_seen_at": "2026-10-10T13:04:42+00:00"
     },
     {
       "expediente": "26/102/2",
@@ -6030,18 +6162,6 @@
       "first_seen_at": "2026-10-09T13:58:00+00:00"
     },
     {
-      "expediente": "SFC/2026/043",
-      "titulo": "Servicio SaaS de una solución de tablones digitales que permita la gestión centralizada, programación, publicación, monitorización y control remoto de contenidos informativos, incluyendo los servicios asociados de puesta en marcha, parametrización inicial, soporte funcional/técnico y una bolsa estimada de horas de acompañamiento adicional.",
-      "estado": "",
-      "organo": "Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, S.A.",
-      "objeto": "Servicio SaaS de una solución de tablones digitales que permita la gestión centralizada, programación, publicación, monitorización y control remoto de contenidos informativos, incluyendo los servicios asociados de puesta en marcha, parametrización inicial, soporte funcional/técnico y una bolsa estimada de horas de acompañamiento adicional.",
-      "importe_sin_iva": "2671.8",
-      "cpv": "72000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2F17k38p4o%2FeOUi78BmzhOQ%3D%3D",
-      "updated": "2026-10-06T15:18:43.437+02:00",
-      "first_seen_at": "2026-10-02T11:17:36+00:00"
-    },
-    {
       "expediente": "3137/2026",
       "titulo": "Servicio de mantenimiento del cloud del gestor de contenidos info tourist del servicio de información turística",
       "estado": "",
@@ -6076,18 +6196,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=QDFiKOy7a11LAIVZdUs8KA%3D%3D",
       "updated": "2026-10-06T12:57:19.282+02:00",
       "first_seen_at": "2026-10-02T11:15:07+00:00"
-    },
-    {
-      "expediente": "EQ.17/26",
-      "titulo": "Suministro de licencia de acceso al software Blackboard Ally, en modalidad SaaS, para su integración y uso con el LMS corporativo Blackboard Learn de la Universidad Pablo de Olavide.",
-      "estado": "",
-      "organo": "Rectorado de la Universidad Pablo de Olavide",
-      "objeto": "Suministro de licencia de acceso al software Blackboard Ally, en modalidad SaaS, para su integración y uso con el LMS corporativo Blackboard Learn de la Universidad Pablo de Olavide.",
-      "importe_sin_iva": "46246.98",
-      "cpv": "48500000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=zWnetfiRxvUeC9GJQOEBkQ%3D%3D",
-      "updated": "2026-10-06T12:53:30.265+02:00",
-      "first_seen_at": "2026-10-09T13:58:00+00:00"
     },
     {
       "expediente": "0565/2026",
@@ -6172,18 +6280,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=X1EIRaDxU5Rt5r0ngvMetA%3D%3D",
       "updated": "2026-10-05T18:52:42.918+02:00",
       "first_seen_at": "2026-10-06T14:32:17+00:00"
-    },
-    {
-      "expediente": "5328/2026",
-      "titulo": "Contratación del suministro para solución integral de administración electrónica y gestión municipal en modalidad software as a service (SAAS) del ayuntamiento de Baza, incluido en el proyecto 3 Transformación Digital para una ciudad más conectada  operación P3.A.1 instalación de plataforma digital financiado en el marco del Plan de Actuación Integrado PAI Baza 2030",
-      "estado": "",
-      "organo": "Junta de Gobierno Local del Ayuntamiento de Baza",
-      "objeto": "Contratación del suministro para solución integral de administración electrónica y gestión municipal en modalidad software as a service (SAAS) del ayuntamiento de Baza, incluido en el proyecto 3 Transformación Digital para una ciudad más conectada  operación P3.A.1 instalación de plataforma digital financiado en el marco del Plan de Actuación Integrado PAI Baza 2030",
-      "importe_sin_iva": "329657.48",
-      "cpv": "48100000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=KkLyIX6nyFomMOlAXxDEjw%3D%3D",
-      "updated": "2026-10-05T17:27:27.431+02:00",
-      "first_seen_at": "2026-10-02T11:18:03+00:00"
     },
     {
       "expediente": "2026/LIC/0058",
@@ -7074,18 +7170,6 @@
       "first_seen_at": "2026-10-02T11:18:31+00:00"
     },
     {
-      "expediente": "2026/D22200/006-202/00007",
-      "titulo": "contratación anticipada y mixta del suministro mediante suscripción de una solución software de gestión integral de recursos humanos en modalidad de software as a service (SAAS) con alojamiento en la nube y con soporte y mantenimiento, así como de los servicios accesorios de implantación, y formación para la Diputación de Almería y Entidades Locales y Entes Instrumentales de la Provincia.",
-      "estado": "",
-      "organo": "Junta de Gobierno de la Diputación Provincial de Almería",
-      "objeto": "contratación anticipada y mixta del suministro mediante suscripción de una solución software de gestión integral de recursos humanos en modalidad de software as a service (SAAS) con alojamiento en la nube y con soporte y mantenimiento, así como de los servicios accesorios de implantación, y formación para la Diputación de Almería y Entidades Locales y Entes Instrumentales de la Provincia.",
-      "importe_sin_iva": "1436891.2",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=15IAHq4KkbI3vLk2DU2Ddg%3D%3D",
-      "updated": "2026-09-23T13:51:28.896+02:00",
-      "first_seen_at": "2026-10-02T11:18:10+00:00"
-    },
-    {
       "expediente": "S-00883-2026",
       "titulo": "Renovación del estudio B4 de Torrespaña a tecnología UHD IP y producción en la nube",
       "estado": "",
@@ -7180,18 +7264,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=68Iq0UJDqY6FQ%2FlhRK79lA%3D%3D",
       "updated": "2026-09-22T10:20:01.491+02:00",
       "first_seen_at": "2026-10-02T11:20:47+00:00"
-    },
-    {
-      "expediente": "2060/2026",
-      "titulo": "Servicio de hosting externo en la nube y renovación de dominios para el Cabildo Insular de La Gomera.",
-      "estado": "",
-      "organo": "Presidencia del Cabildo Insular de La Gomera",
-      "objeto": "Servicio de hosting externo en la nube y renovación de dominios para el Cabildo Insular de La Gomera.",
-      "importe_sin_iva": "11824",
-      "cpv": "72415000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=0LW2I0It2K3yoM4us5k4vw%3D%3D",
-      "updated": "2026-09-22T10:11:30.651+02:00",
-      "first_seen_at": "2026-10-02T11:18:03+00:00"
     },
     {
       "expediente": "25479/2026",

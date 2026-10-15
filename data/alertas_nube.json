@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-14T14:46:20+00:00",
-  "total_nuevas": 476,
+  "generado": "2026-10-15T14:09:42+00:00",
+  "total_nuevas": 474,
   "total_historico": 714,
   "nuevas": [
     {
@@ -14,18 +14,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=0LW2I0It2K3yoM4us5k4vw%3D%3D",
       "updated": "2026-10-13T14:40:29.594+02:00",
       "first_seen_at": "2026-10-02T11:18:03+00:00"
-    },
-    {
-      "expediente": "034-2026-0306",
-      "titulo": "Suministro mediante suscripción, implantación, configuración, soporte y mantenimiento de una solución cloud de análisis de código, auditorias de seguridad y pentest de servicios web.",
-      "estado": "",
-      "organo": "Mutua Universal Mugenat, Mutua Colaboradora con la Seguridad Social nº 10",
-      "objeto": "Suministro mediante suscripción, implantación, configuración, soporte y mantenimiento de una solución cloud de análisis de código, auditorias de seguridad y pentest de servicios web.",
-      "importe_sin_iva": "96980",
-      "cpv": "48730000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=k7sn%2BN%2F8xY%2Bzz8fXU2i3eQ%3D%3D",
-      "updated": "2026-10-13T14:23:27.725+02:00",
-      "first_seen_at": "2026-10-14T14:46:14+00:00"
     },
     {
       "expediente": "SFC/2026/043",
@@ -50,18 +38,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=zWnetfiRxvUeC9GJQOEBkQ%3D%3D",
       "updated": "2026-10-13T14:11:29.750+02:00",
       "first_seen_at": "2026-10-09T13:58:00+00:00"
-    },
-    {
-      "expediente": "2038/2026",
-      "titulo": "PG 39/26 Prestación de un servicio de backup en la nube durante el período 2026-2031",
-      "estado": "",
-      "organo": "Presidente de la Autoridad Portuaria de Santander",
-      "objeto": "PG 39/26 Prestación de un servicio de backup en la nube durante el período 2026-2031",
-      "importe_sin_iva": "95000",
-      "cpv": "72317000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=RLdNUiSYKpHN3k3tjedSGw%3D%3D",
-      "updated": "2026-10-13T12:26:56.698+02:00",
-      "first_seen_at": "2026-10-14T14:46:15+00:00"
     },
     {
       "expediente": "SDA25T01-26-23",

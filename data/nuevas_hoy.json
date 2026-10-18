@@ -1,7 +1,37 @@
 {
-  "generado": "2026-10-17T11:41:37+00:00",
-  "total": 117,
+  "generado": "2026-10-18T11:46:06+00:00",
+  "total": 114,
   "licitaciones": [
+    {
+      "expediente": "028/26-RI",
+      "titulo": "Servicio de apoyo a la gestión integral de servicios del área de sistemas y seguridad de RedIRIS",
+      "estado": "",
+      "organo": "Dirección General de la Entidad Pública Empresarial RED.ES",
+      "objeto": "Servicio de apoyo a la gestión integral de servicios del área de sistemas y seguridad de RedIRIS",
+      "importe_sin_iva": "4535000",
+      "tipo_contrato": "2",
+      "procedimiento": "1",
+      "cpv": "72250000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=RET0wfZAY9bVGIpKDxgsAQ%3D%3D",
+      "updated": "2026-10-17T17:12:16.292+02:00",
+      "published": "",
+      "first_seen_at": "2026-10-18T11:35:33+00:00"
+    },
+    {
+      "expediente": "300/2026/02267",
+      "titulo": "Contrato de suministro, implantación, formación y soporte de un software para la gestión integrada de la información (lims) generada en el Laboratorio de Salud Pública del Organismo Autónomo Madrid Salud",
+      "estado": "",
+      "organo": "Organismo Autónomo Madrid Salud",
+      "objeto": "Contrato de suministro, implantación, formación y soporte de un software para la gestión integrada de la información (lims) generada en el Laboratorio de Salud Pública del Organismo Autónomo Madrid Salud",
+      "importe_sin_iva": "279200",
+      "tipo_contrato": "1",
+      "procedimiento": "1",
+      "cpv": "48150000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=v5I510u2C%2BCTylGzYmBF9Q%3D%3D",
+      "updated": "2026-10-17T16:11:58.059+02:00",
+      "published": "",
+      "first_seen_at": "2026-10-18T11:35:33+00:00"
+    },
     {
       "expediente": "26/039/3",
       "titulo": "Servicios de mantenimiento preventivo, correctivo, evolutivo e incorporación de nuevas funcionalidades a las aplicaciones móviles y sistemas de información al cliente.",
@@ -16,21 +46,6 @@
       "updated": "2026-10-16T14:55:08.562+02:00",
       "published": "",
       "first_seen_at": "2026-09-23T15:28:53+00:00"
-    },
-    {
-      "expediente": "033-2026-0311",
-      "titulo": "Servicios de soporte técnico y mantenimiento para licencias de productos del fabricante Cohesity (anteriormente Veritas Technologies)",
-      "estado": "",
-      "organo": "Mutua Universal Mugenat, Mutua Colaboradora con la Seguridad Social nº 10",
-      "objeto": "Servicios de soporte técnico y mantenimiento para licencias de productos del fabricante Cohesity (anteriormente Veritas Technologies)",
-      "importe_sin_iva": "112250",
-      "tipo_contrato": "2",
-      "procedimiento": "9",
-      "cpv": "72267100",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=1uBTPN3cgSiHCIsjvJ3rhQ%3D%3D",
-      "updated": "2026-10-16T14:20:20.169+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-17T11:41:31+00:00"
     },
     {
       "expediente": "2026-0429",
@@ -286,21 +301,6 @@
       "updated": "2026-10-16T08:05:14.844+02:00",
       "published": "",
       "first_seen_at": "2026-09-23T15:25:08+00:00"
-    },
-    {
-      "expediente": "2021-00146",
-      "titulo": "Servicio de Plataforma de facturación electrónica",
-      "estado": "",
-      "organo": "Dirección General Económico-Financiera de la Entidad Pública Empresarial RENFE-Operadora",
-      "objeto": "Servicio de Plataforma de facturación electrónica",
-      "importe_sin_iva": "938613.86",
-      "tipo_contrato": "2",
-      "procedimiento": "4",
-      "cpv": "72512000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Q1ADn6EKHYh7h85%2Fpmmsfw%3D%3D",
-      "updated": "2026-10-15T20:24:25.437+02:00",
-      "published": "",
-      "first_seen_at": "2026-10-17T11:41:36+00:00"
     },
     {
       "expediente": "MT260312",
@@ -1353,6 +1353,21 @@
       "first_seen_at": "2026-09-23T15:20:57+00:00"
     },
     {
+      "expediente": "A-6/24",
+      "titulo": "Servicio de mantenimiento y soporte técnico del entorno de tareas docentes de la Universidad Autónoma de Madrid",
+      "estado": "",
+      "organo": "Rectorado de la Universidad Autónoma de Madrid",
+      "objeto": "Servicio de mantenimiento y soporte técnico del entorno de tareas docentes de la Universidad Autónoma de Madrid",
+      "importe_sin_iva": "189600",
+      "tipo_contrato": "2",
+      "procedimiento": "1",
+      "cpv": "72267100",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=7awuukCMsjLmnwcj%2BxbdTg%3D%3D",
+      "updated": "2026-10-07T15:54:20.483+02:00",
+      "published": "",
+      "first_seen_at": "2026-10-09T13:58:06+00:00"
+    },
+    {
       "expediente": "300/2026/01356",
       "titulo": "Servicio de apoyo técnico microinformático para la puesta en producción y mantenimiento de los equipos informáticos de la Dirección General de SAMUR Protección Civil",
       "estado": "",
@@ -1696,66 +1711,6 @@
       "updated": "2026-10-04T08:27:49.966+02:00",
       "published": "",
       "first_seen_at": "2026-09-23T15:22:23+00:00"
-    },
-    {
-      "expediente": "2025-11",
-      "titulo": "Servicios de soporte del entorno microinformático y servicio de correo electrónico con destino a la Dirección General del Catastro",
-      "estado": "",
-      "organo": "Junta de Contratación de los Servicios Centrales en el Ministerio de Hacienda",
-      "objeto": "Servicios de soporte del entorno microinformático y servicio de correo electrónico con destino a la Dirección General del Catastro",
-      "importe_sin_iva": "119834.71",
-      "tipo_contrato": "2",
-      "procedimiento": "1",
-      "cpv": "72250000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=cXH39lnpgiuExvMJXBMHHQ%3D%3D",
-      "updated": "2026-10-02T19:57:41.136+02:00",
-      "published": "",
-      "first_seen_at": "2026-09-23T15:17:29+00:00"
-    },
-    {
-      "expediente": "SUM-26-0306-SIST",
-      "titulo": "Suministro de licencias VMware, incluyendo soporte, mantenimiento y migración de los entornos críticos virtualizados",
-      "estado": "",
-      "organo": "Gerencia umivale Activa, Mutua Colaboradora con la Seguridad Social número 3",
-      "objeto": "Suministro de licencias VMware, incluyendo soporte, mantenimiento y migración de los entornos críticos virtualizados",
-      "importe_sin_iva": "104000",
-      "tipo_contrato": "1",
-      "procedimiento": "9",
-      "cpv": "48218000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=2AVqg8Mnf7GopEMYCmrbmw%3D%3D",
-      "updated": "2026-10-02T14:57:45.340+02:00",
-      "published": "",
-      "first_seen_at": "2026-09-23T15:29:37+00:00"
-    },
-    {
-      "expediente": "N202600262",
-      "titulo": "Servicio de asistencia técnica especializada para la gestión de proyectos y servicios TI de MC MUTUAL",
-      "estado": "",
-      "organo": "Dirección General de la Mutual Midat Cyclops, Mutua Colaboradora con la Seguridad Social, nº 1",
-      "objeto": "Servicio de asistencia técnica especializada para la gestión de proyectos y servicios TI de MC MUTUAL",
-      "importe_sin_iva": "861000",
-      "tipo_contrato": "2",
-      "procedimiento": "1",
-      "cpv": "72200000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=xDB2UGma%2FOLjHF5qKI4aaw%3D%3D",
-      "updated": "2026-10-02T14:26:45.920+02:00",
-      "published": "",
-      "first_seen_at": "2026-09-23T15:22:58+00:00"
-    },
-    {
-      "expediente": "024/26-RI",
-      "titulo": "Servicio de gestión y operación del servicio de seguridad DDoS de RedIRIS",
-      "estado": "",
-      "organo": "Dirección General de la Entidad Pública Empresarial RED.ES",
-      "objeto": "Servicio de gestión y operación del servicio de seguridad DDoS de RedIRIS",
-      "importe_sin_iva": "775000",
-      "tipo_contrato": "2",
-      "procedimiento": "1",
-      "cpv": "72250000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=XPsPNzmh2uX5Rey58Yagpg%3D%3D",
-      "updated": "2026-10-02T13:58:38.669+02:00",
-      "published": "",
-      "first_seen_at": "2026-09-29T15:45:15+00:00"
     }
   ]
 }

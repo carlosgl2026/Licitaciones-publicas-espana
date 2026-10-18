@@ -1,19 +1,19 @@
 {
-  "generado": "2026-10-17T11:41:37+00:00",
-  "total_nuevas": 483,
-  "total_historico": 723,
+  "generado": "2026-10-18T11:46:06+00:00",
+  "total_nuevas": 482,
+  "total_historico": 724,
   "nuevas": [
     {
-      "expediente": "5752/2026",
-      "titulo": "Suministro de una plataforma ITSM en modalidad nube (SaaS), incluyendo portal de autoservicio y servicios avanzados de implantación para su puesta en servicio. Contrato derivado SDA del Estado 25/2022",
+      "expediente": "CEA4680/2026",
+      "titulo": "Suministro 14 Licencias De La Suite Adobe Creative Cloud Pro Plus For Teams O Equivalente. (Ministerio De Transportes Y Movilidad Sostenible-Centro De Estudios Y Experimentación De Obras Públicas)",
       "estado": "",
-      "organo": "Pleno de la Diputación Provincial de Castellón",
-      "objeto": "Suministro de una plataforma ITSM en modalidad nube (SaaS), incluyendo portal de autoservicio y servicios avanzados de implantación para su puesta en servicio. Contrato derivado SDA del Estado 25/2022",
-      "importe_sin_iva": "338842.98",
+      "organo": "Dirección General de Racionalización y Centralización de la Contratación-Junta de Contratación Centralizada",
+      "objeto": "Suministro 14 Licencias De La Suite Adobe Creative Cloud Pro Plus For Teams O Equivalente. (Ministerio De Transportes Y Movilidad Sostenible-Centro De Estudios Y Experimentación De Obras Públicas)",
+      "importe_sin_iva": "50000",
       "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2FmftdvaOIRCP%2Bo96UAV7cQ%3D%3D",
-      "updated": "2026-10-16T15:09:05.652+02:00",
-      "first_seen_at": "2026-10-17T11:41:31+00:00"
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=LCJjGbsSCeiTylGzYmBF9Q%3D%3D",
+      "updated": "2026-10-17T10:25:24.174+02:00",
+      "first_seen_at": "2026-10-18T11:35:33+00:00"
     },
     {
       "expediente": "37992/2026",
@@ -86,18 +86,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Pb58hfm4SyBxseVhcqrkhw%3D%3D",
       "updated": "2026-10-16T09:13:38.073+02:00",
       "first_seen_at": "2026-10-02T11:15:16+00:00"
-    },
-    {
-      "expediente": "2026/D22200/006-202/00012",
-      "titulo": "mixto de suministro suscripción Plataforma tecnológica de gestión de contenidos para gestión centralizada portales y páginas web para la Red Provincial de Comunicaciones de la Diputación de Almería, en modalidad de SAAS, con hosting y mantenimiento",
-      "estado": "",
-      "organo": "Junta de Gobierno de la Diputación Provincial de Almería",
-      "objeto": "mixto de suministro suscripción Plataforma tecnológica de gestión de contenidos para gestión centralizada portales y páginas web para la Red Provincial de Comunicaciones de la Diputación de Almería, en modalidad de SAAS, con hosting y mantenimiento",
-      "importe_sin_iva": "326446.27",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=KFmANitD2DnIGlsa0Wad%2Bw%3D%3D",
-      "updated": "2026-10-16T09:11:43.871+02:00",
-      "first_seen_at": "2026-10-17T11:41:34+00:00"
     },
     {
       "expediente": "2.2.19/26",
@@ -5801,6 +5789,18 @@
     }
   ],
   "historico": [
+    {
+      "expediente": "CEA4680/2026",
+      "titulo": "Suministro 14 Licencias De La Suite Adobe Creative Cloud Pro Plus For Teams O Equivalente. (Ministerio De Transportes Y Movilidad Sostenible-Centro De Estudios Y Experimentación De Obras Públicas)",
+      "estado": "",
+      "organo": "Dirección General de Racionalización y Centralización de la Contratación-Junta de Contratación Centralizada",
+      "objeto": "Suministro 14 Licencias De La Suite Adobe Creative Cloud Pro Plus For Teams O Equivalente. (Ministerio De Transportes Y Movilidad Sostenible-Centro De Estudios Y Experimentación De Obras Públicas)",
+      "importe_sin_iva": "50000",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=LCJjGbsSCeiTylGzYmBF9Q%3D%3D",
+      "updated": "2026-10-17T10:25:24.174+02:00",
+      "first_seen_at": "2026-10-18T11:35:33+00:00"
+    },
     {
       "expediente": "5752/2026",
       "titulo": "Suministro de una plataforma ITSM en modalidad nube (SaaS), incluyendo portal de autoservicio y servicios avanzados de implantación para su puesta en servicio. Contrato derivado SDA del Estado 25/2022",

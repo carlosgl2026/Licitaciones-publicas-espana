@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-18T11:46:06+00:00",
-  "total": 145,
+  "generado": "2026-10-19T14:18:57+00:00",
+  "total": 143,
   "licitaciones": [
     {
       "expediente": "028/26-RI",
@@ -2146,36 +2146,6 @@
       "updated": "2026-10-05T08:46:52.148+02:00",
       "published": "",
       "first_seen_at": "2026-09-23T15:23:14+00:00"
-    },
-    {
-      "expediente": "2026000032",
-      "titulo": "Suministro para la adquisición de renovación de licencias CITRIX Cloud (antes CITRIX Xendestop Enterprise).",
-      "estado": "",
-      "organo": "Junta de Gobierno del Ayuntamiento de Getafe",
-      "objeto": "Suministro para la adquisición de renovación de licencias CITRIX Cloud (antes CITRIX Xendestop Enterprise).",
-      "importe_sin_iva": "150000",
-      "tipo_contrato": "1",
-      "procedimiento": "1",
-      "cpv": "48218000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=zrZ40w6QLXaP%2Bo96UAV7cQ%3D%3D",
-      "updated": "2026-10-04T12:41:57.709+02:00",
-      "published": "",
-      "first_seen_at": "2026-09-23T15:20:03+00:00"
-    },
-    {
-      "expediente": "26/014.0",
-      "titulo": "Suministro de actualización y soporte de licencias para la plataforma de acceso y gestión de identidades del portal web del Poder Judicial.",
-      "estado": "",
-      "organo": "Consejo General del Poder Judicial",
-      "objeto": "Suministro de actualización y soporte de licencias para la plataforma de acceso y gestión de identidades del portal web del Poder Judicial.",
-      "importe_sin_iva": "260624.33",
-      "tipo_contrato": "1",
-      "procedimiento": "1",
-      "cpv": "48218000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=EECnKv2eNZa5HQrHoP3G5A%3D%3D",
-      "updated": "2026-10-04T08:27:49.966+02:00",
-      "published": "",
-      "first_seen_at": "2026-09-23T15:22:23+00:00"
     }
   ]
 }

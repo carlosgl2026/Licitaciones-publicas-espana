@@ -1,8 +1,164 @@
 {
-  "generado": "2026-10-19T14:18:57+00:00",
-  "total_nuevas": 481,
-  "total_historico": 724,
+  "generado": "2026-10-20T14:36:34+00:00",
+  "total_nuevas": 491,
+  "total_historico": 729,
   "nuevas": [
+    {
+      "expediente": "CP20/26",
+      "titulo": "Servicios de migración, licenciamiento, soporte y evolución funcional del ERP NAVISION de Hospital Intermutual de Euskadi, Centro Mancomunado de Mutuas Colaboradoras con la Seguridad Social nº 291, a MICROSOFT DYNAMICS 365 BUSINESS CENTRAL en modalidad SaaS",
+      "estado": "",
+      "organo": "Hospital Intermutual de Euskadi, Centro Mancomunado de Mutuas de Accidentes de Trabajo y Enfermadades Profesionales de la Seguridad Social",
+      "objeto": "Servicios de migración, licenciamiento, soporte y evolución funcional del ERP NAVISION de Hospital Intermutual de Euskadi, Centro Mancomunado de Mutuas Colaboradoras con la Seguridad Social nº 291, a MICROSOFT DYNAMICS 365 BUSINESS CENTRAL en modalidad SaaS",
+      "importe_sin_iva": "235400",
+      "cpv": "72200000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2FL%2BwZt8mE0a5HQrHoP3G5A%3D%3D",
+      "updated": "2026-10-19T16:14:39.358+02:00",
+      "first_seen_at": "2026-10-02T11:17:20+00:00"
+    },
+    {
+      "expediente": "2026/01-AB (80/2026)",
+      "titulo": "Servicio de plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite al Consorcio de la Zona Franca de Gran Canaria la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
+      "estado": "",
+      "organo": "Delegación Especial del Ministerio de Hacienda en el Consorcio de la Zona Franca de Gran Canaria",
+      "objeto": "Servicio de plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite al Consorcio de la Zona Franca de Gran Canaria la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
+      "importe_sin_iva": "38400",
+      "cpv": "72000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=FEGdD746tAjIGlsa0Wad%2Bw%3D%3D",
+      "updated": "2026-10-19T15:12:07.023+02:00",
+      "first_seen_at": "2026-10-02T11:08:44+00:00"
+    },
+    {
+      "expediente": "917/2026",
+      "titulo": "Servicio de correo electrónico y herramientas colaborativas mediante un modelo SaaS",
+      "estado": "",
+      "organo": "Alcaldia-Presidencia del Ayuntamiento de Santa Brígida",
+      "objeto": "Servicio de correo electrónico y herramientas colaborativas mediante un modelo SaaS",
+      "importe_sin_iva": "79200",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=ZgVzDCg%2B5gQ2wEhQbcAqug%3D%3D",
+      "updated": "2026-10-19T15:05:51.779+02:00",
+      "first_seen_at": "2026-10-20T14:36:29+00:00"
+    },
+    {
+      "expediente": "2025/006507",
+      "titulo": "Suscripción de licencias Adobe Creative Cloud y Adobe Acrobat.",
+      "estado": "",
+      "organo": "Secretaría General de la Consejería de Hacienda, Administraciones Públicas y Transformación Digital de la Junta de Comunidades de Castilla-La Mancha",
+      "objeto": "Suscripción de licencias Adobe Creative Cloud y Adobe Acrobat.",
+      "importe_sin_iva": "298170.64",
+      "cpv": "48300000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=1nrgE1f91fbIGlsa0Wad%2Bw%3D%3D",
+      "updated": "2026-10-19T14:28:18.968+02:00",
+      "first_seen_at": "2026-10-10T13:04:41+00:00"
+    },
+    {
+      "expediente": "2665/2026",
+      "titulo": "Suministro de una herramienta integral de administración electrónica en la modalidad de “Software as a Service” (SaaS)",
+      "estado": "",
+      "organo": "Alcaldía del Ayuntamiento de O Pereiro de Aguiar",
+      "objeto": "Suministro de una herramienta integral de administración electrónica en la modalidad de “Software as a Service” (SaaS)",
+      "importe_sin_iva": "142600",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Un3sd4KxtlsQyBAnWzHfCg%3D%3D",
+      "updated": "2026-10-19T12:34:39.000+02:00",
+      "first_seen_at": "2026-10-20T14:36:30+00:00"
+    },
+    {
+      "expediente": "18529/2026",
+      "titulo": "El presente contrato consiste en el suministro y servicios de implantación (instalación, formación, migración, puesta en marcha e integraciones) y mantenimiento de un sistema integral en modalidad Cloud para:\n-Gestión económico-financiera (Intervención y Tesorería).\n-Gestión del Patrimonio Municipal.\n-Gestión de Recursos Humanos (Nóminas, registro de personal, portal del empleado).",
+      "estado": "",
+      "organo": "Alcaldía del Ayuntamiento de Puertollano",
+      "objeto": "El presente contrato consiste en el suministro y servicios de implantación (instalación, formación, migración, puesta en marcha e integraciones) y mantenimiento de un sistema integral en modalidad Cloud para:\n-Gestión económico-financiera (Intervención y Tesorería).\n-Gestión del Patrimonio Municipal.\n-Gestión de Recursos Humanos (Nóminas, registro de personal, portal del empleado).",
+      "importe_sin_iva": "384370",
+      "cpv": "72267000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=qfWkyJ3QWsycCF8sV%2BqtYA%3D%3D",
+      "updated": "2026-10-19T12:15:45.899+02:00",
+      "first_seen_at": "2026-10-02T11:18:28+00:00"
+    },
+    {
+      "expediente": "AYAL-2026000085",
+      "titulo": "Servicio de mantenimiento nivel premium, asistencia técnica y almacenamiento en la nube de las aplicaciones informáticas de BL España Software S.L.U.",
+      "estado": "",
+      "organo": "Junta de Gobierno del Ayuntamiento de Almería",
+      "objeto": "Servicio de mantenimiento nivel premium, asistencia técnica y almacenamiento en la nube de las aplicaciones informáticas de BL España Software S.L.U.",
+      "importe_sin_iva": "320167.74",
+      "cpv": "72500000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=JFhFUGQUbsV%2FR5QFTlaM4A%3D%3D",
+      "updated": "2026-10-19T11:54:02.776+02:00",
+      "first_seen_at": "2026-10-02T11:13:24+00:00"
+    },
+    {
+      "expediente": "2026/0007388",
+      "titulo": "Migración a Education Cloud y Captación de Estudiantes para Postgrado, Escuela Internacional y Formación Permanente",
+      "estado": "",
+      "organo": "Rector de la Universidad Carlos III de Madrid",
+      "objeto": "Migración a Education Cloud y Captación de Estudiantes para Postgrado, Escuela Internacional y Formación Permanente",
+      "importe_sin_iva": "66115.7",
+      "cpv": "72227000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=MBBqYvK%2FvL5rSd8H4b2soA%3D%3D",
+      "updated": "2026-10-19T11:32:25.442+02:00",
+      "first_seen_at": "2026-10-20T14:36:30+00:00"
+    },
+    {
+      "expediente": "E-CON-2026-37/SU/AM",
+      "titulo": "Suministro y soporte de entorno SaaS para el Backup de los contenidos M365 de la Universidad de Murcia.",
+      "estado": "",
+      "organo": "Rectorado de la Universidad de Murcia",
+      "objeto": "Suministro y soporte de entorno SaaS para el Backup de los contenidos M365 de la Universidad de Murcia.",
+      "importe_sin_iva": "190909.08",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=01GRiSTTnjc%2Bk2oCbDosIw%3D%3D",
+      "updated": "2026-10-19T10:56:07.795+02:00",
+      "first_seen_at": "2026-10-02T11:14:42+00:00"
+    },
+    {
+      "expediente": "CG-2026/2815/0106",
+      "titulo": "Suscripciones Red Hat OpenShift Platform Plus (Bare Metal Node), Premium, y Red Hat Satellite for Unlimited Guests, junto con la infraestructura cloud AWS necesaria para el despliegue y la operación de la plataforma OpenShift de Ibermutua, conforme a la configuración y cantidades establecidas en el Pliego de Prescripciones Técnicas.",
+      "estado": "",
+      "organo": "Dirección General de IBERMUTUA, Mutua Colaboradora con la Seguridad Social nº 274",
+      "objeto": "Suscripciones Red Hat OpenShift Platform Plus (Bare Metal Node), Premium, y Red Hat Satellite for Unlimited Guests, junto con la infraestructura cloud AWS necesaria para el despliegue y la operación de la plataforma OpenShift de Ibermutua, conforme a la configuración y cantidades establecidas en el Pliego de Prescripciones Técnicas.",
+      "importe_sin_iva": "211965.06",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=GgKeo75%2FOCjjHF5qKI4aaw%3D%3D",
+      "updated": "2026-10-19T10:33:05.443+02:00",
+      "first_seen_at": "2026-10-02T11:17:52+00:00"
+    },
+    {
+      "expediente": "2026_036_PASS",
+      "titulo": "El objeto del contrato es el suministro y renovación de licencias SaaS de la suite Atlassian (Jira Service Management Standard, Confluence Standard y Bitbucket Standard), junto con los servicios para implantar la CMDB corporativa de EOI sobre Jira Service Management Assets y Atlassian Assets Discovery.",
+      "estado": "",
+      "organo": "Dirección General de la Fundación EOI",
+      "objeto": "El objeto del contrato es el suministro y renovación de licencias SaaS de la suite Atlassian (Jira Service Management Standard, Confluence Standard y Bitbucket Standard), junto con los servicios para implantar la CMDB corporativa de EOI sobre Jira Service Management Assets y Atlassian Assets Discovery.",
+      "importe_sin_iva": "35837.13",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=T8K%2BVahsXYokJPJS%2BPS9vg%3D%3D",
+      "updated": "2026-10-19T10:30:21.689+02:00",
+      "first_seen_at": "2026-10-20T14:36:31+00:00"
+    },
+    {
+      "expediente": "2679/2026",
+      "titulo": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
+      "estado": "",
+      "organo": "Alcaldía del Ayuntamiento de Güímar",
+      "objeto": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
+      "importe_sin_iva": "576700",
+      "cpv": "72000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=G9oWpGgxiezN3k3tjedSGw%3D%3D",
+      "updated": "2026-10-19T10:19:28.340+02:00",
+      "first_seen_at": "2026-10-02T11:18:01+00:00"
+    },
+    {
+      "expediente": "87/2026",
+      "titulo": "Suministro, implantación y puesta en funcionamiento de licencias informáticas de la plataforma Proofpoint, con alojamiento y acceso a la solución a través de infraestructura en la nube para Unión de Mutuas MCSS nº 267.",
+      "estado": "",
+      "organo": "Dirección Gerencia de Unión de Mutuas, Mutua Colaboradora con la Seguridad Social Nº 267",
+      "objeto": "Suministro, implantación y puesta en funcionamiento de licencias informáticas de la plataforma Proofpoint, con alojamiento y acceso a la solución a través de infraestructura en la nube para Unión de Mutuas MCSS nº 267.",
+      "importe_sin_iva": "152012.5",
+      "cpv": "48218000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=5sxdvM7k1SU4NavIWzMcHA%3D%3D",
+      "updated": "2026-10-19T09:50:42.159+02:00",
+      "first_seen_at": "2026-10-20T14:36:32+00:00"
+    },
     {
       "expediente": "37992/2026",
       "titulo": "Servei d un assistent IA conversional (XATBOT) en mode SAAS, implantació, parametrització i manteniment",
@@ -12,8 +168,68 @@
       "importe_sin_iva": "38433.57",
       "cpv": "72200000",
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=WOUQAwS%2BiR5LAIVZdUs8KA%3D%3D",
-      "updated": "2026-10-16T15:00:07.897+02:00",
+      "updated": "2026-10-19T09:41:04.800+02:00",
       "first_seen_at": "2026-10-02T11:18:13+00:00"
+    },
+    {
+      "expediente": "2026/000299",
+      "titulo": "Servicio en la nube de plataforma e-learning para dar soporte a las acciones formativas y colaborativas en línea que lleva a cabo el Centro Regional de Formación del Profesorado de Castilla-La Mancha.",
+      "estado": "",
+      "organo": "Secretaría General de la Consejería de Hacienda, Administraciones Públicas y Transformación Digital de la Junta de Comunidades de Castilla-La Mancha",
+      "objeto": "Servicio en la nube de plataforma e-learning para dar soporte a las acciones formativas y colaborativas en línea que lleva a cabo el Centro Regional de Formación del Profesorado de Castilla-La Mancha.",
+      "importe_sin_iva": "1633146.84",
+      "cpv": "72000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2BvkbVmxANmXIGlsa0Wad%2Bw%3D%3D",
+      "updated": "2026-10-19T09:39:03.358+02:00",
+      "first_seen_at": "2026-10-02T11:07:29+00:00"
+    },
+    {
+      "expediente": "4/26-S",
+      "titulo": "Servicio de soporte, mantenimiento, formación y streaming en modalidad SaaS de la plataforma Séneca FX iBoss",
+      "estado": "",
+      "organo": "Coordinador General de Economía, Hacienda, Patrimonio y Contratación del Ayuntamiento de las Las Palmas de Gran Canaria",
+      "objeto": "Servicio de soporte, mantenimiento, formación y streaming en modalidad SaaS de la plataforma Séneca FX iBoss",
+      "importe_sin_iva": "47748.64",
+      "cpv": "72200000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=rmh7yKq0k6dJ8Trn0ZPzLw%3D%3D",
+      "updated": "2026-10-19T09:31:52.605+02:00",
+      "first_seen_at": "2026-10-16T14:10:41+00:00"
+    },
+    {
+      "expediente": "73/2026",
+      "titulo": "Contratación de una solución informática que englobe la gestión de Recursos Humanos, Nómina, Portal del Empleado y Control de Presencia del Ayuntamiento de Valdemoro, en modalidad SaaS.",
+      "estado": "",
+      "organo": "Junta de Gobierno del Ayuntamiento de Valdemoro",
+      "objeto": "Contratación de una solución informática que englobe la gestión de Recursos Humanos, Nómina, Portal del Empleado y Control de Presencia del Ayuntamiento de Valdemoro, en modalidad SaaS.",
+      "importe_sin_iva": "229067.34",
+      "cpv": "72500000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=hC5t%2F%2FvywcB70UvEyYJSGw%3D%3D",
+      "updated": "2026-10-19T09:24:56.715+02:00",
+      "first_seen_at": "2026-10-02T11:16:54+00:00"
+    },
+    {
+      "expediente": "2026/D22200/006-202/00012",
+      "titulo": "mixto de suministro suscripción Plataforma tecnológica de gestión de contenidos para gestión centralizada portales y páginas web para la Red Provincial de Comunicaciones de la Diputación de Almería, en modalidad de SAAS, con hosting y mantenimiento",
+      "estado": "",
+      "organo": "Junta de Gobierno de la Diputación Provincial de Almería",
+      "objeto": "mixto de suministro suscripción Plataforma tecnológica de gestión de contenidos para gestión centralizada portales y páginas web para la Red Provincial de Comunicaciones de la Diputación de Almería, en modalidad de SAAS, con hosting y mantenimiento",
+      "importe_sin_iva": "326446.27",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=KFmANitD2DnIGlsa0Wad%2Bw%3D%3D",
+      "updated": "2026-10-19T09:03:59.354+02:00",
+      "first_seen_at": "2026-10-17T11:41:34+00:00"
+    },
+    {
+      "expediente": "8060/2026",
+      "titulo": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS)",
+      "estado": "",
+      "organo": "Alcaldía del Ayuntamiento de Bormujos",
+      "objeto": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS)",
+      "importe_sin_iva": "488240.48",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=qIwaNPtQdgxVYjgxA4nMUw%3D%3D",
+      "updated": "2026-10-19T09:00:00.000+02:00",
+      "first_seen_at": "2026-10-12T15:50:55+00:00"
     },
     {
       "expediente": "2025/009194",
@@ -110,18 +326,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=HUulPfVoJGx9Zh%2FyRJgM8w%3D%3D",
       "updated": "2026-10-15T16:41:46.869+02:00",
       "first_seen_at": "2026-10-02T11:17:27+00:00"
-    },
-    {
-      "expediente": "2679/2026",
-      "titulo": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
-      "estado": "",
-      "organo": "Alcaldía del Ayuntamiento de Güímar",
-      "objeto": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
-      "importe_sin_iva": "576700",
-      "cpv": "72000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=G9oWpGgxiezN3k3tjedSGw%3D%3D",
-      "updated": "2026-10-15T15:50:03.119+02:00",
-      "first_seen_at": "2026-10-02T11:18:01+00:00"
     },
     {
       "expediente": "SU.029/2026",
@@ -650,18 +854,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=ID72KDyuH8Y4NavIWzMcHA%3D%3D",
       "updated": "2026-10-02T13:44:54.597+02:00",
       "first_seen_at": "2026-10-02T11:18:05+00:00"
-    },
-    {
-      "expediente": "73/2026",
-      "titulo": "Contratación de una solución informática que englobe la gestión de Recursos Humanos, Nómina, Portal del Empleado y Control de Presencia del Ayuntamiento de Valdemoro, en modalidad SaaS.",
-      "estado": "",
-      "organo": "Junta de Gobierno del Ayuntamiento de Valdemoro",
-      "objeto": "Contratación de una solución informática que englobe la gestión de Recursos Humanos, Nómina, Portal del Empleado y Control de Presencia del Ayuntamiento de Valdemoro, en modalidad SaaS.",
-      "importe_sin_iva": "229067.34",
-      "cpv": "72500000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=hC5t%2F%2FvywcB70UvEyYJSGw%3D%3D",
-      "updated": "2026-10-02T13:05:00.282+02:00",
-      "first_seen_at": "2026-10-02T11:16:54+00:00"
     },
     {
       "expediente": "2026/00012504F",
@@ -1216,18 +1408,6 @@
       "first_seen_at": "2026-10-02T11:08:22+00:00"
     },
     {
-      "expediente": "CG-2026/2815/0106",
-      "titulo": "Suscripciones Red Hat OpenShift Platform Plus (Bare Metal Node), Premium, y Red Hat Satellite for Unlimited Guests, junto con la infraestructura cloud AWS necesaria para el despliegue y la operación de la plataforma OpenShift de Ibermutua, conforme a la configuración y cantidades establecidas en el Pliego de Prescripciones Técnicas.",
-      "estado": "",
-      "organo": "Dirección General de IBERMUTUA, Mutua Colaboradora con la Seguridad Social nº 274",
-      "objeto": "Suscripciones Red Hat OpenShift Platform Plus (Bare Metal Node), Premium, y Red Hat Satellite for Unlimited Guests, junto con la infraestructura cloud AWS necesaria para el despliegue y la operación de la plataforma OpenShift de Ibermutua, conforme a la configuración y cantidades establecidas en el Pliego de Prescripciones Técnicas.",
-      "importe_sin_iva": "211965.06",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=GgKeo75%2FOCjjHF5qKI4aaw%3D%3D",
-      "updated": "2026-09-23T11:41:50.960+02:00",
-      "first_seen_at": "2026-10-02T11:17:52+00:00"
-    },
-    {
       "expediente": "5457/2026",
       "titulo": "El objeto del contrato será el suministro mediante suscripción en modalidad de software como servicio (SaaS) basado en la nube de Microsoft, de herramientas de productividad, colaboración, correo electrónico corporativo y analítica de datos para la Gerencia Municipal de Urbanismo",
       "estado": "",
@@ -1310,18 +1490,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=HDgHNbO1m1U%2B1TMyIiZmzw%3D%3D",
       "updated": "2026-09-17T11:23:30.226+02:00",
       "first_seen_at": "2026-10-02T11:12:29+00:00"
-    },
-    {
-      "expediente": "2026/000299",
-      "titulo": "Servicio en la nube de plataforma e-learning para dar soporte a las acciones formativas y colaborativas en línea que lleva a cabo el Centro Regional de Formación del Profesorado de Castilla-La Mancha.",
-      "estado": "",
-      "organo": "Secretaría General de la Consejería de Hacienda, Administraciones Públicas y Transformación Digital de la Junta de Comunidades de Castilla-La Mancha",
-      "objeto": "Servicio en la nube de plataforma e-learning para dar soporte a las acciones formativas y colaborativas en línea que lleva a cabo el Centro Regional de Formación del Profesorado de Castilla-La Mancha.",
-      "importe_sin_iva": "1633146.84",
-      "cpv": "72000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2BvkbVmxANmXIGlsa0Wad%2Bw%3D%3D",
-      "updated": "2026-09-17T11:00:07.490+02:00",
-      "first_seen_at": "2026-10-02T11:07:29+00:00"
     },
     {
       "expediente": "SERV/CONT2026000052",
@@ -1742,30 +1910,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=vTf8ZpGDv6s3vLk2DU2Ddg%3D%3D",
       "updated": "2026-08-28T08:09:36.366+02:00",
       "first_seen_at": "2026-10-02T11:16:50+00:00"
-    },
-    {
-      "expediente": "AYAL-2026000085",
-      "titulo": "Servicio de mantenimiento nivel premium, asistencia técnica y almacenamiento en la nube de las aplicaciones informáticas de BL España Software S.L.U.",
-      "estado": "",
-      "organo": "Junta de Gobierno del Ayuntamiento de Almería",
-      "objeto": "Servicio de mantenimiento nivel premium, asistencia técnica y almacenamiento en la nube de las aplicaciones informáticas de BL España Software S.L.U.",
-      "importe_sin_iva": "320167.74",
-      "cpv": "72500000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=JFhFUGQUbsV%2FR5QFTlaM4A%3D%3D",
-      "updated": "2026-08-27T11:52:19.846+02:00",
-      "first_seen_at": "2026-10-02T11:13:24+00:00"
-    },
-    {
-      "expediente": "18529/2026",
-      "titulo": "El presente contrato consiste en el suministro y servicios de implantación (instalación, formación, migración, puesta en marcha e integraciones) y mantenimiento de un sistema integral en modalidad Cloud para:\n-Gestión económico-financiera (Intervención y Tesorería).\n-Gestión del Patrimonio Municipal.\n-Gestión de Recursos Humanos (Nóminas, registro de personal, portal del empleado).",
-      "estado": "",
-      "organo": "Alcaldía del Ayuntamiento de Puertollano",
-      "objeto": "El presente contrato consiste en el suministro y servicios de implantación (instalación, formación, migración, puesta en marcha e integraciones) y mantenimiento de un sistema integral en modalidad Cloud para:\n-Gestión económico-financiera (Intervención y Tesorería).\n-Gestión del Patrimonio Municipal.\n-Gestión de Recursos Humanos (Nóminas, registro de personal, portal del empleado).",
-      "importe_sin_iva": "384370",
-      "cpv": "72267000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=qfWkyJ3QWsycCF8sV%2BqtYA%3D%3D",
-      "updated": "2026-08-27T08:19:04.114+02:00",
-      "first_seen_at": "2026-10-02T11:18:28+00:00"
     },
     {
       "expediente": "ICO_2026_30",
@@ -2810,18 +2954,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=0rYQqYAkiyKqb7rCcv76BA%3D%3D",
       "updated": "2026-07-10T10:16:52.023+02:00",
       "first_seen_at": "2026-10-02T11:11:52+00:00"
-    },
-    {
-      "expediente": "E-CON-2026-37/SU/AM",
-      "titulo": "Suministro y soporte de entorno SaaS para el Backup de los contenidos M365 de la Universidad de Murcia.",
-      "estado": "",
-      "organo": "Rectorado de la Universidad de Murcia",
-      "objeto": "Suministro y soporte de entorno SaaS para el Backup de los contenidos M365 de la Universidad de Murcia.",
-      "importe_sin_iva": "190909.08",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=01GRiSTTnjc%2Bk2oCbDosIw%3D%3D",
-      "updated": "2026-07-09T13:01:53.528+02:00",
-      "first_seen_at": "2026-10-02T11:14:42+00:00"
     },
     {
       "expediente": "21659/2025",
@@ -4672,18 +4804,6 @@
       "first_seen_at": "2026-10-02T11:07:30+00:00"
     },
     {
-      "expediente": "2026/01-AB (80/2026)",
-      "titulo": "Servicio de plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite al Consorcio de la Zona Franca de Gran Canaria la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
-      "estado": "",
-      "organo": "Delegación Especial del Ministerio de Hacienda en el Consorcio de la Zona Franca de Gran Canaria",
-      "objeto": "Servicio de plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite al Consorcio de la Zona Franca de Gran Canaria la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
-      "importe_sin_iva": "38400",
-      "cpv": "72000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=FEGdD746tAjIGlsa0Wad%2Bw%3D%3D",
-      "updated": "2026-04-08T11:44:07.680+02:00",
-      "first_seen_at": "2026-10-02T11:08:44+00:00"
-    },
-    {
       "expediente": "1596/2026",
       "titulo": "Suministro de licencias Microsoft 365 para herramientas ofimáticas y servicios de correo electrónico y almacenamiento en la nube",
       "estado": "",
@@ -5778,6 +5898,234 @@
   ],
   "historico": [
     {
+      "expediente": "CP20/26",
+      "titulo": "Servicios de migración, licenciamiento, soporte y evolución funcional del ERP NAVISION de Hospital Intermutual de Euskadi, Centro Mancomunado de Mutuas Colaboradoras con la Seguridad Social nº 291, a MICROSOFT DYNAMICS 365 BUSINESS CENTRAL en modalidad SaaS",
+      "estado": "",
+      "organo": "Hospital Intermutual de Euskadi, Centro Mancomunado de Mutuas de Accidentes de Trabajo y Enfermadades Profesionales de la Seguridad Social",
+      "objeto": "Servicios de migración, licenciamiento, soporte y evolución funcional del ERP NAVISION de Hospital Intermutual de Euskadi, Centro Mancomunado de Mutuas Colaboradoras con la Seguridad Social nº 291, a MICROSOFT DYNAMICS 365 BUSINESS CENTRAL en modalidad SaaS",
+      "importe_sin_iva": "235400",
+      "cpv": "72200000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2FL%2BwZt8mE0a5HQrHoP3G5A%3D%3D",
+      "updated": "2026-10-19T16:14:39.358+02:00",
+      "first_seen_at": "2026-10-02T11:17:20+00:00"
+    },
+    {
+      "expediente": "2026/01-AB (80/2026)",
+      "titulo": "Servicio de plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite al Consorcio de la Zona Franca de Gran Canaria la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
+      "estado": "",
+      "organo": "Delegación Especial del Ministerio de Hacienda en el Consorcio de la Zona Franca de Gran Canaria",
+      "objeto": "Servicio de plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite al Consorcio de la Zona Franca de Gran Canaria la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
+      "importe_sin_iva": "38400",
+      "cpv": "72000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=FEGdD746tAjIGlsa0Wad%2Bw%3D%3D",
+      "updated": "2026-10-19T15:12:07.023+02:00",
+      "first_seen_at": "2026-10-02T11:08:44+00:00"
+    },
+    {
+      "expediente": "917/2026",
+      "titulo": "Servicio de correo electrónico y herramientas colaborativas mediante un modelo SaaS",
+      "estado": "",
+      "organo": "Alcaldia-Presidencia del Ayuntamiento de Santa Brígida",
+      "objeto": "Servicio de correo electrónico y herramientas colaborativas mediante un modelo SaaS",
+      "importe_sin_iva": "79200",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=ZgVzDCg%2B5gQ2wEhQbcAqug%3D%3D",
+      "updated": "2026-10-19T15:05:51.779+02:00",
+      "first_seen_at": "2026-10-20T14:36:29+00:00"
+    },
+    {
+      "expediente": "2025/006507",
+      "titulo": "Suscripción de licencias Adobe Creative Cloud y Adobe Acrobat.",
+      "estado": "",
+      "organo": "Secretaría General de la Consejería de Hacienda, Administraciones Públicas y Transformación Digital de la Junta de Comunidades de Castilla-La Mancha",
+      "objeto": "Suscripción de licencias Adobe Creative Cloud y Adobe Acrobat.",
+      "importe_sin_iva": "298170.64",
+      "cpv": "48300000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=1nrgE1f91fbIGlsa0Wad%2Bw%3D%3D",
+      "updated": "2026-10-19T14:28:18.968+02:00",
+      "first_seen_at": "2026-10-10T13:04:41+00:00"
+    },
+    {
+      "expediente": "2665/2026",
+      "titulo": "Suministro de una herramienta integral de administración electrónica en la modalidad de “Software as a Service” (SaaS)",
+      "estado": "",
+      "organo": "Alcaldía del Ayuntamiento de O Pereiro de Aguiar",
+      "objeto": "Suministro de una herramienta integral de administración electrónica en la modalidad de “Software as a Service” (SaaS)",
+      "importe_sin_iva": "142600",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Un3sd4KxtlsQyBAnWzHfCg%3D%3D",
+      "updated": "2026-10-19T12:34:39.000+02:00",
+      "first_seen_at": "2026-10-20T14:36:30+00:00"
+    },
+    {
+      "expediente": "18529/2026",
+      "titulo": "El presente contrato consiste en el suministro y servicios de implantación (instalación, formación, migración, puesta en marcha e integraciones) y mantenimiento de un sistema integral en modalidad Cloud para:\n-Gestión económico-financiera (Intervención y Tesorería).\n-Gestión del Patrimonio Municipal.\n-Gestión de Recursos Humanos (Nóminas, registro de personal, portal del empleado).",
+      "estado": "",
+      "organo": "Alcaldía del Ayuntamiento de Puertollano",
+      "objeto": "El presente contrato consiste en el suministro y servicios de implantación (instalación, formación, migración, puesta en marcha e integraciones) y mantenimiento de un sistema integral en modalidad Cloud para:\n-Gestión económico-financiera (Intervención y Tesorería).\n-Gestión del Patrimonio Municipal.\n-Gestión de Recursos Humanos (Nóminas, registro de personal, portal del empleado).",
+      "importe_sin_iva": "384370",
+      "cpv": "72267000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=qfWkyJ3QWsycCF8sV%2BqtYA%3D%3D",
+      "updated": "2026-10-19T12:15:45.899+02:00",
+      "first_seen_at": "2026-10-02T11:18:28+00:00"
+    },
+    {
+      "expediente": "AYAL-2026000085",
+      "titulo": "Servicio de mantenimiento nivel premium, asistencia técnica y almacenamiento en la nube de las aplicaciones informáticas de BL España Software S.L.U.",
+      "estado": "",
+      "organo": "Junta de Gobierno del Ayuntamiento de Almería",
+      "objeto": "Servicio de mantenimiento nivel premium, asistencia técnica y almacenamiento en la nube de las aplicaciones informáticas de BL España Software S.L.U.",
+      "importe_sin_iva": "320167.74",
+      "cpv": "72500000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=JFhFUGQUbsV%2FR5QFTlaM4A%3D%3D",
+      "updated": "2026-10-19T11:54:02.776+02:00",
+      "first_seen_at": "2026-10-02T11:13:24+00:00"
+    },
+    {
+      "expediente": "2026/0007388",
+      "titulo": "Migración a Education Cloud y Captación de Estudiantes para Postgrado, Escuela Internacional y Formación Permanente",
+      "estado": "",
+      "organo": "Rector de la Universidad Carlos III de Madrid",
+      "objeto": "Migración a Education Cloud y Captación de Estudiantes para Postgrado, Escuela Internacional y Formación Permanente",
+      "importe_sin_iva": "66115.7",
+      "cpv": "72227000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=MBBqYvK%2FvL5rSd8H4b2soA%3D%3D",
+      "updated": "2026-10-19T11:32:25.442+02:00",
+      "first_seen_at": "2026-10-20T14:36:30+00:00"
+    },
+    {
+      "expediente": "E-CON-2026-37/SU/AM",
+      "titulo": "Suministro y soporte de entorno SaaS para el Backup de los contenidos M365 de la Universidad de Murcia.",
+      "estado": "",
+      "organo": "Rectorado de la Universidad de Murcia",
+      "objeto": "Suministro y soporte de entorno SaaS para el Backup de los contenidos M365 de la Universidad de Murcia.",
+      "importe_sin_iva": "190909.08",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=01GRiSTTnjc%2Bk2oCbDosIw%3D%3D",
+      "updated": "2026-10-19T10:56:07.795+02:00",
+      "first_seen_at": "2026-10-02T11:14:42+00:00"
+    },
+    {
+      "expediente": "CG-2026/2815/0106",
+      "titulo": "Suscripciones Red Hat OpenShift Platform Plus (Bare Metal Node), Premium, y Red Hat Satellite for Unlimited Guests, junto con la infraestructura cloud AWS necesaria para el despliegue y la operación de la plataforma OpenShift de Ibermutua, conforme a la configuración y cantidades establecidas en el Pliego de Prescripciones Técnicas.",
+      "estado": "",
+      "organo": "Dirección General de IBERMUTUA, Mutua Colaboradora con la Seguridad Social nº 274",
+      "objeto": "Suscripciones Red Hat OpenShift Platform Plus (Bare Metal Node), Premium, y Red Hat Satellite for Unlimited Guests, junto con la infraestructura cloud AWS necesaria para el despliegue y la operación de la plataforma OpenShift de Ibermutua, conforme a la configuración y cantidades establecidas en el Pliego de Prescripciones Técnicas.",
+      "importe_sin_iva": "211965.06",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=GgKeo75%2FOCjjHF5qKI4aaw%3D%3D",
+      "updated": "2026-10-19T10:33:05.443+02:00",
+      "first_seen_at": "2026-10-02T11:17:52+00:00"
+    },
+    {
+      "expediente": "2026_036_PASS",
+      "titulo": "El objeto del contrato es el suministro y renovación de licencias SaaS de la suite Atlassian (Jira Service Management Standard, Confluence Standard y Bitbucket Standard), junto con los servicios para implantar la CMDB corporativa de EOI sobre Jira Service Management Assets y Atlassian Assets Discovery.",
+      "estado": "",
+      "organo": "Dirección General de la Fundación EOI",
+      "objeto": "El objeto del contrato es el suministro y renovación de licencias SaaS de la suite Atlassian (Jira Service Management Standard, Confluence Standard y Bitbucket Standard), junto con los servicios para implantar la CMDB corporativa de EOI sobre Jira Service Management Assets y Atlassian Assets Discovery.",
+      "importe_sin_iva": "35837.13",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=T8K%2BVahsXYokJPJS%2BPS9vg%3D%3D",
+      "updated": "2026-10-19T10:30:21.689+02:00",
+      "first_seen_at": "2026-10-20T14:36:31+00:00"
+    },
+    {
+      "expediente": "2679/2026",
+      "titulo": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
+      "estado": "",
+      "organo": "Alcaldía del Ayuntamiento de Güímar",
+      "objeto": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
+      "importe_sin_iva": "576700",
+      "cpv": "72000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=G9oWpGgxiezN3k3tjedSGw%3D%3D",
+      "updated": "2026-10-19T10:19:28.340+02:00",
+      "first_seen_at": "2026-10-02T11:18:01+00:00"
+    },
+    {
+      "expediente": "87/2026",
+      "titulo": "Suministro, implantación y puesta en funcionamiento de licencias informáticas de la plataforma Proofpoint, con alojamiento y acceso a la solución a través de infraestructura en la nube para Unión de Mutuas MCSS nº 267.",
+      "estado": "",
+      "organo": "Dirección Gerencia de Unión de Mutuas, Mutua Colaboradora con la Seguridad Social Nº 267",
+      "objeto": "Suministro, implantación y puesta en funcionamiento de licencias informáticas de la plataforma Proofpoint, con alojamiento y acceso a la solución a través de infraestructura en la nube para Unión de Mutuas MCSS nº 267.",
+      "importe_sin_iva": "152012.5",
+      "cpv": "48218000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=5sxdvM7k1SU4NavIWzMcHA%3D%3D",
+      "updated": "2026-10-19T09:50:42.159+02:00",
+      "first_seen_at": "2026-10-20T14:36:32+00:00"
+    },
+    {
+      "expediente": "37992/2026",
+      "titulo": "Servei d un assistent IA conversional (XATBOT) en mode SAAS, implantació, parametrització i manteniment",
+      "estado": "",
+      "organo": "Concejalía Delegada del Ayuntamiento de Eivissa",
+      "objeto": "Servei d un assistent IA conversional (XATBOT) en mode SAAS, implantació, parametrització i manteniment",
+      "importe_sin_iva": "38433.57",
+      "cpv": "72200000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=WOUQAwS%2BiR5LAIVZdUs8KA%3D%3D",
+      "updated": "2026-10-19T09:41:04.800+02:00",
+      "first_seen_at": "2026-10-02T11:18:13+00:00"
+    },
+    {
+      "expediente": "2026/000299",
+      "titulo": "Servicio en la nube de plataforma e-learning para dar soporte a las acciones formativas y colaborativas en línea que lleva a cabo el Centro Regional de Formación del Profesorado de Castilla-La Mancha.",
+      "estado": "",
+      "organo": "Secretaría General de la Consejería de Hacienda, Administraciones Públicas y Transformación Digital de la Junta de Comunidades de Castilla-La Mancha",
+      "objeto": "Servicio en la nube de plataforma e-learning para dar soporte a las acciones formativas y colaborativas en línea que lleva a cabo el Centro Regional de Formación del Profesorado de Castilla-La Mancha.",
+      "importe_sin_iva": "1633146.84",
+      "cpv": "72000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2BvkbVmxANmXIGlsa0Wad%2Bw%3D%3D",
+      "updated": "2026-10-19T09:39:03.358+02:00",
+      "first_seen_at": "2026-10-02T11:07:29+00:00"
+    },
+    {
+      "expediente": "4/26-S",
+      "titulo": "Servicio de soporte, mantenimiento, formación y streaming en modalidad SaaS de la plataforma Séneca FX iBoss",
+      "estado": "",
+      "organo": "Coordinador General de Economía, Hacienda, Patrimonio y Contratación del Ayuntamiento de las Las Palmas de Gran Canaria",
+      "objeto": "Servicio de soporte, mantenimiento, formación y streaming en modalidad SaaS de la plataforma Séneca FX iBoss",
+      "importe_sin_iva": "47748.64",
+      "cpv": "72200000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=rmh7yKq0k6dJ8Trn0ZPzLw%3D%3D",
+      "updated": "2026-10-19T09:31:52.605+02:00",
+      "first_seen_at": "2026-10-16T14:10:41+00:00"
+    },
+    {
+      "expediente": "73/2026",
+      "titulo": "Contratación de una solución informática que englobe la gestión de Recursos Humanos, Nómina, Portal del Empleado y Control de Presencia del Ayuntamiento de Valdemoro, en modalidad SaaS.",
+      "estado": "",
+      "organo": "Junta de Gobierno del Ayuntamiento de Valdemoro",
+      "objeto": "Contratación de una solución informática que englobe la gestión de Recursos Humanos, Nómina, Portal del Empleado y Control de Presencia del Ayuntamiento de Valdemoro, en modalidad SaaS.",
+      "importe_sin_iva": "229067.34",
+      "cpv": "72500000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=hC5t%2F%2FvywcB70UvEyYJSGw%3D%3D",
+      "updated": "2026-10-19T09:24:56.715+02:00",
+      "first_seen_at": "2026-10-02T11:16:54+00:00"
+    },
+    {
+      "expediente": "2026/D22200/006-202/00012",
+      "titulo": "mixto de suministro suscripción Plataforma tecnológica de gestión de contenidos para gestión centralizada portales y páginas web para la Red Provincial de Comunicaciones de la Diputación de Almería, en modalidad de SAAS, con hosting y mantenimiento",
+      "estado": "",
+      "organo": "Junta de Gobierno de la Diputación Provincial de Almería",
+      "objeto": "mixto de suministro suscripción Plataforma tecnológica de gestión de contenidos para gestión centralizada portales y páginas web para la Red Provincial de Comunicaciones de la Diputación de Almería, en modalidad de SAAS, con hosting y mantenimiento",
+      "importe_sin_iva": "326446.27",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=KFmANitD2DnIGlsa0Wad%2Bw%3D%3D",
+      "updated": "2026-10-19T09:03:59.354+02:00",
+      "first_seen_at": "2026-10-17T11:41:34+00:00"
+    },
+    {
+      "expediente": "8060/2026",
+      "titulo": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS)",
+      "estado": "",
+      "organo": "Alcaldía del Ayuntamiento de Bormujos",
+      "objeto": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS)",
+      "importe_sin_iva": "488240.48",
+      "cpv": "48000000",
+      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=qIwaNPtQdgxVYjgxA4nMUw%3D%3D",
+      "updated": "2026-10-19T09:00:00.000+02:00",
+      "first_seen_at": "2026-10-12T15:50:55+00:00"
+    },
+    {
       "expediente": "CEA4680/2026",
       "titulo": "Suministro 14 Licencias De La Suite Adobe Creative Cloud Pro Plus For Teams O Equivalente. (Ministerio De Transportes Y Movilidad Sostenible-Centro De Estudios Y Experimentación De Obras Públicas)",
       "estado": "",
@@ -5800,18 +6148,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2FmftdvaOIRCP%2Bo96UAV7cQ%3D%3D",
       "updated": "2026-10-16T15:09:05.652+02:00",
       "first_seen_at": "2026-10-17T11:41:31+00:00"
-    },
-    {
-      "expediente": "37992/2026",
-      "titulo": "Servei d un assistent IA conversional (XATBOT) en mode SAAS, implantació, parametrització i manteniment",
-      "estado": "",
-      "organo": "Concejalía Delegada del Ayuntamiento de Eivissa",
-      "objeto": "Servei d un assistent IA conversional (XATBOT) en mode SAAS, implantació, parametrització i manteniment",
-      "importe_sin_iva": "38433.57",
-      "cpv": "72200000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=WOUQAwS%2BiR5LAIVZdUs8KA%3D%3D",
-      "updated": "2026-10-16T15:00:07.897+02:00",
-      "first_seen_at": "2026-10-02T11:18:13+00:00"
     },
     {
       "expediente": "2025/009194",
@@ -5874,18 +6210,6 @@
       "first_seen_at": "2026-10-02T11:15:16+00:00"
     },
     {
-      "expediente": "2026/D22200/006-202/00012",
-      "titulo": "mixto de suministro suscripción Plataforma tecnológica de gestión de contenidos para gestión centralizada portales y páginas web para la Red Provincial de Comunicaciones de la Diputación de Almería, en modalidad de SAAS, con hosting y mantenimiento",
-      "estado": "",
-      "organo": "Junta de Gobierno de la Diputación Provincial de Almería",
-      "objeto": "mixto de suministro suscripción Plataforma tecnológica de gestión de contenidos para gestión centralizada portales y páginas web para la Red Provincial de Comunicaciones de la Diputación de Almería, en modalidad de SAAS, con hosting y mantenimiento",
-      "importe_sin_iva": "326446.27",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=KFmANitD2DnIGlsa0Wad%2Bw%3D%3D",
-      "updated": "2026-10-16T09:11:43.871+02:00",
-      "first_seen_at": "2026-10-17T11:41:34+00:00"
-    },
-    {
       "expediente": "2.2.19/26",
       "titulo": "Suministro de licencias de suscripción Adobe Creative Cloud",
       "estado": "",
@@ -5920,18 +6244,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=HUulPfVoJGx9Zh%2FyRJgM8w%3D%3D",
       "updated": "2026-10-15T16:41:46.869+02:00",
       "first_seen_at": "2026-10-02T11:17:27+00:00"
-    },
-    {
-      "expediente": "2679/2026",
-      "titulo": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
-      "estado": "",
-      "organo": "Alcaldía del Ayuntamiento de Güímar",
-      "objeto": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
-      "importe_sin_iva": "576700",
-      "cpv": "72000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=G9oWpGgxiezN3k3tjedSGw%3D%3D",
-      "updated": "2026-10-15T15:50:03.119+02:00",
-      "first_seen_at": "2026-10-02T11:18:01+00:00"
     },
     {
       "expediente": "SU.029/2026",
@@ -5992,18 +6304,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=zWnetfiRxvUeC9GJQOEBkQ%3D%3D",
       "updated": "2026-10-15T10:47:08.505+02:00",
       "first_seen_at": "2026-10-09T13:58:00+00:00"
-    },
-    {
-      "expediente": "4/26-S",
-      "titulo": "Servicio de soporte, mantenimiento, formación y streaming en modalidad SaaS de la plataforma Séneca FX iBoss",
-      "estado": "",
-      "organo": "Coordinador General de Economía, Hacienda, Patrimonio y Contratación del Ayuntamiento de las Las Palmas de Gran Canaria",
-      "objeto": "Servicio de soporte, mantenimiento, formación y streaming en modalidad SaaS de la plataforma Séneca FX iBoss",
-      "importe_sin_iva": "47748.64",
-      "cpv": "72200000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=rmh7yKq0k6dJ8Trn0ZPzLw%3D%3D",
-      "updated": "2026-10-15T10:27:13.869+02:00",
-      "first_seen_at": "2026-10-16T14:10:41+00:00"
     },
     {
       "expediente": "010-2026",
@@ -6246,18 +6546,6 @@
       "first_seen_at": "2026-10-02T11:18:10+00:00"
     },
     {
-      "expediente": "8060/2026",
-      "titulo": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS)",
-      "estado": "",
-      "organo": "Alcaldía del Ayuntamiento de Bormujos",
-      "objeto": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS)",
-      "importe_sin_iva": "488240.48",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=qIwaNPtQdgxVYjgxA4nMUw%3D%3D",
-      "updated": "2026-10-11T09:27:05.673+02:00",
-      "first_seen_at": "2026-10-12T15:50:55+00:00"
-    },
-    {
       "expediente": "SLU-2026-PASS-CON-0001",
       "titulo": "Contratación de un máximo de 65 licencias de uso de un gestor de proyectos en modalidad SAAS (Software As A Service) 24x7x365 Turismo y Planificación Costa del Sol, S.L.U.",
       "estado": "",
@@ -6268,18 +6556,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=syxSKHkTujGzz8fXU2i3eQ%3D%3D",
       "updated": "2026-10-09T14:41:33.218+02:00",
       "first_seen_at": "2026-10-02T11:16:18+00:00"
-    },
-    {
-      "expediente": "2025/006507",
-      "titulo": "Suscripción de licencias Adobe Creative Cloud y Adobe Acrobat.",
-      "estado": "",
-      "organo": "Secretaría General de la Consejería de Hacienda, Administraciones Públicas y Transformación Digital de la Junta de Comunidades de Castilla-La Mancha",
-      "objeto": "Suscripción de licencias Adobe Creative Cloud y Adobe Acrobat.",
-      "importe_sin_iva": "298170.64",
-      "cpv": "48300000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=1nrgE1f91fbIGlsa0Wad%2Bw%3D%3D",
-      "updated": "2026-10-09T14:06:32.669+02:00",
-      "first_seen_at": "2026-10-10T13:04:41+00:00"
     },
     {
       "expediente": "10-SV-26-VSC",
@@ -6748,18 +7024,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=ID72KDyuH8Y4NavIWzMcHA%3D%3D",
       "updated": "2026-10-02T13:44:54.597+02:00",
       "first_seen_at": "2026-10-02T11:18:05+00:00"
-    },
-    {
-      "expediente": "73/2026",
-      "titulo": "Contratación de una solución informática que englobe la gestión de Recursos Humanos, Nómina, Portal del Empleado y Control de Presencia del Ayuntamiento de Valdemoro, en modalidad SaaS.",
-      "estado": "",
-      "organo": "Junta de Gobierno del Ayuntamiento de Valdemoro",
-      "objeto": "Contratación de una solución informática que englobe la gestión de Recursos Humanos, Nómina, Portal del Empleado y Control de Presencia del Ayuntamiento de Valdemoro, en modalidad SaaS.",
-      "importe_sin_iva": "229067.34",
-      "cpv": "72500000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=hC5t%2F%2FvywcB70UvEyYJSGw%3D%3D",
-      "updated": "2026-10-02T13:05:00.282+02:00",
-      "first_seen_at": "2026-10-02T11:16:54+00:00"
     },
     {
       "expediente": "2026/00012504F",
@@ -7482,18 +7746,6 @@
       "first_seen_at": "2026-10-02T11:08:22+00:00"
     },
     {
-      "expediente": "CG-2026/2815/0106",
-      "titulo": "Suscripciones Red Hat OpenShift Platform Plus (Bare Metal Node), Premium, y Red Hat Satellite for Unlimited Guests, junto con la infraestructura cloud AWS necesaria para el despliegue y la operación de la plataforma OpenShift de Ibermutua, conforme a la configuración y cantidades establecidas en el Pliego de Prescripciones Técnicas.",
-      "estado": "",
-      "organo": "Dirección General de IBERMUTUA, Mutua Colaboradora con la Seguridad Social nº 274",
-      "objeto": "Suscripciones Red Hat OpenShift Platform Plus (Bare Metal Node), Premium, y Red Hat Satellite for Unlimited Guests, junto con la infraestructura cloud AWS necesaria para el despliegue y la operación de la plataforma OpenShift de Ibermutua, conforme a la configuración y cantidades establecidas en el Pliego de Prescripciones Técnicas.",
-      "importe_sin_iva": "211965.06",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=GgKeo75%2FOCjjHF5qKI4aaw%3D%3D",
-      "updated": "2026-09-23T11:41:50.960+02:00",
-      "first_seen_at": "2026-10-02T11:17:52+00:00"
-    },
-    {
       "expediente": "SER/2026/0000002565",
       "titulo": "Servicio de Software de planificación para dosimetrías de radioterapia externa para los Servicios de Radiofísica y Oncología Radioterápica en modalidad Software cómo servicio in situ, con mantenimiento preventivo, correctivo y evolutivo para el Complejo Hospitalario Universitario Ntra. Sra. de Candelaria y su Red de Centros",
       "estado": "",
@@ -7636,18 +7888,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=HDgHNbO1m1U%2B1TMyIiZmzw%3D%3D",
       "updated": "2026-09-17T11:23:30.226+02:00",
       "first_seen_at": "2026-10-02T11:12:29+00:00"
-    },
-    {
-      "expediente": "2026/000299",
-      "titulo": "Servicio en la nube de plataforma e-learning para dar soporte a las acciones formativas y colaborativas en línea que lleva a cabo el Centro Regional de Formación del Profesorado de Castilla-La Mancha.",
-      "estado": "",
-      "organo": "Secretaría General de la Consejería de Hacienda, Administraciones Públicas y Transformación Digital de la Junta de Comunidades de Castilla-La Mancha",
-      "objeto": "Servicio en la nube de plataforma e-learning para dar soporte a las acciones formativas y colaborativas en línea que lleva a cabo el Centro Regional de Formación del Profesorado de Castilla-La Mancha.",
-      "importe_sin_iva": "1633146.84",
-      "cpv": "72000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2BvkbVmxANmXIGlsa0Wad%2Bw%3D%3D",
-      "updated": "2026-09-17T11:00:07.490+02:00",
-      "first_seen_at": "2026-10-02T11:07:29+00:00"
     },
     {
       "expediente": "SERV/CONT2026000052",
@@ -8164,30 +8404,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=vTf8ZpGDv6s3vLk2DU2Ddg%3D%3D",
       "updated": "2026-08-28T08:09:36.366+02:00",
       "first_seen_at": "2026-10-02T11:16:50+00:00"
-    },
-    {
-      "expediente": "AYAL-2026000085",
-      "titulo": "Servicio de mantenimiento nivel premium, asistencia técnica y almacenamiento en la nube de las aplicaciones informáticas de BL España Software S.L.U.",
-      "estado": "",
-      "organo": "Junta de Gobierno del Ayuntamiento de Almería",
-      "objeto": "Servicio de mantenimiento nivel premium, asistencia técnica y almacenamiento en la nube de las aplicaciones informáticas de BL España Software S.L.U.",
-      "importe_sin_iva": "320167.74",
-      "cpv": "72500000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=JFhFUGQUbsV%2FR5QFTlaM4A%3D%3D",
-      "updated": "2026-08-27T11:52:19.846+02:00",
-      "first_seen_at": "2026-10-02T11:13:24+00:00"
-    },
-    {
-      "expediente": "18529/2026",
-      "titulo": "El presente contrato consiste en el suministro y servicios de implantación (instalación, formación, migración, puesta en marcha e integraciones) y mantenimiento de un sistema integral en modalidad Cloud para:\n-Gestión económico-financiera (Intervención y Tesorería).\n-Gestión del Patrimonio Municipal.\n-Gestión de Recursos Humanos (Nóminas, registro de personal, portal del empleado).",
-      "estado": "",
-      "organo": "Alcaldía del Ayuntamiento de Puertollano",
-      "objeto": "El presente contrato consiste en el suministro y servicios de implantación (instalación, formación, migración, puesta en marcha e integraciones) y mantenimiento de un sistema integral en modalidad Cloud para:\n-Gestión económico-financiera (Intervención y Tesorería).\n-Gestión del Patrimonio Municipal.\n-Gestión de Recursos Humanos (Nóminas, registro de personal, portal del empleado).",
-      "importe_sin_iva": "384370",
-      "cpv": "72267000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=qfWkyJ3QWsycCF8sV%2BqtYA%3D%3D",
-      "updated": "2026-08-27T08:19:04.114+02:00",
-      "first_seen_at": "2026-10-02T11:18:28+00:00"
     },
     {
       "expediente": "ICO_2026_30",
@@ -8920,18 +9136,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=2A98kvwBYCUZDGvgaZEVxQ%3D%3D",
       "updated": "2026-08-03T09:00:00.000+02:00",
       "first_seen_at": "2026-10-02T11:16:35+00:00"
-    },
-    {
-      "expediente": "CP20/26",
-      "titulo": "Servicios de migración, licenciamiento, soporte y evolución funcional del ERP NAVISION de Hospital Intermutual de Euskadi, Centro Mancomunado de Mutuas Colaboradoras con la Seguridad Social nº 291, a MICROSOFT DYNAMICS 365 BUSINESS CENTRAL en modalidad SaaS",
-      "estado": "",
-      "organo": "Hospital Intermutual de Euskadi, Centro Mancomunado de Mutuas de Accidentes de Trabajo y Enfermadades Profesionales de la Seguridad Social",
-      "objeto": "Servicios de migración, licenciamiento, soporte y evolución funcional del ERP NAVISION de Hospital Intermutual de Euskadi, Centro Mancomunado de Mutuas Colaboradoras con la Seguridad Social nº 291, a MICROSOFT DYNAMICS 365 BUSINESS CENTRAL en modalidad SaaS",
-      "importe_sin_iva": "235400",
-      "cpv": "72200000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2FL%2BwZt8mE0a5HQrHoP3G5A%3D%3D",
-      "updated": "2026-07-31T15:44:23.982+02:00",
-      "first_seen_at": "2026-10-02T11:17:20+00:00"
     },
     {
       "expediente": "51471N",
@@ -9676,18 +9880,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=J5%2F9okSO6DXIGlsa0Wad%2Bw%3D%3D",
       "updated": "2026-07-10T10:08:55.659+02:00",
       "first_seen_at": "2026-10-02T11:16:05+00:00"
-    },
-    {
-      "expediente": "E-CON-2026-37/SU/AM",
-      "titulo": "Suministro y soporte de entorno SaaS para el Backup de los contenidos M365 de la Universidad de Murcia.",
-      "estado": "",
-      "organo": "Rectorado de la Universidad de Murcia",
-      "objeto": "Suministro y soporte de entorno SaaS para el Backup de los contenidos M365 de la Universidad de Murcia.",
-      "importe_sin_iva": "190909.08",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=01GRiSTTnjc%2Bk2oCbDosIw%3D%3D",
-      "updated": "2026-07-09T13:01:53.528+02:00",
-      "first_seen_at": "2026-10-02T11:14:42+00:00"
     },
     {
       "expediente": "21659/2025",
@@ -12304,18 +12496,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=hoi%2FI7TGyXF70UvEyYJSGw%3D%3D",
       "updated": "2026-04-08T12:52:26.519+02:00",
       "first_seen_at": "2026-10-02T11:10:20+00:00"
-    },
-    {
-      "expediente": "2026/01-AB (80/2026)",
-      "titulo": "Servicio de plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite al Consorcio de la Zona Franca de Gran Canaria la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
-      "estado": "",
-      "organo": "Delegación Especial del Ministerio de Hacienda en el Consorcio de la Zona Franca de Gran Canaria",
-      "objeto": "Servicio de plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite al Consorcio de la Zona Franca de Gran Canaria la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
-      "importe_sin_iva": "38400",
-      "cpv": "72000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=FEGdD746tAjIGlsa0Wad%2Bw%3D%3D",
-      "updated": "2026-04-08T11:44:07.680+02:00",
-      "first_seen_at": "2026-10-02T11:08:44+00:00"
     },
     {
       "expediente": "1596/2026",

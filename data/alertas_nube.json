@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-20T14:36:34+00:00",
-  "total_nuevas": 491,
+  "generado": "2026-10-21T14:16:19+00:00",
+  "total_nuevas": 486,
   "total_historico": 729,
   "nuevas": [
     {
@@ -28,18 +28,6 @@
       "first_seen_at": "2026-10-02T11:08:44+00:00"
     },
     {
-      "expediente": "917/2026",
-      "titulo": "Servicio de correo electrónico y herramientas colaborativas mediante un modelo SaaS",
-      "estado": "",
-      "organo": "Alcaldia-Presidencia del Ayuntamiento de Santa Brígida",
-      "objeto": "Servicio de correo electrónico y herramientas colaborativas mediante un modelo SaaS",
-      "importe_sin_iva": "79200",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=ZgVzDCg%2B5gQ2wEhQbcAqug%3D%3D",
-      "updated": "2026-10-19T15:05:51.779+02:00",
-      "first_seen_at": "2026-10-20T14:36:29+00:00"
-    },
-    {
       "expediente": "2025/006507",
       "titulo": "Suscripción de licencias Adobe Creative Cloud y Adobe Acrobat.",
       "estado": "",
@@ -50,18 +38,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=1nrgE1f91fbIGlsa0Wad%2Bw%3D%3D",
       "updated": "2026-10-19T14:28:18.968+02:00",
       "first_seen_at": "2026-10-10T13:04:41+00:00"
-    },
-    {
-      "expediente": "2665/2026",
-      "titulo": "Suministro de una herramienta integral de administración electrónica en la modalidad de “Software as a Service” (SaaS)",
-      "estado": "",
-      "organo": "Alcaldía del Ayuntamiento de O Pereiro de Aguiar",
-      "objeto": "Suministro de una herramienta integral de administración electrónica en la modalidad de “Software as a Service” (SaaS)",
-      "importe_sin_iva": "142600",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Un3sd4KxtlsQyBAnWzHfCg%3D%3D",
-      "updated": "2026-10-19T12:34:39.000+02:00",
-      "first_seen_at": "2026-10-20T14:36:30+00:00"
     },
     {
       "expediente": "18529/2026",
@@ -88,18 +64,6 @@
       "first_seen_at": "2026-10-02T11:13:24+00:00"
     },
     {
-      "expediente": "2026/0007388",
-      "titulo": "Migración a Education Cloud y Captación de Estudiantes para Postgrado, Escuela Internacional y Formación Permanente",
-      "estado": "",
-      "organo": "Rector de la Universidad Carlos III de Madrid",
-      "objeto": "Migración a Education Cloud y Captación de Estudiantes para Postgrado, Escuela Internacional y Formación Permanente",
-      "importe_sin_iva": "66115.7",
-      "cpv": "72227000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=MBBqYvK%2FvL5rSd8H4b2soA%3D%3D",
-      "updated": "2026-10-19T11:32:25.442+02:00",
-      "first_seen_at": "2026-10-20T14:36:30+00:00"
-    },
-    {
       "expediente": "E-CON-2026-37/SU/AM",
       "titulo": "Suministro y soporte de entorno SaaS para el Backup de los contenidos M365 de la Universidad de Murcia.",
       "estado": "",
@@ -124,18 +88,6 @@
       "first_seen_at": "2026-10-02T11:17:52+00:00"
     },
     {
-      "expediente": "2026_036_PASS",
-      "titulo": "El objeto del contrato es el suministro y renovación de licencias SaaS de la suite Atlassian (Jira Service Management Standard, Confluence Standard y Bitbucket Standard), junto con los servicios para implantar la CMDB corporativa de EOI sobre Jira Service Management Assets y Atlassian Assets Discovery.",
-      "estado": "",
-      "organo": "Dirección General de la Fundación EOI",
-      "objeto": "El objeto del contrato es el suministro y renovación de licencias SaaS de la suite Atlassian (Jira Service Management Standard, Confluence Standard y Bitbucket Standard), junto con los servicios para implantar la CMDB corporativa de EOI sobre Jira Service Management Assets y Atlassian Assets Discovery.",
-      "importe_sin_iva": "35837.13",
-      "cpv": "48000000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=T8K%2BVahsXYokJPJS%2BPS9vg%3D%3D",
-      "updated": "2026-10-19T10:30:21.689+02:00",
-      "first_seen_at": "2026-10-20T14:36:31+00:00"
-    },
-    {
       "expediente": "2679/2026",
       "titulo": "Contratación de una plataforma de administración electrónica en modalidad Software como Servicio (SaaS) que facilite a esta entidad la adopción de un sistema de tramitación administrativa conforme al marco legal vigente",
       "estado": "",
@@ -146,18 +98,6 @@
       "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=G9oWpGgxiezN3k3tjedSGw%3D%3D",
       "updated": "2026-10-19T10:19:28.340+02:00",
       "first_seen_at": "2026-10-02T11:18:01+00:00"
-    },
-    {
-      "expediente": "87/2026",
-      "titulo": "Suministro, implantación y puesta en funcionamiento de licencias informáticas de la plataforma Proofpoint, con alojamiento y acceso a la solución a través de infraestructura en la nube para Unión de Mutuas MCSS nº 267.",
-      "estado": "",
-      "organo": "Dirección Gerencia de Unión de Mutuas, Mutua Colaboradora con la Seguridad Social Nº 267",
-      "objeto": "Suministro, implantación y puesta en funcionamiento de licencias informáticas de la plataforma Proofpoint, con alojamiento y acceso a la solución a través de infraestructura en la nube para Unión de Mutuas MCSS nº 267.",
-      "importe_sin_iva": "152012.5",
-      "cpv": "48218000",
-      "url": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=5sxdvM7k1SU4NavIWzMcHA%3D%3D",
-      "updated": "2026-10-19T09:50:42.159+02:00",
-      "first_seen_at": "2026-10-20T14:36:32+00:00"
     },
     {
       "expediente": "37992/2026",

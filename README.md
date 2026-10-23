@@ -1,92 +1,158 @@
-# Licitaciones España — plataforma de seguimiento diario
+# Ginebra · feed propio de licitaciones públicas de tecnología
 
-Detecta cada día las licitaciones nuevas (o actualizadas) del feed nacional de la
-**Plataforma de Contratación del Sector Público (PLACSP)** y las muestra en un
-dashboard web sencillo.
+Ginebra construye un **feed propio** de licitaciones públicas españolas a partir de
+los datos abiertos de la Plataforma de Contratación del Sector Público (PLACSP).
+Cada día descarga los feeds oficiales, guarda un histórico propio en SQLite
+(con el recorrido de estados de cada expediente, algo que el feed oficial no
+conserva), aplica los criterios de negocio y publica:
+
+- un **feed Atom** y un **JSON Feed** a los que suscribirse,
+- un **dashboard** web con filtros por administración, sector, estado y tipo,
+- ficheros JSON para integrar con otras herramientas.
+
+Sitio publicado: <https://www.inorganic.com/ginebra/>
+Feed Atom: <https://www.inorganic.com/ginebra/data/feed.atom>
+
+## Fuentes oficiales
+
+Todas las fuentes son canales de sindicación de PLACSP (catálogo en el
+[portal de datos abiertos de Hacienda](https://www.hacienda.gob.es/es-ES/GobiernoAbierto/Datos%20Abiertos/Paginas/licitaciones_plataforma_contratacion.aspx)).
+Publican ZIPs con ficheros Atom en formato CODICE 2.x y se regeneran cada
+madrugada con los cambios del día anterior.
+
+| id | feed | Contenido | Ficheros | Por defecto |
+|---|---|---|---|---|
+| `placsp` | 643 | Licitaciones de perfiles de contratante alojados en PLACSP (AGE, la mayoría de entidades locales, varias CCAA). Sin contratos menores. | anual + mensual | sí |
+| `agregadas` | 1044 | Licitaciones recibidas por agregación de administraciones con plataforma propia: **Comunidad de Madrid**, Generalitat de Catalunya, Gobierno Vasco, Junta de Andalucía, Xunta de Galicia, Gobierno de Navarra, Gobierno de La Rioja. | anual + mensual | sí |
+| `menores` | 1143 | Contratos menores de perfiles alojados en PLACSP. | anual + mensual | no |
+| `encargos` | 1383 | Encargos a medios propios. Estructura CODICE distinta, no validada. | anual | no |
+| `consultas` | 1403 | Consultas preliminares de mercado. Estructura CODICE distinta, no validada. | anual | no |
+
+Además se descarga el **directorio oficial de órganos de contratación**
+(`OrganosContratacion.xlsx`, unos 23.500 órganos con sector, dependencia de
+primer y segundo nivel, NIF, DIR3 y código postal) para clasificar cada
+licitación administración por administración y ayuntamiento por ayuntamiento.
+
+`python -m ginebra fuentes` imprime el catálogo con las URL exactas.
+
+### Por qué ZIP mensuales
+
+El ZIP anual del feed 643 pesa 1,9 GB y, con el ancho de banda que PLACSP
+ofrece a los runners de GitHub, tarda más de cinco horas en bajar. El ZIP del
+mes en curso pesa unos 120 MB y contiene todas las actualizaciones del mes,
+que es lo único que hace falta para detectar novedades. La ejecución diaria
+procesa el mes en curso y, los tres primeros días de cada mes, también el
+anterior.
 
 ## Cómo funciona
 
 ```
-fetch_licitaciones.py  ──►  data/licitaciones.db   (histórico completo, SQLite)
-                        ──►  data/nuevas_hoy.json   (solo lo nuevo/cambiado en esta ejecución)
-                        ──►  data/latest.json       (últimos ~30 días, para el dashboard)
-
-dashboard.html  ──►  lee data/*.json y los muestra, con búsqueda y filtros
+feeds PLACSP (ZIP mensual)  ─►  ginebra.descarga  ─►  ginebra.codice (Atom + CODICE)
+                                                           │
+OrganosContratacion.xlsx    ─►  ginebra.organos  ─►  data/ginebra.db (SQLite: licitaciones, cambios, organos...)
+                                                           │
+                                                  ginebra.filtros + ginebra.exportar
+                                                           │
+                       data/latest.json · nuevas_hoy.json · alertas_nube.json · feed.atom · feed_nube.atom · feed.json · resumen.json
+                                                           │
+                                                  site/index.html (GitHub Pages)
 ```
 
-PLACSP publica un ZIP anual con **todas** las licitaciones de ese año, y ese ZIP
-"se actualiza diariamente con los cambios del día anterior" (así lo documenta el
-propio catálogo oficial). El script descarga ese ZIP, compara cada expediente
-contra lo que ya tenía guardado, y marca como "nuevo" todo lo que no existía o
-cuya fecha `updated` ha cambiado (p. ej. pasó de "Publicada" a "Adjudicada").
+Módulos del paquete `ginebra/`:
 
-## ⚠️ Por qué no lo he podido ejecutar yo mismo ahora mismo
+| Módulo | Qué hace |
+|---|---|
+| `fuentes.py` | Registro de feeds oficiales y cálculo de los periodos a procesar. |
+| `descarga.py` | Descarga en streaming con validación de la firma ZIP y reintentos. El WAF de PLACSP devuelve a veces una página HTML de error con código 200. |
+| `codice.py` | Parser de los `<entry>` Atom y del documento CODICE: expediente, estado, órgano (NIF, DIR3, jerarquía orgánica, plataforma de origen), importes, CPV, lugar, procedimiento, plazo, lotes, resultado y adjudicatario, pliegos y anuncios. También las `<at:deleted-entry>`. |
+| `modelo.py` | Dataclass `Licitacion` (la vista aplanada de cada expediente) y `Baja`. |
+| `db.py` | SQLite: `licitaciones` (una fila por expediente, clave el `<id>` Atom), `cambios` (historial de estados), `novedades`, `organos`, `ejecuciones`, `meta`. |
+| `organos.py` | Carga del directorio oficial de órganos y búsqueda por ID de plataforma, DIR3 o NIF. |
+| `filtros.py` | Criterios de negocio (tecnología, tamaño, cercanía) y alerta de nube, con explicación de por qué cada licitación aparece. |
+| `ingesta.py` | Orquesta descarga, parseo, detección de nuevos/actualizados/bajas y poda. |
+| `exportar.py` | JSON para el dashboard, Atom 1.0, JSON Feed 1.1 y resumen. |
+| `cli.py` | Órdenes `actualizar`, `ingerir`, `exportar`, `organos`, `fuentes`, `resumen`. |
 
-El entorno donde genero estos archivos solo tiene salida de red hacia registries
-de paquetes (PyPI, GitHub, npm...), no hacia `contrataciondelsectorpublico.gob.es`.
-El script está probado con datos de ejemplo (parseo, detección de nuevas,
-exportación a JSON — todo verificado), pero la primera descarga real del ZIP
-tienes que lanzarla tú, desde tu ordenador, un servidor, o GitHub Actions.
+### Detección de novedades
 
-## Puesta en marcha — 3 opciones
+La clave de cada expediente es el `<id>` del entry Atom, que PLACSP garantiza
+único por expediente (el número de expediente no lo es: muchos ayuntamientos
+usan "1/2026"). Cuando un expediente llega con una fecha `updated` posterior
+a la guardada se marca como **actualizado** y se conserva el estado anterior;
+si no existía, como **nuevo**; si llega una `<at:deleted-entry>`, como
+**baja** (anulada o cerrada). La primera carga de una fuente no genera
+novedades para no inundar el feed con el histórico.
 
-### Opción A: GitHub Actions + GitHub Pages (recomendada, cero mantenimiento)
+### Criterios de negocio (`ginebra/filtros.py`)
 
-1. Crea un repo nuevo en GitHub y sube el contenido de esta carpeta.
-2. En **Settings → Pages**, elige "GitHub Actions" como origen.
-3. El workflow `.github/workflows/daily.yml` ya incluido:
-   - corre todos los días a las 06:15 UTC (y también puedes lanzarlo a mano desde la pestaña *Actions*),
-   - descarga el ZIP del año en curso, detecta lo nuevo,
-   - commitea `data/*.json` al repo,
-   - publica `dashboard.html` + `data/` en GitHub Pages.
-4. Al cabo de la primera ejecución tendrás tu dashboard en
-   `https://<tu-usuario>.github.io/<tu-repo>/`.
+1. **Tecnología**: CPV que empiece por 72 (servicios TI) o 48 (software), o
+   palabras clave de desarrollo, datos, IA y nube en el objeto.
+2. **Tamaño**: presupuesto base sin IVA (o valor estimado) entre 100.000 y
+   5.000.000 €.
+3. **Cercanía**: lugar de ejecución NUTS ES30, órgano con código postal 28xxx
+   o en un municipio de la Comunidad de Madrid, plataforma o jerarquía de la
+   Comunidad de Madrid, o un organismo de ámbito estatal (Administración
+   General del Estado, Renfe, Adif, Aena...) siempre que no tenga sede
+   conocida fuera de Madrid.
 
-### Opción B: cron en tu propio servidor
+La alerta de **nube pública** se evalúa sobre todas las licitaciones sin
+filtro de tamaño ni cercanía.
+
+## Ficheros publicados (`data/`)
+
+| Fichero | Contenido |
+|---|---|
+| `feed.atom` | El feed propio: licitaciones que cumplen los criterios, últimos 30 días, con categorías por estado, tipo, sector y administración. |
+| `feed.json` | Lo mismo en JSON Feed 1.1; cada item lleva el registro completo en `_ginebra`. |
+| `feed_nube.atom` | Alertas de nube pública en cualquier administración. |
+| `latest.json` | Registros completos de la selección (etiquetas, clasificación por administración, motivos, anuncios). |
+| `nuevas_hoy.json` | Subconjunto de `latest.json` que es novedad en la última ejecución. |
+| `alertas_nube.json` | Alertas de nube: `nuevas` e `historico` (180 días). |
+| `resumen.json` | Estado de la base, novedades, reparto por administración, últimas ejecuciones. |
+
+La base de datos `data/ginebra.db` no se versiona: en GitHub Actions se
+conserva entre ejecuciones con `actions/cache`.
+
+## Uso
 
 ```bash
-pip install -r requirements.txt
-python fetch_licitaciones.py                # descarga el año actual y actualiza data/
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt pytest
+.venv/bin/python -m pytest                      # tests
 
-# Servir el dashboard (necesita servidor HTTP por el CORS de fetch(), no vale file://)
-python3 -m http.server 8000
-# abre http://localhost:8000/dashboard.html
+.venv/bin/python -m ginebra actualizar          # mes en curso de placsp + agregadas, y exporta
+.venv/bin/python -m ginebra actualizar --fuentes placsp agregadas menores
+.venv/bin/python -m ginebra actualizar --periodos 202609 202610   # meses concretos
+.venv/bin/python -m ginebra actualizar --anios 2026                # ZIP anual (carga inicial, tarda)
+.venv/bin/python -m ginebra ingerir fichero.zip --fuente agregadas # ZIP ya descargado
+.venv/bin/python -m ginebra exportar            # regenera data/ sin descargar nada
+.venv/bin/python -m ginebra resumen             # estado de la base
+
+python3 -m http.server 8000                     # dashboard en http://localhost:8000/site/
 ```
 
-Añádelo a `crontab -e`:
-```
-15 6 * * * cd /ruta/al/proyecto && /usr/bin/python3 fetch_licitaciones.py >> fetch.log 2>&1
-```
+Variables de entorno: `GINEBRA_DATA_DIR`, `GINEBRA_CACHE_DIR`, `GINEBRA_DB`,
+`GINEBRA_SITE_URL` (URL pública usada en los enlaces del feed).
 
-### Opción C: solo probarlo en local, una vez
+## Automatización
 
-```bash
-pip install -r requirements.txt
-python fetch_licitaciones.py --years 2026
-python3 -m http.server 8000
-```
+`.github/workflows/diario.yml` corre cada día a las 06:30 UTC (y a mano desde
+la pestaña Actions, con parámetros opcionales de fuentes, meses o años):
+restaura la base de datos de la caché, ejecuta `ginebra actualizar`,
+commitea `data/*.json` y `data/*.atom`, y despliega `site/` + `data/` en
+GitHub Pages. `.github/workflows/tests.yml` ejecuta los tests en cada push.
 
-## Extender a más fuentes
+## Extender
 
-`fetch_licitaciones.py` está centrado en el feed principal de licitaciones
-(`sindicacion_643`). El catálogo de `dcarrero/ContratacionAbierta` documenta más
-feeds oficiales con la misma estructura CODICE (contratos menores, plataformas
-agregadas, encargos a medios propios, consultas preliminares...). Para añadir
-uno, solo hace falta:
+- **Otra fuente**: añade una `Fuente` en `ginebra/fuentes.py`. Si usa CODICE
+  de licitaciones, el parser sirve tal cual.
+- **Otros criterios**: ajusta `Criterios` en `ginebra/filtros.py` y ejecuta
+  `ginebra exportar`; no hace falta volver a descargar nada porque la base
+  guarda todas las licitaciones, no solo las seleccionadas.
+- **Otro perfil de empresa** (otra región, otros CPV): cambia `nuts_cercania`,
+  `cp_prefijos`, `municipios` y `cpv_prefijos`.
 
-1. Añadir su URL base (con `{year}`) como una nueva constante tipo `BASE_URL`.
-2. Reutilizar `iter_entries_from_zip` / `parse_entry` tal cual.
-3. Guardar en una tabla SQLite separada (o añadir una columna `fuente`).
+## Referencias
 
-## Aviso sobre otro repo que mencionaste
-
-`Hikaru17zx/licitaciones-espana` no se ha usado para nada de esto: su README
-empuja a instalar un `.exe`/`.dmg` desde un enlace que en realidad apunta a un
-`.zip` — un patrón típico de malware disfrazado de app. No lo descargues ni lo
-ejecutes.
-
-## Créditos de las fuentes originales
-
-- Catálogo de fuentes oficiales: [dcarrero/ContratacionAbierta](https://github.com/dcarrero/ContratacionAbierta)
-- Dataset histórico de referencia (no usado en el pipeline diario, pero útil para análisis): [BquantFinance/licitaciones-espana](https://github.com/BquantFinance/licitaciones-espana)
-- Fuente oficial de datos: [PLACSP — Ministerio de Hacienda](https://contrataciondelestado.es)
+- [Especificación de sindicación y reutilización de datos de PLACSP](https://contrataciondelsectorpublico.gob.es/datosabiertos/especificacion-sindicacion.pdf)
+- [Resumen de los conjuntos de datos abiertos](https://contrataciondelsectorpublico.gob.es/datosabiertos/DGPE_PLACSP_ResumenDatosAbiertos.pdf)
+- [Listas de códigos CODICE](https://contrataciondelestado.es/codice/cl/)

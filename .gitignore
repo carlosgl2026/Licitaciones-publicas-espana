@@ -1,3 +1,13 @@
-data/licitaciones.db
+# Base de datos local (se cachea en GitHub Actions, no se versiona)
+data/*.db
+data/*.db-journal
+# ZIPs descargados de PLACSP y metadatos de descarga
+cache/
+# Carpeta generada para GitHub Pages
+site/data/
+# Python
 __pycache__/
 *.pyc
+.venv/
+*.egg-info/
+.pytest_cache/

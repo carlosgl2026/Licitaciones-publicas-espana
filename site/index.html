@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ginebra · licitaciones públicas de tecnología</title>
+<link rel="alternate" type="application/atom+xml" title="Ginebra · feed Atom" href="data/feed.atom">
+<link rel="alternate" type="application/feed+json" title="Ginebra · JSON Feed" href="data/feed.json">
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --ink: #1a1d23; --muted: #6b7280; --border: #e5e7eb;
+    --accent: #1d4ed8; --accent-soft: #e8edfd; --new: #15803d; --new-soft: #e8f8ee;
+    --upd: #b45309; --upd-soft: #fef3c7; --baja: #b91c1c; --baja-soft: #fee2e2; --chip: #eef2ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1115; --card: #171a21; --ink: #e8eaf0; --muted: #9aa3b2; --border: #2a2f3a;
+            --accent: #7aa2ff; --accent-soft: #1d2740; --new-soft: #113022; --new: #6ee7a0;
+            --upd-soft: #3a2a0a; --upd: #fbbf24; --baja-soft: #3b1111; --baja: #fca5a5; --chip: #1f2433; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--ink); }
+  header { background: #111827; color: #fff; padding: 22px 16px; }
+  header .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: flex-end; justify-content: space-between; }
+  header h1 { margin: 0 0 4px; font-size: 1.35rem; }
+  header p { margin: 0; color: #c7cad1; font-size: 0.88rem; }
+  header a { color: #bfd0ff; }
+  .feeds { font-size: 0.85rem; color: #c7cad1; }
+  .feeds a { margin-left: 10px; white-space: nowrap; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+  main.wrap { padding: 18px 16px 40px; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 16px; }
+  .stat { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+  .stat .num { font-size: 1.5rem; font-weight: 700; }
+  .stat .label { font-size: 0.78rem; color: var(--muted); }
+  .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .tab { padding: 8px 14px; border-radius: 999px; border: 1px solid var(--border); background: var(--card); cursor: pointer; font-size: 0.85rem; color: var(--muted); }
+  .tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .toolbar { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; margin-bottom: 14px; }
+  .toolbar input, .toolbar select { width: 100%; padding: 9px 10px; border-radius: 8px; border: 1px solid var(--border); font-size: 0.88rem; background: var(--card); color: var(--ink); }
+  .toolbar input[type="search"] { grid-column: 1 / -1; }
+  .nota { background: var(--upd-soft); color: var(--upd); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; margin-bottom: 14px; font-size: 0.85rem; }
+  .grupo { margin: 18px 0 8px; font-size: 0.95rem; font-weight: 600; display: flex; align-items: baseline; gap: 8px; }
+  .grupo small { color: var(--muted); font-weight: normal; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+  .card.nuevo { border-left: 3px solid var(--new); }
+  .card.actualizado { border-left: 3px solid var(--upd); }
+  .card.baja { border-left: 3px solid var(--baja); opacity: 0.85; }
+  .card h3 { margin: 0 0 6px; font-size: 1rem; line-height: 1.35; font-weight: 600; }
+  .card h3 a { color: var(--accent); text-decoration: none; }
+  .card h3 a:hover { text-decoration: underline; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 8px; }
+  .badge { display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+  .badge.nuevo { background: var(--new-soft); color: var(--new); }
+  .badge.actualizado { background: var(--upd-soft); color: var(--upd); }
+  .badge.baja { background: var(--baja-soft); color: var(--baja); }
+  .badge.plazo { background: var(--upd-soft); color: var(--upd); }
+  .badge.plazo.urgente { background: var(--baja-soft); color: var(--baja); }
+  .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 4px 14px; font-size: 0.82rem; color: var(--muted); }
+  .meta strong { color: var(--ink); font-weight: 600; }
+  .admin { font-size: 0.82rem; color: var(--muted); margin-bottom: 6px; }
+  .admin b { color: var(--ink); font-weight: 600; }
+  .motivos { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { font-size: 0.72rem; padding: 2px 8px; border-radius: 6px; background: var(--chip); color: var(--muted); }
+  .enlaces { margin-top: 8px; font-size: 0.82rem; }
+  .enlaces a { color: var(--accent); margin-right: 12px; text-decoration: none; }
+  .enlaces a:hover { text-decoration: underline; }
+  .empty { text-align: center; padding: 50px 16px; color: var(--muted); }
+  .empty.error { color: var(--baja); }
+  footer { text-align: center; padding: 26px 16px; color: var(--muted); font-size: 0.78rem; }
+  footer a { color: var(--accent); }
+  code { font-size: 0.85em; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div>
+      <h1>Ginebra · licitaciones públicas de tecnología</h1>
+      <p>Feed propio construido sobre los datos abiertos de PLACSP (perfiles alojados + plataformas agregadas), actualizado cada día.</p>
+      <p id="actualizado" style="margin-top:4px"></p>
+    </div>
+    <div class="feeds">
+      Suscríbete:
+      <a href="data/feed.atom">Feed Atom</a>
+      <a href="data/feed.json">JSON Feed</a>
+      <a href="data/feed_nube.atom">Atom · nube pública</a>
+      <a href="data/latest.json">latest.json</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="stats">
+    <div class="stat"><div class="num" id="sSeleccion">—</div><div class="label">Seleccionadas (últimos <span id="sVentana">30</span> días)</div></div>
+    <div class="stat"><div class="num" id="sNovedades">—</div><div class="label">Novedades en la última ejecución</div></div>
+    <div class="stat"><div class="num" id="sNube">—</div><div class="label">Alertas de nube pública</div></div>
+    <div class="stat"><div class="num" id="sBase">—</div><div class="label">Expedientes en la base propia</div></div>
+    <div class="stat"><div class="num" id="sFiltradas">—</div><div class="label">Mostrando ahora</div></div>
+  </div>
+
+  <div id="nota" class="nota" hidden></div>
+
+  <div class="tabs">
+    <div class="tab active" data-tab="nuevas">Novedades</div>
+    <div class="tab" data-tab="todas">Selección</div>
+    <div class="tab" data-tab="nube">☁️ Nube pública</div>
+  </div>
+
+  <div class="toolbar">
+    <input type="search" id="q" placeholder="Buscar por objeto, órgano, administración, expediente o adjudicatario…">
+    <select id="fSector"><option value="">Todos los sectores</option></select>
+    <select id="fAdmin"><option value="">Todas las administraciones</option></select>
+    <select id="fEstado"><option value="">Todos los estados</option></select>
+    <select id="fTipo"><option value="">Todos los tipos</option></select>
+    <select id="fFuente"><option value="">Todas las fuentes</option></select>
+    <select id="orden">
+      <option value="updated">Más recientes primero</option>
+      <option value="importe">Mayor importe primero</option>
+      <option value="plazo">Plazo más próximo primero</option>
+    </select>
+    <select id="agrupar">
+      <option value="">Sin agrupar</option>
+      <option value="administracion">Agrupar por administración</option>
+      <option value="sector">Agrupar por sector</option>
+      <option value="entidad">Agrupar por entidad</option>
+    </select>
+  </div>
+
+  <div id="lista"></div>
+</main>
+
+<footer>
+  Datos: <a href="https://www.hacienda.gob.es/es-ES/GobiernoAbierto/Datos%20Abiertos/Paginas/licitaciones_plataforma_contratacion.aspx">datos abiertos de la Plataforma de Contratación del Sector Público</a>
+  · Generado por <a href="https://github.com/inorganic-software/ginebra">ginebra</a>. Este visor no publica ni firma nada.
+</footer>
+
+<script>
+(function () {
+  const state = { tab: 'nuevas', q: '', sector: '', admin: '', estado: '', tipo: '', fuente: '', orden: 'updated', agrupar: '',
+                  nuevas: null, todas: null, nube: null, resumen: null };
+  const $ = (s) => document.querySelector(s);
+  const FUENTES = { placsp: 'PLACSP', agregadas: 'Agregadas', menores: 'Menores', encargos: 'Encargos', consultas: 'Consultas' };
+
+  function fmtImporte(v) { const n = parseFloat(v); return isNaN(n) ? null : n.toLocaleString('es-ES', { maximumFractionDigits: 0 }) + ' €'; }
+  function fmtFecha(iso) { if (!iso) return '—'; const d = new Date(iso); return isNaN(d) ? iso : d.toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric' }); }
+  function fmtFechaHora(iso) { if (!iso) return '—'; const d = new Date(iso); return isNaN(d) ? iso : d.toLocaleString('es-ES', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' }); }
+  function diasHasta(iso) { if (!iso) return null; const d = new Date(iso); if (isNaN(d)) return null; return Math.ceil((d - new Date()) / 86400000); }
+  function esc(s) { return String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
+
+  async function cargar() {
+    // En producción data/ está junto al index; en local (python3 -m http.server desde la raíz) está en ../data/
+    const get = (f) => fetch('data/' + f).then(r => r.ok ? r.json() : null).catch(() => null)
+      .then(j => j || fetch('../data/' + f).then(r => r.ok ? r.json() : null).catch(() => null));
+    const [nuevas, todas, nube, resumen] = await Promise.all([get('nuevas_hoy.json'), get('latest.json'), get('alertas_nube.json'), get('resumen.json')]);
+    Object.assign(state, { nuevas, todas, nube, resumen });
+    if (!nuevas && !todas) {
+      $('#lista').innerHTML = `<div class="empty error">No se encontró <code>data/latest.json</code> junto a este HTML.<br><br>
+        Este visor se publica junto a la carpeta <code>data/</code> que genera <code>python -m ginebra actualizar</code>.
+        Si lo abres desde disco (<code>file://</code>), sírvelo con <code>python3 -m http.server</code> desde la raíz del proyecto
+        y abre <code>http://localhost:8000/site/</code>.</div>`;
+      return;
+    }
+    const gen = (todas || nuevas).generado;
+    $('#actualizado').textContent = 'Última actualización: ' + fmtFechaHora(gen) + (resumen && resumen.base_de_datos ? ` · ${(resumen.base_de_datos.total || 0).toLocaleString('es-ES')} expedientes en base` : '');
+    $('#sSeleccion').textContent = (todas?.total ?? 0).toLocaleString('es-ES');
+    $('#sVentana').textContent = todas?.ventana_dias ?? 30;
+    const nov = resumen?.novedades_ultima_ejecucion;
+    $('#sNovedades').textContent = nov ? `${nov.nuevo || 0} / ${nov.actualizado || 0}` : (nuevas?.total ?? 0);
+    $('#sNovedades').title = 'nuevas / actualizadas en toda la base';
+    $('#sNube').textContent = (nube?.total_historico ?? 0).toLocaleString('es-ES');
+    $('#sBase').textContent = (resumen?.base_de_datos?.total ?? 0).toLocaleString('es-ES');
+    if (nuevas && nuevas.nota) { $('#nota').hidden = false; $('#nota').textContent = 'ℹ️ ' + nuevas.nota; }
+    if (nuevas && nuevas.total === 0 && todas && todas.total > 0) { state.tab = 'todas'; marcarTab(); }
+    poblarFiltros();
+    render();
+  }
+
+  function dataset() {
+    if (state.tab === 'nube') return state.nube?.historico || [];
+    const src = state.tab === 'nuevas' ? state.nuevas : state.todas;
+    return src?.licitaciones || [];
+  }
+
+  function opciones(sel, valores, etiqueta) {
+    const actual = sel.value;
+    while (sel.options.length > 1) sel.remove(1);
+    const cuenta = {};
+    valores.forEach(v => { if (v) cuenta[v] = (cuenta[v] || 0) + 1; });
+    Object.keys(cuenta).sort((a, b) => cuenta[b] - cuenta[a] || a.localeCompare(b)).forEach(v => {
+      const o = document.createElement('option'); o.value = v; o.textContent = `${etiqueta ? etiqueta(v) : v} (${cuenta[v]})`; sel.appendChild(o);
+    });
+    sel.value = Object.keys(cuenta).includes(actual) ? actual : '';
+  }
+
+  function poblarFiltros() {
+    const rows = dataset();
+    opciones($('#fSector'), rows.map(r => r.sector));
+    opciones($('#fAdmin'), rows.map(r => r.administracion));
+    opciones($('#fEstado'), rows.map(r => r.estado_label || r.estado));
+    opciones($('#fTipo'), rows.map(r => r.tipo_contrato_label || r.tipo_contrato));
+    opciones($('#fFuente'), rows.map(r => r.fuente), v => FUENTES[v] || v);
+    state.sector = $('#fSector').value; state.admin = $('#fAdmin').value; state.estado = $('#fEstado').value;
+    state.tipo = $('#fTipo').value; state.fuente = $('#fFuente').value;
+  }
+
+  function filtrar(rows) {
+    let out = rows;
+    if (state.q) {
+      const q = state.q.toLowerCase();
+      out = out.filter(r => [r.objeto, r.titulo, r.organo, r.administracion, r.entidad, r.expediente, r.adjudicatario, r.cpvs]
+        .some(v => (v || '').toLowerCase().includes(q)));
+    }
+    if (state.sector) out = out.filter(r => r.sector === state.sector);
+    if (state.admin) out = out.filter(r => r.administracion === state.admin);
+    if (state.estado) out = out.filter(r => (r.estado_label || r.estado) === state.estado);
+    if (state.tipo) out = out.filter(r => (r.tipo_contrato_label || r.tipo_contrato) === state.tipo);
+    if (state.fuente) out = out.filter(r => r.fuente === state.fuente);
+    out = [...out].sort((a, b) => {
+      if (state.orden === 'importe') return (parseFloat(b.presupuesto_sin_iva) || 0) - (parseFloat(a.presupuesto_sin_iva) || 0);
+      if (state.orden === 'plazo') return (a.plazo_presentacion || '9999').localeCompare(b.plazo_presentacion || '9999');
+      return (b.updated || '').localeCompare(a.updated || '');
+    });
+    return out;
+  }
+
+  function tarjeta(r) {
+    const importe = fmtImporte(r.presupuesto_sin_iva);
+    const estimado = fmtImporte(r.valor_estimado);
+    const adj = fmtImporte(r.importe_adjudicacion);
+    const badges = [];
+    if (r.novedad === 'nuevo') badges.push('<span class="badge nuevo">NUEVA</span>');
+    if (r.novedad === 'actualizado') badges.push(`<span class="badge actualizado">ACTUALIZADA${r.estado_anterior ? ' · antes: ' + esc(r.estado_anterior) : ''}</span>`);
+    if (r.novedad === 'baja' || r.baja_fecha) badges.push(`<span class="badge baja">${esc(r.baja_motivo || 'BAJA')}</span>`);
+    badges.push(`<span class="badge">${esc(r.estado_label || r.estado || '—')}</span>`);
+    if (r.tipo_contrato_label) badges.push(`<span class="badge">${esc(r.tipo_contrato_label)}</span>`);
+    const dias = diasHasta(r.plazo_presentacion);
+    if (dias !== null && (r.estado === 'PUB' || r.estado === 'PRE')) {
+      if (dias >= 0) badges.push(`<span class="badge plazo ${dias <= 5 ? 'urgente' : ''}">quedan ${dias} días</span>`);
+    }
+    badges.push(`<span class="badge" title="fuente">${esc(FUENTES[r.fuente] || r.fuente)}</span>`);
+    const admin = [r.sector, r.administracion, r.entidad].filter(Boolean).filter((v, i, a) => a.indexOf(v) === i).map(esc).join(' › ');
+    const motivos = Object.entries(r.motivos || {}).map(([k, v]) => `<span class="chip">${esc(k)}: ${esc(v)}</span>`).join('');
+    const enlaces = [
+      r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">Ficha</a>` : '',
+      r.pliego_administrativo_url ? `<a href="${esc(r.pliego_administrativo_url)}" target="_blank" rel="noopener">Pliego administrativo</a>` : '',
+      r.pliego_tecnico_url ? `<a href="${esc(r.pliego_tecnico_url)}" target="_blank" rel="noopener">Pliego técnico</a>` : '',
+      r.organo_perfil_url ? `<a href="${esc(r.organo_perfil_url)}" target="_blank" rel="noopener">Perfil del contratante</a>` : '',
+    ].filter(Boolean).join('');
+    return `
+      <div class="card ${esc(r.novedad || '')}">
+        <h3><a href="${esc(r.url || '#')}" target="_blank" rel="noopener">${esc(r.objeto || r.titulo || 'Sin objeto')}</a></h3>
+        <div class="badges">${badges.join('')}</div>
+        <div class="admin"><b>${esc(r.organo || '—')}</b>${admin ? ' · ' + admin : ''}</div>
+        <div class="meta">
+          <span><strong>Expediente:</strong> ${esc(r.expediente || '—')}</span>
+          ${importe ? `<span><strong>Presupuesto sin IVA:</strong> ${importe}</span>` : (estimado ? `<span><strong>Valor estimado:</strong> ${estimado}</span>` : '')}
+          ${r.plazo_presentacion ? `<span><strong>Plazo de presentación:</strong> ${fmtFechaHora(r.plazo_presentacion)}</span>` : ''}
+          ${r.procedimiento_label ? `<span><strong>Procedimiento:</strong> ${esc(r.procedimiento_label)}</span>` : ''}
+          ${r.cpv ? `<span><strong>CPV:</strong> ${esc(r.cpvs || r.cpv)}</span>` : ''}
+          ${r.num_lotes ? `<span><strong>Lotes:</strong> ${r.num_lotes}</span>` : ''}
+          ${r.adjudicatario ? `<span><strong>Adjudicatario:</strong> ${esc(r.adjudicatario)}${adj ? ' · ' + adj : ''}</span>` : ''}
+          ${r.ultimo_anuncio_label ? `<span><strong>Último anuncio:</strong> ${esc(r.ultimo_anuncio_label)} ${fmtFecha(r.fecha_ultimo_anuncio)}</span>` : ''}
+          <span><strong>Actualizado:</strong> ${fmtFecha(r.updated)}</span>
+        </div>
+        ${motivos ? `<div class="motivos">${motivos}</div>` : ''}
+        ${enlaces ? `<div class="enlaces">${enlaces}</div>` : ''}
+      </div>`;
+  }
+
+  function render() {
+    const rows = filtrar(dataset());
+    $('#sFiltradas').textContent = rows.length.toLocaleString('es-ES');
+    const lista = $('#lista');
+    if (!rows.length) {
+      lista.innerHTML = `<div class="empty">${state.tab === 'nuevas' ? 'Sin novedades en la última ejecución con estos filtros.' : 'Sin resultados con estos filtros.'}</div>`;
+      return;
+    }
+    let intro = '';
+    if (state.tab === 'nube') intro = `<div class="nota">☁️ Licitaciones que mencionan nube pública (cualquier proveedor) en cualquier administración española, <strong>sin filtro de tamaño ni de cercanía</strong>.</div>`;
+    if (!state.agrupar) { lista.innerHTML = intro + rows.map(tarjeta).join(''); return; }
+    const grupos = new Map();
+    rows.forEach(r => { const k = r[state.agrupar] || '(sin clasificar)'; if (!grupos.has(k)) grupos.set(k, []); grupos.get(k).push(r); });
+    lista.innerHTML = intro + [...grupos.entries()].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]))
+      .map(([k, v]) => `<div class="grupo">${esc(k)} <small>${v.length}</small></div>` + v.map(tarjeta).join('')).join('');
+  }
+
+  function marcarTab() { document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === state.tab)); }
+  document.querySelectorAll('.tab').forEach(tab => tab.addEventListener('click', () => { state.tab = tab.dataset.tab; marcarTab(); poblarFiltros(); render(); }));
+  $('#q').addEventListener('input', e => { state.q = e.target.value; render(); });
+  [['fSector', 'sector'], ['fAdmin', 'admin'], ['fEstado', 'estado'], ['fTipo', 'tipo'], ['fFuente', 'fuente'], ['orden', 'orden'], ['agrupar', 'agrupar']]
+    .forEach(([id, k]) => $('#' + id).addEventListener('change', e => { state[k] = e.target.value; render(); }));
+  cargar();
+})();
+</script>
+</body>
+</html>

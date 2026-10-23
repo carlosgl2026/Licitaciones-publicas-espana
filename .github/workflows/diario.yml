@@ -1,0 +1,108 @@
+name: Actualización diaria
+
+on:
+  schedule:
+    # PLACSP regenera los ZIP de sindicación de madrugada (hacia las 04:00 UTC
+    # para el feed 643). Ejecutamos a las 06:30 UTC (08:30 en verano, 07:30 en
+    # invierno en España), con margen. GitHub puede retrasar el disparo.
+    - cron: "30 6 * * *"
+  workflow_dispatch:
+    inputs:
+      fuentes:
+        description: "Fuentes a procesar (ids separados por espacio; vacío = por defecto)"
+        required: false
+        default: ""
+      periodos:
+        description: "Meses AAAAMM separados por espacio (vacío = mes en curso)"
+        required: false
+        default: ""
+      anios:
+        description: "Años AAAA para usar los ZIP anuales (carga inicial completa, tarda horas)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "diario"
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 600
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Dependencias
+        run: pip install -r requirements.txt
+
+      - name: Restaurar la base de datos de la ejecución anterior
+        uses: actions/cache@v4
+        with:
+          path: data/ginebra.db
+          key: ginebra-db-v3-${{ github.run_id }}
+          restore-keys: |
+            ginebra-db-v3-
+
+      - name: Actualizar feeds y exportar
+        env:
+          GINEBRA_SITE_URL: https://www.inorganic.com/ginebra/
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.fuentes }}" ]; then ARGS="$ARGS --fuentes ${{ github.event.inputs.fuentes }}"; fi
+          if [ -n "${{ github.event.inputs.periodos }}" ]; then ARGS="$ARGS --periodos ${{ github.event.inputs.periodos }}"; fi
+          if [ -n "${{ github.event.inputs.anios }}" ]; then ARGS="$ARGS --anios ${{ github.event.inputs.anios }}"; fi
+          python -m ginebra actualizar $ARGS
+          python -m ginebra resumen
+
+      - name: Commitear datos publicados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Los ficheros de data/ se regeneran enteros en cada ejecución, así que
+          # no tiene sentido fusionar diffs: ponemos nuestra versión encima de
+          # lo último que haya en main y reintentamos el push si hay carrera.
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --soft origin/main
+            git add data/*.json data/*.atom
+            if git diff --staged --quiet; then
+              echo "Sin cambios que commitear"; break
+            fi
+            git commit -m "Actualización diaria $(date -u +%Y-%m-%d)"
+            if git push; then break; fi
+            echo "Push rechazado, reintento $i/5"; sleep 10
+          done
+
+      - name: Preparar sitio para GitHub Pages
+        run: |
+          rm -rf _site && mkdir -p _site/data
+          cp site/index.html _site/index.html
+          cp data/*.json data/*.atom _site/data/
+
+      - name: Subir artefacto de Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  desplegar:
+    needs: actualizar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Desplegar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

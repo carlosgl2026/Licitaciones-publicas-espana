@@ -1,6 +1,6 @@
 {
- "generado": "2026-10-23T04:40:12+00:00",
- "ultima_actualizacion": "2026-10-23T04:40:12+00:00",
+ "generado": "2026-10-23T07:21:29+00:00",
+ "ultima_actualizacion": "2026-10-23T07:21:29+00:00",
  "base_de_datos": {
   "total": 44737,
   "por_fuente": {
@@ -15,7 +15,7 @@
  "novedades_ultima_ejecucion": {
   "nuevo": 0,
   "actualizado": 0,
-  "baja": 0
+  "baja": 51
  },
  "alertas_nube": 238,
  "por_administracion": {
@@ -46,6 +46,26 @@
   "Ministerio de Juventud e Infancia": 1
  },
  "ejecuciones": [
+  {
+   "ejecutado_en": "2026-10-23T07:21:29+00:00",
+   "fuente": "agregadas",
+   "periodo": "202610",
+   "entradas": 19385,
+   "expedientes": 13450,
+   "nuevos": 0,
+   "actualizados": 0,
+   "bajas": 2
+  },
+  {
+   "ejecutado_en": "2026-10-23T07:19:31+00:00",
+   "fuente": "placsp",
+   "periodo": "202610",
+   "entradas": 43337,
+   "expedientes": 31287,
+   "nuevos": 0,
+   "actualizados": 0,
+   "bajas": 49
+  },
   {
    "ejecutado_en": "2026-10-23T04:40:12+00:00",
    "fuente": "agregadas",

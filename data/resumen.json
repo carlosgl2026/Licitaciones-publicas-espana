@@ -1,0 +1,75 @@
+{
+ "generado": "2026-10-23T04:40:12+00:00",
+ "ultima_actualizacion": "2026-10-23T04:40:12+00:00",
+ "base_de_datos": {
+  "total": 44737,
+  "por_fuente": {
+   "agregadas": 13450,
+   "placsp": 31287
+  },
+  "updated_min": "2026-09-29T15:00:11.557+02:00",
+  "updated_max": "2026-10-23T02:00:02.619+02:00"
+ },
+ "ventana_dias": 30,
+ "seleccionadas": 536,
+ "novedades_ultima_ejecucion": {
+  "nuevo": 0,
+  "actualizado": 0,
+  "baja": 0
+ },
+ "alertas_nube": 238,
+ "por_administracion": {
+  "SOCIEDADES, FUNDACIONES y CONSORCIOS ESTATALES": 143,
+  "Comunidad de Madrid": 121,
+  "Ministerio de Hacienda": 72,
+  "Ministerio de Defensa": 50,
+  "INSTITUCIONES INDEPENDIENTES": 29,
+  "MUTUAS DE ACCIDENTES DE TRABAJO COLABORADORAS DE LA SEGURIDAD SOCIAL": 22,
+  "SOCIEDADES, FUNDACIONES Y CONSORCIOS ENTIDADES LOCALES": 16,
+  "UNIVERSIDADES": 12,
+  "Ministerio de Sanidad": 10,
+  "Ministerio del Interior": 9,
+  "Ministerio de Economía, Comercio y Empresa": 9,
+  "Ministerio para la Transformación Digital y de la Función Pública": 9,
+  "Ministerio de Ciencia, Innovación y Universidades": 8,
+  "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes": 6,
+  "Ministerio de Cultura": 5,
+  "Ministerio para la Transición Ecológica y el Reto Demográfico": 3,
+  "Ministerio de Transportes y Movilidad Sostenible": 2,
+  "Ministerio de Trabajo y Economía Social": 2,
+  "Ministerio de Vivienda y Agenda Urbana": 2,
+  "Ministerio de Inclusión, Seguridad Social y Migraciones": 1,
+  "Ministerio de Igualdad": 1,
+  "Ministerio de Agricultura, Pesca y Alimentación": 1,
+  "Ministerio de Educación, Formación Profesional y Deportes": 1,
+  "SOCIEDADES, FUNDACIONES Y CONSORCIOS COMUNIDADES AUTÓNOMAS": 1,
+  "Ministerio de Juventud e Infancia": 1
+ },
+ "ejecuciones": [
+  {
+   "ejecutado_en": "2026-10-23T04:40:12+00:00",
+   "fuente": "agregadas",
+   "periodo": "202610",
+   "entradas": 19385,
+   "expedientes": 13450,
+   "nuevos": 13450,
+   "actualizados": 5677,
+   "bajas": 0
+  },
+  {
+   "ejecutado_en": "2026-10-23T04:39:48+00:00",
+   "fuente": "placsp",
+   "periodo": "202610",
+   "entradas": 43337,
+   "expedientes": 31287,
+   "nuevos": 31287,
+   "actualizados": 11266,
+   "bajas": 47
+  }
+ ],
+ "feeds": {
+  "atom": "https://raw.githubusercontent.com/inorganic-software/ginebra/main/data/feed.atom",
+  "atom_nube": "https://raw.githubusercontent.com/inorganic-software/ginebra/main/data/feed_nube.atom",
+  "json": "https://raw.githubusercontent.com/inorganic-software/ginebra/main/data/feed.json"
+ }
+}

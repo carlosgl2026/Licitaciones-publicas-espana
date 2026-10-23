@@ -7,11 +7,14 @@ Cada día descarga los feeds oficiales, guarda un histórico propio en SQLite
 conserva), aplica los criterios de negocio y publica:
 
 - un **feed Atom** y un **JSON Feed** a los que suscribirse,
-- un **dashboard** web con filtros por administración, sector, estado y tipo,
+- un **dashboard** web (`site/index.html`) con filtros por administración, sector, estado y tipo,
 - ficheros JSON para integrar con otras herramientas.
 
-Sitio publicado: <https://www.inorganic.com/ginebra/>
-Feed Atom: <https://www.inorganic.com/ginebra/data/feed.atom>
+Los ficheros generados se commitean en `data/` y, mientras no haya un hosting
+propio, se sirven desde el repositorio:
+<https://raw.githubusercontent.com/inorganic-software/ginebra/main/data/feed.atom>.
+El dashboard no se publica en GitHub Pages (la organización sirve sus Pages
+bajo `www.inorganic.com`); se usa en local o se desplegará en GCP.
 
 ## Fuentes oficiales
 
@@ -55,7 +58,7 @@ OrganosContratacion.xlsx    ─►  ginebra.organos  ─►  data/ginebra.db (SQ
                                                            │
                        data/latest.json · nuevas_hoy.json · alertas_nube.json · feed.atom · feed_nube.atom · feed.json · resumen.json
                                                            │
-                                                  site/index.html (GitHub Pages)
+                                                  site/index.html (visor local; hosting pendiente)
 ```
 
 Módulos del paquete `ginebra/`:
@@ -131,15 +134,16 @@ python3 -m http.server 8000                     # dashboard en http://localhost:
 ```
 
 Variables de entorno: `GINEBRA_DATA_DIR`, `GINEBRA_CACHE_DIR`, `GINEBRA_DB`,
-`GINEBRA_SITE_URL` (URL pública usada en los enlaces del feed).
+`GINEBRA_SITE_URL` y `GINEBRA_DATA_URL` (URLs públicas usadas en los enlaces
+de los feeds).
 
 ## Automatización
 
 `.github/workflows/diario.yml` corre cada día a las 06:30 UTC (y a mano desde
 la pestaña Actions, con parámetros opcionales de fuentes, meses o años):
-restaura la base de datos de la caché, ejecuta `ginebra actualizar`,
-commitea `data/*.json` y `data/*.atom`, y despliega `site/` + `data/` en
-GitHub Pages. `.github/workflows/tests.yml` ejecuta los tests en cada push.
+restaura la base de datos de la caché, ejecuta `ginebra actualizar` y
+commitea `data/*.json` y `data/*.atom`. `.github/workflows/tests.yml`
+ejecuta los tests en cada push.
 
 ## Extender
 

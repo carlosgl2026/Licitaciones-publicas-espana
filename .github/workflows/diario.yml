@@ -23,8 +23,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: "diario"
@@ -56,8 +54,6 @@ jobs:
             ginebra-db-v3-
 
       - name: Actualizar feeds y exportar
-        env:
-          GINEBRA_SITE_URL: https://www.inorganic.com/ginebra/
         run: |
           ARGS=""
           if [ -n "${{ github.event.inputs.fuentes }}" ]; then ARGS="$ARGS --fuentes ${{ github.event.inputs.fuentes }}"; fi
@@ -84,25 +80,3 @@ jobs:
             if git push; then break; fi
             echo "Push rechazado, reintento $i/5"; sleep 10
           done
-
-      - name: Preparar sitio para GitHub Pages
-        run: |
-          rm -rf _site && mkdir -p _site/data
-          cp site/index.html _site/index.html
-          cp data/*.json data/*.atom _site/data/
-
-      - name: Subir artefacto de Pages
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-  desplegar:
-    needs: actualizar
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Desplegar en GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4

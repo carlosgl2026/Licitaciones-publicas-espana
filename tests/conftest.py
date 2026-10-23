@@ -14,6 +14,7 @@ def entorno(tmp_path, monkeypatch):
     monkeypatch.setattr(config, "CACHE_DIR", tmp_path / "cache")
     monkeypatch.setattr(config, "DB_PATH", tmp_path / "data" / "test.db")
     monkeypatch.setattr(config, "SITE_URL", "https://example.org/ginebra/")
+    monkeypatch.setattr(config, "DATA_URL", "https://example.org/ginebra/data/")
     return tmp_path
 
 

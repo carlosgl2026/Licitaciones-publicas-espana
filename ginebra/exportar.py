@@ -267,9 +267,9 @@ def generar_atom(registros: list[dict], titulo: str, nombre_fichero: str, subtit
     ET.SubElement(feed, A + "title").text = titulo
     if subtitulo:
         ET.SubElement(feed, A + "subtitle").text = subtitulo
-    ET.SubElement(feed, A + "id").text = site + nombre_fichero
+    ET.SubElement(feed, A + "id").text = config.DATA_URL + nombre_fichero
     ET.SubElement(feed, A + "updated").text = ahora.isoformat(timespec="seconds")
-    ET.SubElement(feed, A + "link", rel="self", href=site + "data/" + nombre_fichero, type="application/atom+xml")
+    ET.SubElement(feed, A + "link", rel="self", href=config.DATA_URL + nombre_fichero, type="application/atom+xml")
     ET.SubElement(feed, A + "link", rel="alternate", href=site, type="text/html")
     ET.SubElement(feed, A + "generator", uri="https://github.com/inorganic-software/ginebra").text = "ginebra"
     autor = ET.SubElement(feed, A + "author")
@@ -326,7 +326,7 @@ def generar_json_feed(registros: list[dict], titulo: str, nombre_fichero: str,
         "version": "https://jsonfeed.org/version/1.1",
         "title": titulo,
         "home_page_url": site,
-        "feed_url": site + "data/" + nombre_fichero,
+        "feed_url": config.DATA_URL + nombre_fichero,
         "description": "Licitaciones públicas de tecnología seleccionadas por ginebra a partir de los datos abiertos de PLACSP.",
         "authors": [{"name": config.FEED_AUTOR}],
         "language": "es",
@@ -409,9 +409,9 @@ def exportar_todo(conn: sqlite3.Connection, data_dir: Path | None = None, dias: 
         "por_administracion": dict(sorted(por_admin.items(), key=lambda kv: -kv[1])),
         "ejecuciones": ejecuciones,
         "feeds": {
-            "atom": config.SITE_URL + "data/feed.atom",
-            "atom_nube": config.SITE_URL + "data/feed_nube.atom",
-            "json": config.SITE_URL + "data/feed.json",
+            "atom": config.DATA_URL + "feed.atom",
+            "atom_nube": config.DATA_URL + "feed_nube.atom",
+            "json": config.DATA_URL + "feed.json",
         },
     }
     _escribir_json(data_dir / "resumen.json", resumen)
